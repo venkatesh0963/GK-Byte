@@ -1,0 +1,3369 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GK BYTE - Weekly curated questions to test your knowledge.">
+    <title>GK BYTE | June Current Affairs Quiz</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Poppins for Headings, Inter for Body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Variables for Material Design & Theming */
+        :root {
+            /* Light Theme Colors */
+            --bg-color: #f8fafc; 
+            --surface-color: #ffffff;
+            --text-color: #222222;
+            --text-muted: #555555;
+            --primary-color: #2563EB; 
+            --primary-hover: #1d4ed8;
+            --secondary-bg: #f1f5f9;
+            --accent-green: #10b981; 
+            --error-red: #ef4444; 
+            --border-color: #e2e8f0;
+            
+            /* Material Shadows */
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            
+            /* Typography */
+            --font-body: 'Inter', sans-serif;
+            --font-heading: 'Poppins', sans-serif;
+        }
+
+        [data-theme="dark"] {
+            /* Dark Theme Colors */
+            --bg-color: #121212;
+            --surface-color: #1e1e1e;
+            --text-color: #e5e5e5;
+            --text-muted: #a3a3a3;
+            --primary-color: #3b82f6;
+            --primary-hover: #60a5fa;
+            --secondary-bg: #2d2d2d;
+            --border-color: #333333;
+            
+            /* Shadows for Dark Mode */
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-body);
+            font-size: 16px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s ease, color 0.3s ease;
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+        
+        h1, h2, h3, h4 { 
+            font-family: var(--font-heading); 
+            color: var(--text-color);
+            line-height: 1.3;
+        }
+
+        /* Material Utility Classes */
+        .mat-card {
+            background-color: var(--surface-color);
+            border-radius: 12px;
+            box-shadow: var(--shadow-sm);
+            padding: 30px;
+            border: 1px solid var(--border-color);
+        }
+
+        .mat-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background-color: var(--primary-color);
+            color: #ffffff !important;
+            font-weight: 500;
+            font-family: var(--font-body);
+            border-radius: 8px;
+            box-shadow: var(--shadow-sm);
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.2s, box-shadow 0.2s, transform 0.1s;
+            font-size: 1rem;
+            letter-spacing: 0.3px;
+        }
+
+        .mat-btn:hover { 
+            background-color: var(--primary-hover);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .mat-btn:active { 
+            transform: scale(0.98); 
+            box-shadow: var(--shadow-sm); 
+        }
+
+        .mat-btn.secondary { 
+            background-color: transparent;
+            color: var(--primary-color) !important;
+            border: 2px solid var(--primary-color);
+            box-shadow: none;
+        }
+
+        .mat-btn.secondary:hover {
+            background-color: rgba(37, 99, 235, 0.05);
+        }
+        
+        [data-theme="dark"] .mat-btn.secondary:hover {
+            background-color: rgba(59, 130, 246, 0.1);
+        }
+        
+        .mat-btn.accent {
+            background-color: var(--accent-green);
+        }
+        .mat-btn.accent:hover {
+            background-color: #059669;
+        }
+
+        /* Header & Navigation */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: var(--surface-color);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: var(--shadow-sm);
+            border-bottom: 1px solid var(--border-color);
+            transition: background-color 0.3s ease;
+        }
+
+        .logo a {
+            font-family: var(--font-heading);
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--text-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        .logo a i {
+            color: var(--primary-color);
+        }
+
+        nav { display: flex; align-items: center; gap: 24px; }
+        nav ul { display: flex; align-items: center; gap: 8px; }
+
+        nav a.nav-link {
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: background-color 0.2s, color 0.2s;
+            color: var(--text-color);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        nav a.nav-link:hover, .dropdown.active > a.nav-link {
+            background-color: var(--secondary-bg);
+            color: var(--primary-color);
+        }
+
+        /* Dropdown */
+        .dropdown { position: relative; }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 120%;
+            left: 50%;
+            transform: translateX(-50%) translateY(10px);
+            background-color: var(--surface-color);
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            min-width: 220px;
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
+            z-index: 100;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        .dropdown-menu a {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 16px;
+            border-radius: 8px;
+            transition: background-color 0.2s;
+            font-weight: 500;
+            color: var(--text-color);
+            font-size: 0.95rem;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: var(--secondary-bg);
+            color: var(--primary-color);
+        }
+
+        /* Actions (Toggle & Quiz Btn) */
+        .nav-actions { display: flex; align-items: center; gap: 16px; }
+
+        .theme-toggle {
+            background: var(--secondary-bg);
+            border: none;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            cursor: pointer;
+            color: var(--text-color);
+            transition: background-color 0.2s, transform 0.2s;
+        }
+
+        .theme-toggle:hover {
+            background-color: var(--border-color);
+            transform: scale(1.05);
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 28px;
+            color: var(--text-color);
+            cursor: pointer;
+        }
+
+        /* Quiz Page Styles */
+        .section { padding: 60px 5%; max-width: 1200px; margin: 0 auto; min-height: 80vh; }
+        
+        .page-title { 
+            text-align: center; 
+            margin-bottom: 48px; 
+            font-size: 2.5rem; 
+            font-weight: 800;
+        }
+
+        .week-nav { 
+            display: flex; 
+            justify-content: center; 
+            gap: 16px; 
+            margin-bottom: 48px; 
+            flex-wrap: wrap; 
+        }
+        
+        .week-btn { 
+            background-color: var(--surface-color); 
+            color: var(--text-muted); 
+            font-size: 1rem; 
+            padding: 12px 24px; 
+            border-radius: 24px; 
+            transition: all 0.2s; 
+            border: 1px solid var(--border-color); 
+            font-weight: 600; 
+            font-family: var(--font-body);
+            display: flex; 
+            align-items: center; 
+            gap: 8px; 
+            cursor: pointer;
+        }
+        .week-btn:hover { 
+            border-color: var(--primary-color); 
+            color: var(--primary-color); 
+        }
+        .week-btn.active { 
+            background-color: var(--primary-color); 
+            color: white; 
+            border-color: var(--primary-color);
+            box-shadow: var(--shadow-sm); 
+        }
+        
+        .question-card { 
+            margin-bottom: 40px; 
+            text-align: left; 
+            animation: fadeIn 0.4s ease; 
+            display: none; 
+            padding: 32px;
+        }
+        
+        @keyframes fadeIn { 
+            from { opacity: 0; transform: translateY(10px); } 
+            to { opacity: 1; transform: translateY(0); } 
+        }
+
+        .question-text { 
+            font-size: 1.15rem; 
+            font-weight: 600; 
+            margin-bottom: 24px; 
+            padding: 20px 24px; 
+            background-color: var(--secondary-bg); 
+            color: var(--text-color); 
+            border-left: 4px solid var(--primary-color); 
+            border-radius: 8px;
+            line-height: 1.6; 
+        }
+
+        .options-grid { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 16px; 
+            margin-bottom: 24px; 
+        }
+        
+        .option { 
+            background-color: var(--surface-color); 
+            border: 1px solid var(--border-color);
+            padding: 16px 20px; 
+            border-radius: 12px; 
+            font-weight: 500; 
+            transition: all 0.2s ease; 
+            display: flex; 
+            align-items: center; 
+            gap: 16px; 
+            font-size: 1rem; 
+            cursor: pointer;
+        }
+        
+        .option:hover { 
+            border-color: var(--primary-color);
+            background-color: rgba(37, 99, 235, 0.05);
+            color: var(--primary-color); 
+        }
+        
+        [data-theme="dark"] .option:hover {
+            background-color: rgba(59, 130, 246, 0.1);
+        }
+
+        .option-letter { 
+            background: var(--primary-color); 
+            color: white; 
+            width: 32px; 
+            height: 32px; 
+            display: inline-flex; 
+            align-items: center; 
+            justify-content: center; 
+            border-radius: 50%; 
+            font-weight: 600; 
+            font-size: 0.9rem; 
+            flex-shrink: 0; 
+        }
+
+        .explanation-box { 
+            margin-top: 24px; 
+            background-color: rgba(16, 185, 129, 0.1); /* light green bg */
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            border-left: 4px solid var(--accent-green); 
+            padding: 20px 24px; 
+            border-radius: 8px; 
+            display: none; 
+            animation: slideDown 0.3s ease; 
+        }
+        
+        [data-theme="dark"] .explanation-box {
+            background-color: rgba(16, 185, 129, 0.15);
+        }
+        
+        @keyframes slideDown { 
+            from { opacity: 0; transform: translateY(-10px); } 
+            to { opacity: 1; transform: translateY(0); } 
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--surface-color); padding: 80px 5% 40px; margin-top: 80px;
+            border-top: 1px solid var(--border-color);
+        }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 40px; max-width: 1280px; margin: 0 auto 60px; }
+        
+        .footer-col { display: flex; flex-direction: column; }
+        .footer-col h4 { font-size: 1.125rem; margin-bottom: 24px; font-weight: 600; color: var(--text-color); }
+        .footer-links { display: flex; flex-direction: column; gap: 12px; }
+        .footer-links a { color: var(--text-muted); transition: color 0.2s; display: inline-block; font-size: 0.95rem; }
+        .footer-links a:hover { color: var(--primary-color); }
+        
+        .newsletter form { display: flex; flex-direction: column; gap: 8px; margin-top: 16px; }
+        .newsletter input {
+            padding: 12px 16px; border: 1px solid var(--border-color); border-radius: 8px;
+            background: var(--bg-color); color: var(--text-color); outline: none;
+            font-family: var(--font-body); transition: border-color 0.2s;
+        }
+        .newsletter input:focus { border-color: var(--primary-color); }
+        
+        .footer-bottom { text-align: center; padding-top: 24px; border-top: 1px solid var(--border-color); color: var(--text-muted); font-size: 0.875rem; }
+
+        @media (max-width: 768px) {
+            .menu-toggle { display: block; }
+            nav {
+                position: absolute; top: 100%; left: 0; width: 100%; background-color: var(--surface-color);
+                padding: 24px 5%; flex-direction: column; box-shadow: var(--shadow-md);
+                opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.3s ease;
+                border-bottom: 1px solid var(--border-color);
+            }
+            nav.active { opacity: 1; visibility: visible; transform: translateY(0); }
+            nav ul { flex-direction: column; width: 100%; gap: 8px; }
+            nav ul li { width: 100%; text-align: center; }
+            nav a.nav-link { width: 100%; justify-content: center; }
+            
+            .dropdown-menu {
+                position: static; transform: none; box-shadow: none; border: none;
+                display: none; opacity: 1; visibility: visible; padding: 10px 0;
+                background-color: transparent;
+            }
+            .dropdown.active .dropdown-menu { display: flex; }
+            
+            .nav-actions { width: 100%; justify-content: center; margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--border-color); }
+            
+            .options-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; text-align: center; }
+        }
+         /* Scroll to Top Button */
+        .scroll-top-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            box-shadow: var(--shadow-md);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+        .scroll-top-btn.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .scroll-top-btn:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+    </style>
+</head>
+<body>
+<!-- Scroll to Top Button -->
+<button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <i class="fa-solid fa-graduation-cap"></i> GK BYTE
+        </a>
+    </div>
+    <nav id="nav-menu">
+        <ul>
+            <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="nav-link"><i class="fa-solid fa-book-open"></i> Subjects <i class="fa-solid fa-chevron-down" style="font-size: 0.8em; margin-left:5px;"></i></a>
+                <div class="dropdown-menu">
+                    <a href="history.html"><i class="fa-solid fa-landmark"></i> History</a>
+                    <a href="politics.html"><i class="fa-solid fa-gavel"></i> Politics</a>
+                    <a href="economics.html"><i class="fa-solid fa-chart-line"></i> Economics</a>
+                    <a href="current-affairs.html"><i class="fa-solid fa-newspaper"></i> Current Affairs</a>
+                    <a href="geography.html"><i class="fa-solid fa-earth-americas"></i> Geography</a>
+                </div>
+            </li>
+            <li><a href="index.html#about" class="nav-link"><i class="fa-solid fa-circle-info"></i> About</a></li>
+            <li><a href="index.html#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="quiz.html" class="mat-btn accent"><i class="fa-solid fa-gamepad"></i> GK Quiz</a>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode"><i class="fa-solid fa-moon"></i></button>
+        </div>
+    </nav>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+</header>
+
+<section class="section">
+    <h1 class="page-title">June Current Affairs Quiz</h1>
+    
+    <div class="week-nav">
+        <button class="week-btn active" data-week="week1"><i class="fa-regular fa-calendar-check"></i> Week 1</button>
+        <button class="week-btn" data-week="week2"><i class="fa-regular fa-calendar-check"></i> Week 2</button>
+        <button class="week-btn" data-week="week3"><i class="fa-regular fa-calendar-check"></i> Week 3</button>
+        <button class="week-btn" data-week="week4"><i class="fa-regular fa-calendar-check"></i> Week 4</button>
+    </div>
+
+    <!-- WEEK 1 -->
+<div id="week1" class="week-content" style="display: block;">
+
+<!-- Q1 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q1: Which country hosted the G7 Summit held in June 2026?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Canada</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Italy</span></div>
+        <div class="option"><span class="option-letter">C</span><span>France</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Japan</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Canada
+        </strong>
+        <p>Canada hosted the 2026 G7 Summit, where leaders discussed global security, AI, climate change, and economic cooperation.</p>
+    </div>
+</div>
+
+<!-- Q2 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q2: International Yoga Day is observed every year on?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>5 June</span></div>
+        <div class="option"><span class="option-letter">B</span><span>21 June</span></div>
+        <div class="option"><span class="option-letter">C</span><span>15 August</span></div>
+        <div class="option"><span class="option-letter">D</span><span>2 October</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) 21 June
+        </strong>
+        <p>The International Day of Yoga is celebrated annually on 21 June following a UN resolution proposed by India.</p>
+    </div>
+</div>
+
+<!-- Q3 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q3: World Environment Day is celebrated on?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>5 June</span></div>
+        <div class="option"><span class="option-letter">B</span><span>22 April</span></div>
+        <div class="option"><span class="option-letter">C</span><span>16 September</span></div>
+        <div class="option"><span class="option-letter">D</span><span>21 March</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) 5 June
+        </strong>
+        <p>World Environment Day is observed every year on 5 June to promote environmental awareness.</p>
+    </div>
+</div>
+
+<!-- Q4 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q4: Which Indian organization successfully conducted several PSLV launches in 2026?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>DRDO</span></div>
+        <div class="option"><span class="option-letter">B</span><span>ISRO</span></div>
+        <div class="option"><span class="option-letter">C</span><span>BARC</span></div>
+        <div class="option"><span class="option-letter">D</span><span>HAL</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) ISRO
+        </strong>
+        <p>ISRO continued launching satellites using the reliable PSLV launch vehicle.</p>
+    </div>
+</div>
+
+<!-- Q5 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q5: Which ministry observes International Day of Yoga in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Ministry of AYUSH</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Ministry of Health</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Ministry of Sports</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Ministry of Education</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Ministry of AYUSH
+        </strong>
+        <p>The Ministry of AYUSH coordinates nationwide International Yoga Day celebrations.</p>
+    </div>
+</div>
+
+<!-- Q6 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q6: RBI stands for?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Reserve Bank of India</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Rural Bank of India</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Revenue Bank of India</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Regional Bank of India</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Reserve Bank of India
+        </strong>
+        <p>RBI is India's central bank responsible for monetary policy and banking regulation.</p>
+    </div>
+</div>
+
+<!-- Q7 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q7: Which day is observed as World Oceans Day?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>8 June</span></div>
+        <div class="option"><span class="option-letter">B</span><span>10 June</span></div>
+        <div class="option"><span class="option-letter">C</span><span>12 June</span></div>
+        <div class="option"><span class="option-letter">D</span><span>15 June</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) 8 June
+        </strong>
+        <p>World Oceans Day is celebrated every year on 8 June to protect marine ecosystems.</p>
+    </div>
+</div>
+
+<!-- Q8 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q8: Which organization conducts the Civil Services Examination?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>SSC</span></div>
+        <div class="option"><span class="option-letter">B</span><span>UPSC</span></div>
+        <div class="option"><span class="option-letter">C</span><span>NTA</span></div>
+        <div class="option"><span class="option-letter">D</span><span>IBPS</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) UPSC
+        </strong>
+        <p>UPSC conducts IAS, IPS, IFS and other Civil Services examinations.</p>
+    </div>
+</div>
+
+<!-- Q9 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q9: Which city is the headquarters of ISRO?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Hyderabad</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Bengaluru</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Chennai</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Mumbai</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Bengaluru
+        </strong>
+        <p>ISRO headquarters is located in Bengaluru, Karnataka.</p>
+    </div>
+</div>
+
+<!-- Q10 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q10: Which day is celebrated as International Day against Drug Abuse?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>26 June</span></div>
+        <div class="option"><span class="option-letter">B</span><span>21 June</span></div>
+        <div class="option"><span class="option-letter">C</span><span>5 June</span></div>
+        <div class="option"><span class="option-letter">D</span><span>30 June</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) 26 June
+        </strong>
+        <p>The United Nations observes 26 June as the International Day against Drug Abuse and Illicit Trafficking.</p>
+    </div>
+</div>
+
+<!-- Q11 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q11: Which day is observed as World Blood Donor Day?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>5 June</span></div>
+        <div class="option"><span class="option-letter">B</span><span>8 June</span></div>
+        <div class="option"><span class="option-letter">C</span><span>14 June</span></div>
+        <div class="option"><span class="option-letter">D</span><span>21 June</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) 14 June
+        </strong>
+        <p>World Blood Donor Day is observed on 14 June every year to raise awareness about the need for safe blood donations.</p>
+    </div>
+</div>
+
+<!-- Q12 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q12: Which organization releases the Global Gender Gap Report?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>UNDP</span></div>
+        <div class="option"><span class="option-letter">B</span><span>World Bank</span></div>
+        <div class="option"><span class="option-letter">C</span><span>World Economic Forum</span></div>
+        <div class="option"><span class="option-letter">D</span><span>UNESCO</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) World Economic Forum
+        </strong>
+        <p>The Global Gender Gap Report is published annually by the World Economic Forum (WEF).</p>
+    </div>
+</div>
+
+<!-- Q13 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q13: Which Indian mission aims to provide tap water to every rural household?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>PM-KISAN</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Jal Jeevan Mission</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Swachh Bharat Mission</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Namami Gange</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Jal Jeevan Mission
+        </strong>
+        <p>Jal Jeevan Mission aims to provide Functional Household Tap Connections to every rural household.</p>
+    </div>
+</div>
+
+<!-- Q14 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q14: Which city is the headquarters of the Reserve Bank of India (RBI)?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>New Delhi</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Kolkata</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Mumbai</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Chennai</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Mumbai
+        </strong>
+        <p>The headquarters of the Reserve Bank of India is located in Mumbai, Maharashtra.</p>
+    </div>
+</div>
+
+<!-- Q15 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q15: Which country is the host of the FIFA World Cup 2026?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>United States, Canada & Mexico</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Brazil</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Qatar</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Germany</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) United States, Canada & Mexico
+        </strong>
+        <p>The 2026 FIFA World Cup is jointly hosted by the United States, Canada, and Mexico.</p>
+    </div>
+</div>
+
+<!-- Q16 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q16: Which organization conducts NEET-UG in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>CBSE</span></div>
+        <div class="option"><span class="option-letter">B</span><span>NTA</span></div>
+        <div class="option"><span class="option-letter">C</span><span>UPSC</span></div>
+        <div class="option"><span class="option-letter">D</span><span>UGC</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) NTA
+        </strong>
+        <p>The National Testing Agency (NTA) conducts the NEET-UG examination.</p>
+    </div>
+</div>
+
+<!-- Q17 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q17: Which country has the largest population in the world?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>China</span></div>
+        <div class="option"><span class="option-letter">B</span><span>India</span></div>
+        <div class="option"><span class="option-letter">C</span><span>United States</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Indonesia</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) India
+        </strong>
+        <p>India is the world's most populous country according to the latest UN estimates.</p>
+    </div>
+</div>
+
+<!-- Q18 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q18: World Refugee Day is observed every year on?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>18 June</span></div>
+        <div class="option"><span class="option-letter">B</span><span>20 June</span></div>
+        <div class="option"><span class="option-letter">C</span><span>22 June</span></div>
+        <div class="option"><span class="option-letter">D</span><span>25 June</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) 20 June
+        </strong>
+        <p>World Refugee Day is observed annually on 20 June to honor refugees around the world.</p>
+    </div>
+</div>
+
+<!-- Q19 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q19: Which country hosted the ICC Champions Trophy 2025?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>India</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Australia</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Pakistan</span></div>
+        <div class="option"><span class="option-letter">D</span><span>England</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Pakistan
+        </strong>
+        <p>Pakistan was the official host of the ICC Champions Trophy 2025.</p>
+    </div>
+</div>
+
+<!-- Q20 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q20: Which day is celebrated as International MSME Day?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>21 June</span></div>
+        <div class="option"><span class="option-letter">B</span><span>24 June</span></div>
+        <div class="option"><span class="option-letter">C</span><span>27 June</span></div>
+        <div class="option"><span class="option-letter">D</span><span>30 June</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) 27 June
+        </strong>
+        <p>The United Nations observes 27 June as Micro-, Small and Medium-sized Enterprises (MSME) Day.</p>
+    </div>
+</div>
+
+<!-- Q21 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q21: Which day is observed as International Day of the Seafarer?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>23 June</span></div>
+        <div class="option"><span class="option-letter">B</span><span>24 June</span></div>
+        <div class="option"><span class="option-letter">C</span><span>25 June</span></div>
+        <div class="option"><span class="option-letter">D</span><span>26 June</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) 25 June
+        </strong>
+        <p>International Day of the Seafarer is observed every year on 25 June to recognize the contribution of seafarers to global trade.</p>
+    </div>
+</div>
+
+<!-- Q22 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q22: Which ministry implements the PM Surya Ghar: Muft Bijli Yojana?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Ministry of Power</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Ministry of Coal</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Ministry of Finance</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Ministry of New & Renewable Energy</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: D) Ministry of New & Renewable Energy
+        </strong>
+        <p>The scheme promotes rooftop solar installations for households across India.</p>
+    </div>
+</div>
+
+<!-- Q23 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q23: Which organization publishes the Global Innovation Index?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>UNESCO</span></div>
+        <div class="option"><span class="option-letter">B</span><span>WIPO</span></div>
+        <div class="option"><span class="option-letter">C</span><span>IMF</span></div>
+        <div class="option"><span class="option-letter">D</span><span>OECD</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) WIPO
+        </strong>
+        <p>The Global Innovation Index is published annually by the World Intellectual Property Organization (WIPO).</p>
+    </div>
+</div>
+
+<!-- Q24 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q24: Which Indian city is known as the 'Space City of India'?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Hyderabad</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Ahmedabad</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Bengaluru</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Sriharikota</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Bengaluru
+        </strong>
+        <p>Bengaluru is called the Space City of India because it houses ISRO headquarters and major space research centres.</p>
+    </div>
+</div>
+
+<!-- Q25 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q25: World Sickle Cell Day is observed on?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>18 June</span></div>
+        <div class="option"><span class="option-letter">B</span><span>19 June</span></div>
+        <div class="option"><span class="option-letter">C</span><span>20 June</span></div>
+        <div class="option"><span class="option-letter">D</span><span>21 June</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) 19 June
+        </strong>
+        <p>World Sickle Cell Day is observed annually on 19 June to increase awareness about sickle cell disease.</p>
+    </div>
+</div>
+
+<!-- Q26 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q26: Which country is the headquarters of the International Monetary Fund (IMF)?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>United Kingdom</span></div>
+        <div class="option"><span class="option-letter">B</span><span>France</span></div>
+        <div class="option"><span class="option-letter">C</span><span>United States</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Switzerland</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) United States
+        </strong>
+        <p>The IMF headquarters is located in Washington, D.C., USA.</p>
+    </div>
+</div>
+
+<!-- Q27 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q27: Which state has the longest coastline in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Tamil Nadu</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Andhra Pradesh</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Kerala</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Gujarat</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: D) Gujarat
+        </strong>
+        <p>Gujarat has the longest coastline among all Indian states.</p>
+    </div>
+</div>
+
+<!-- Q28 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q28: Which organization releases the World Competitiveness Ranking?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>IMD</span></div>
+        <div class="option"><span class="option-letter">B</span><span>IMF</span></div>
+        <div class="option"><span class="option-letter">C</span><span>World Bank</span></div>
+        <div class="option"><span class="option-letter">D</span><span>ADB</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) IMD
+        </strong>
+        <p>The International Institute for Management Development (IMD) publishes the World Competitiveness Ranking.</p>
+    </div>
+</div>
+
+<!-- Q29 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q29: Which country is hosting the 2036 Olympic Games bid supported by India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Ahmedabad, India</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Doha, Qatar</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Istanbul, Türkiye</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Jakarta, Indonesia</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Ahmedabad, India
+        </strong>
+        <p>India has proposed Ahmedabad as the host city for its bid to host the 2036 Olympic Games.</p>
+    </div>
+</div>
+
+<!-- Q30 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q30: Which day is celebrated as Statistics Day in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>27 June</span></div>
+        <div class="option"><span class="option-letter">B</span><span>28 June</span></div>
+        <div class="option"><span class="option-letter">C</span><span>29 June</span></div>
+        <div class="option"><span class="option-letter">D</span><span>30 June</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) 29 June
+        </strong>
+        <p>Statistics Day is celebrated on 29 June every year in honor of Prof. P. C. Mahalanobis.</p>
+    </div>
+</div>
+<!-- Q31 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q31: Which organization publishes the World Investment Report?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>World Bank</span></div>
+        <div class="option"><span class="option-letter">B</span><span>UNCTAD</span></div>
+        <div class="option"><span class="option-letter">C</span><span>IMF</span></div>
+        <div class="option"><span class="option-letter">D</span><span>OECD</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color: var(--accent-green); display:block; margin-bottom:8px;">
+            Correct Answer: B) UNCTAD
+        </strong>
+        <p>The World Investment Report is released annually by the United Nations Conference on Trade and Development (UNCTAD).</p>
+    </div>
+</div>
+
+<!-- Q32 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q32: Which Indian state launched the 'Mukhyamantri Majhi Ladki Bahin Yojana'?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Maharashtra</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Madhya Pradesh</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Rajasthan</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Odisha</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color: var(--accent-green); display:block; margin-bottom:8px;">
+            Correct Answer: A) Maharashtra
+        </strong>
+        <p>This welfare scheme provides financial assistance to eligible women in Maharashtra.</p>
+    </div>
+</div>
+
+<!-- Q33 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q33: Which day is celebrated as World Music Day?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>18 June</span></div>
+        <div class="option"><span class="option-letter">B</span><span>19 June</span></div>
+        <div class="option"><span class="option-letter">C</span><span>21 June</span></div>
+        <div class="option"><span class="option-letter">D</span><span>25 June</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color: var(--accent-green); display:block; margin-bottom:8px;">
+            Correct Answer: C) 21 June
+        </strong>
+        <p>World Music Day (Fête de la Musique) is celebrated globally on 21 June.</p>
+    </div>
+</div>
+
+<!-- Q34 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q34: Which institution issues the Financial Stability Report in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>SEBI</span></div>
+        <div class="option"><span class="option-letter">B</span><span>RBI</span></div>
+        <div class="option"><span class="option-letter">C</span><span>NITI Aayog</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Finance Ministry</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color: var(--accent-green); display:block; margin-bottom:8px;">
+            Correct Answer: B) RBI
+        </strong>
+        <p>The Reserve Bank of India publishes the Financial Stability Report twice every year.</p>
+    </div>
+</div>
+
+<!-- Q35 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q35: Which country is the headquarters of the World Health Organization (WHO)?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>France</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Switzerland</span></div>
+        <div class="option"><span class="option-letter">C</span><span>USA</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Belgium</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color: var(--accent-green); display:block; margin-bottom:8px;">
+            Correct Answer: B) Switzerland
+        </strong>
+        <p>WHO is headquartered in Geneva, Switzerland.</p>
+    </div>
+</div>
+
+<div style="text-align:center;margin-top:40px;">
+    <button class="mat-btn secondary view-more-btn" onclick="loadMore(this, 'week1')">
+        View More Questions <i class="fa-solid fa-angle-down" style="margin-left:8px;"></i>
+    </button>
+</div>
+</div>
+
+
+    <!-- WEEK 2 -->
+    <div id="week2" class="week-content" style="display: none;">
+
+<!-- Q36 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q36: Which ministry is responsible for implementing PM-KISAN?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Ministry of Finance</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Ministry of Rural Development</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Ministry of Agriculture & Farmers Welfare</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Ministry of Cooperation</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color: var(--accent-green); display:block; margin-bottom:8px;">
+            Correct Answer: C) Ministry of Agriculture & Farmers Welfare
+        </strong>
+        <p>PM-KISAN is implemented by the Ministry of Agriculture & Farmers Welfare.</p>
+    </div>
+</div>
+
+<!-- Q37 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q37: Which country is known as the 'Land of the Rising Sun'?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>China</span></div>
+        <div class="option"><span class="option-letter">B</span><span>South Korea</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Japan</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Thailand</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color: var(--accent-green); display:block; margin-bottom:8px;">
+            Correct Answer: C) Japan
+        </strong>
+        <p>Japan is popularly known as the 'Land of the Rising Sun'.</p>
+    </div>
+</div>
+
+<!-- Q38 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q38: Which Indian mission focuses on the conservation and rejuvenation of the Ganga River?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Namami Gange</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Jal Jeevan Mission</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Swachh Bharat Mission</span></div>
+        <div class="option"><span class="option-letter">D</span><span>AMRUT</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color: var(--accent-green); display:block; margin-bottom:8px;">
+            Correct Answer: A) Namami Gange
+        </strong>
+        <p>Namami Gange is a flagship programme aimed at cleaning and conserving the River Ganga.</p>
+    </div>
+</div>
+
+<!-- Q39 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q39: World Hydrography Day is observed every year on?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>20 June</span></div>
+        <div class="option"><span class="option-letter">B</span><span>21 June</span></div>
+        <div class="option"><span class="option-letter">C</span><span>22 June</span></div>
+        <div class="option"><span class="option-letter">D</span><span>23 June</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color: var(--accent-green); display:block; margin-bottom:8px;">
+            Correct Answer: B) 21 June
+        </strong>
+        <p>World Hydrography Day is celebrated on 21 June to highlight the importance of hydrography.</p>
+    </div>
+</div>
+
+<!-- Q40 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q40: Which Indian city is home to the headquarters of NITI Aayog?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Mumbai</span></div>
+        <div class="option"><span class="option-letter">B</span><span>New Delhi</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Chennai</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Bengaluru</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color: var(--accent-green); display:block; margin-bottom:8px;">
+            Correct Answer: B) New Delhi
+        </strong>
+        <p>NITI Aayog, the Government of India's premier policy think tank, is headquartered in New Delhi.</p>
+    </div>
+</div>
+<!-- Q41 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q41: Which organization releases the Global Peace Index?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>United Nations</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Institute for Economics & Peace (IEP)</span></div>
+        <div class="option"><span class="option-letter">C</span><span>World Bank</span></div>
+        <div class="option"><span class="option-letter">D</span><span>IMF</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Institute for Economics & Peace (IEP)
+        </strong>
+        <p>The Global Peace Index is published annually by the Institute for Economics & Peace (IEP).</p>
+    </div>
+</div>
+
+<!-- Q42 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q42: World Day to Combat Desertification and Drought is observed on?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>15 June</span></div>
+        <div class="option"><span class="option-letter">B</span><span>17 June</span></div>
+        <div class="option"><span class="option-letter">C</span><span>19 June</span></div>
+        <div class="option"><span class="option-letter">D</span><span>21 June</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) 17 June
+        </strong>
+        <p>This day promotes awareness about preventing desertification and drought.</p>
+    </div>
+</div>
+
+<!-- Q43 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q43: Which is India's largest public sector bank?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Punjab National Bank</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Canara Bank</span></div>
+        <div class="option"><span class="option-letter">C</span><span>State Bank of India</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Bank of Baroda</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) State Bank of India
+        </strong>
+        <p>SBI is India's largest public sector bank in terms of assets and branch network.</p>
+    </div>
+</div>
+
+<!-- Q44 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q44: Which Indian mission is associated with digital governance?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Digital India</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Skill India</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Make in India</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Startup India</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Digital India
+        </strong>
+        <p>Digital India aims to transform India into a digitally empowered society and knowledge economy.</p>
+    </div>
+</div>
+
+<!-- Q45 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q45: Which country is known as the "Land of Thunder Dragon"?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Nepal</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Bhutan</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Mongolia</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Tibet</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Bhutan
+        </strong>
+        <p>Bhutan is popularly known as the Land of the Thunder Dragon.</p>
+    </div>
+</div>
+
+<!-- Q46 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q46: Which organization regulates the Indian securities market?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>RBI</span></div>
+        <div class="option"><span class="option-letter">B</span><span>SEBI</span></div>
+        <div class="option"><span class="option-letter">C</span><span>IRDAI</span></div>
+        <div class="option"><span class="option-letter">D</span><span>PFRDA</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) SEBI
+        </strong>
+        <p>SEBI regulates India's securities and capital markets.</p>
+    </div>
+</div>
+
+<!-- Q47 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q47: International Olympic Day is observed every year on?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>21 June</span></div>
+        <div class="option"><span class="option-letter">B</span><span>22 June</span></div>
+        <div class="option"><span class="option-letter">C</span><span>23 June</span></div>
+        <div class="option"><span class="option-letter">D</span><span>24 June</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) 23 June
+        </strong>
+        <p>Olympic Day is celebrated on 23 June every year to promote participation in sports worldwide.</p>
+    </div>
+</div>
+
+<!-- Q48 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q48: Which ministry implements the PM Vishwakarma Scheme?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Ministry of MSME</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Ministry of Rural Development</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Ministry of Labour</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Ministry of Commerce</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Ministry of MSME
+        </strong>
+        <p>The PM Vishwakarma Scheme supports traditional artisans and craftspeople through the Ministry of MSME.</p>
+    </div>
+</div>
+
+<!-- Q49 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q49: Which country is home to the headquarters of the International Court of Justice?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>France</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Belgium</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Netherlands</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Switzerland</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Netherlands
+        </strong>
+        <p>The International Court of Justice is located in The Hague, Netherlands.</p>
+    </div>
+</div>
+
+<!-- Q50 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q50: Which day is observed as National Statistics Day in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>27 June</span></div>
+        <div class="option"><span class="option-letter">B</span><span>28 June</span></div>
+        <div class="option"><span class="option-letter">C</span><span>29 June</span></div>
+        <div class="option"><span class="option-letter">D</span><span>30 June</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) 29 June
+        </strong>
+        <p>National Statistics Day is celebrated on 29 June to commemorate the birth anniversary of Prof. P. C. Mahalanobis.</p>
+    </div>
+</div>
+<!-- Q51 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q51: Which Indian mission aims to achieve universal health coverage?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Ayushman Bharat</span></div>
+        <div class="option"><span class="option-letter">B</span><span>PM-KISAN</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Digital India</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Skill India</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: A) Ayushman Bharat</strong>
+        <p>Ayushman Bharat aims to provide affordable healthcare and health insurance coverage.</p>
+    </div>
+</div>
+
+<!-- Q52 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q52: World Day Against Child Labour is observed on?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>10 June</span></div>
+        <div class="option"><span class="option-letter">B</span><span>11 June</span></div>
+        <div class="option"><span class="option-letter">C</span><span>12 June</span></div>
+        <div class="option"><span class="option-letter">D</span><span>13 June</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: C) 12 June</strong>
+        <p>World Day Against Child Labour is observed every year on 12 June.</p>
+    </div>
+</div>
+
+<!-- Q53 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q53: Which institution publishes the Global Financial Stability Report?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>IMF</span></div>
+        <div class="option"><span class="option-letter">B</span><span>World Bank</span></div>
+        <div class="option"><span class="option-letter">C</span><span>ADB</span></div>
+        <div class="option"><span class="option-letter">D</span><span>OECD</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: A) IMF</strong>
+        <p>The International Monetary Fund publishes the Global Financial Stability Report.</p>
+    </div>
+</div>
+
+<!-- Q54 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q54: Which state is known as the 'Spice Garden of India'?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Kerala</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Karnataka</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Tamil Nadu</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Goa</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: A) Kerala</strong>
+        <p>Kerala is popularly known as the Spice Garden of India.</p>
+    </div>
+</div>
+
+<!-- Q55 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q55: Which organization regulates civil aviation in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>DGCA</span></div>
+        <div class="option"><span class="option-letter">B</span><span>AAI</span></div>
+        <div class="option"><span class="option-letter">C</span><span>ISRO</span></div>
+        <div class="option"><span class="option-letter">D</span><span>NHAI</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: A) DGCA</strong>
+        <p>The Directorate General of Civil Aviation regulates civil aviation in India.</p>
+    </div>
+</div>
+
+<!-- Q56 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q56: Which day is celebrated as World Bicycle Day?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>2 June</span></div>
+        <div class="option"><span class="option-letter">B</span><span>3 June</span></div>
+        <div class="option"><span class="option-letter">C</span><span>4 June</span></div>
+        <div class="option"><span class="option-letter">D</span><span>5 June</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: B) 3 June</strong>
+        <p>World Bicycle Day is observed annually on 3 June.</p>
+    </div>
+</div>
+
+<!-- Q57 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q57: Which country has the largest economy in the world?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>China</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Japan</span></div>
+        <div class="option"><span class="option-letter">C</span><span>United States</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Germany</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: C) United States</strong>
+        <p>The United States remains the world's largest economy by nominal GDP.</p>
+    </div>
+</div>
+
+<!-- Q58 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q58: Which mission aims to make India a global manufacturing hub?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Startup India</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Digital India</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Make in India</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Skill India</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: C) Make in India</strong>
+        <p>Make in India promotes domestic manufacturing and investment.</p>
+    </div>
+</div>
+
+<!-- Q59 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q59: Which river is known as the 'Dakshin Ganga'?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Krishna</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Kaveri</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Godavari</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Narmada</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: C) Godavari</strong>
+        <p>Godavari is popularly known as the Dakshin Ganga (Ganga of the South).</p>
+    </div>
+</div>
+
+<!-- Q60 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q60: Which ministry is responsible for the Jal Jeevan Mission?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Ministry of Rural Development</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Ministry of Jal Shakti</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Ministry of Environment</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Ministry of Housing</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: B) Ministry of Jal Shakti</strong>
+        <p>Jal Jeevan Mission is implemented by the Ministry of Jal Shakti.</p>
+    </div>
+</div>
+
+<!-- Q61 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q61: International Day of Innocent Children Victims of Aggression is observed on?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>2 June</span></div>
+        <div class="option"><span class="option-letter">B</span><span>4 June</span></div>
+        <div class="option"><span class="option-letter">C</span><span>6 June</span></div>
+        <div class="option"><span class="option-letter">D</span><span>8 June</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: B) 4 June</strong>
+        <p>The UN observes this day on 4 June every year.</p>
+    </div>
+</div>
+
+<!-- Q62 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q62: Which Indian state has the largest forest area?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Madhya Pradesh</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Arunachal Pradesh</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Chhattisgarh</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Maharashtra</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: A) Madhya Pradesh</strong>
+        <p>Madhya Pradesh has the largest forest area in India.</p>
+    </div>
+</div>
+
+<!-- Q63 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q63: Which institution publishes the World Economic Outlook?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>IMF</span></div>
+        <div class="option"><span class="option-letter">B</span><span>ADB</span></div>
+        <div class="option"><span class="option-letter">C</span><span>World Bank</span></div>
+        <div class="option"><span class="option-letter">D</span><span>UNDP</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: A) IMF</strong>
+        <p>The IMF releases the World Economic Outlook twice each year.</p>
+    </div>
+</div>
+
+<!-- Q64 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q64: Which country is called the 'Pearl of the Indian Ocean'?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Maldives</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Sri Lanka</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Mauritius</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Seychelles</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: B) Sri Lanka</strong>
+        <p>Sri Lanka is popularly known as the Pearl of the Indian Ocean.</p>
+    </div>
+</div>
+
+<!-- Q65 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q65: Which Indian organization manages the UPI payment system?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>SEBI</span></div>
+        <div class="option"><span class="option-letter">B</span><span>RBI</span></div>
+        <div class="option"><span class="option-letter">C</span><span>NPCI</span></div>
+        <div class="option"><span class="option-letter">D</span><span>NABARD</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: C) NPCI</strong>
+        <p>The National Payments Corporation of India (NPCI) operates the Unified Payments Interface (UPI).</p>
+    </div>
+</div>
+<!-- Q66 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q66: Which day is observed as World Environment Day?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>3 June</span></div>
+        <div class="option"><span class="option-letter">B</span><span>4 June</span></div>
+        <div class="option"><span class="option-letter">C</span><span>5 June</span></div>
+        <div class="option"><span class="option-letter">D</span><span>6 June</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: C) 5 June</strong>
+        <p>World Environment Day is observed every year on 5 June.</p>
+    </div>
+</div>
+
+<!-- Q67 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q67: Which institution conducts the Civil Services Examination in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>SSC</span></div>
+        <div class="option"><span class="option-letter">B</span><span>UPSC</span></div>
+        <div class="option"><span class="option-letter">C</span><span>NTA</span></div>
+        <div class="option"><span class="option-letter">D</span><span>IBPS</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: B) UPSC</strong>
+        <p>The Union Public Service Commission (UPSC) conducts the Civil Services Examination.</p>
+    </div>
+</div>
+
+<!-- Q68 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q68: Which Indian state is known as the 'Tea Garden of India'?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>West Bengal</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Assam</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Sikkim</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Meghalaya</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: B) Assam</strong>
+        <p>Assam is famous worldwide for its tea plantations.</p>
+    </div>
+</div>
+
+<!-- Q69 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q69: Which ministry launched the PM e-VIDYA programme?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Ministry of Education</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Ministry of IT</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Ministry of Skill Development</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Ministry of Finance</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: A) Ministry of Education</strong>
+        <p>PM e-VIDYA was launched to promote digital education across India.</p>
+    </div>
+</div>
+
+<!-- Q70 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q70: World Oceans Day is celebrated every year on?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>6 June</span></div>
+        <div class="option"><span class="option-letter">B</span><span>7 June</span></div>
+        <div class="option"><span class="option-letter">C</span><span>8 June</span></div>
+        <div class="option"><span class="option-letter">D</span><span>9 June</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: C) 8 June</strong>
+        <p>World Oceans Day is observed annually on 8 June.</p>
+    </div>
+</div>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <button class="mat-btn secondary view-more-btn" onclick="loadMore(this, 'week2')">
+                View More Questions <i class="fa-solid fa-angle-down" style="margin-left:8px;"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- WEEK 3 -->
+    <div id="week3" class="week-content" style="display: none;">
+
+<!-- Q71 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q71: Which Indian city is known as the 'Silicon Valley of India'?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Hyderabad</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Pune</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Bengaluru</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Chennai</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: C) Bengaluru</strong>
+        <p>Bengaluru is known as the Silicon Valley of India due to its IT industry.</p>
+    </div>
+</div>
+
+<!-- Q72 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q72: Which organization publishes the Human Development Report?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>UNDP</span></div>
+        <div class="option"><span class="option-letter">B</span><span>UNESCO</span></div>
+        <div class="option"><span class="option-letter">C</span><span>UNICEF</span></div>
+        <div class="option"><span class="option-letter">D</span><span>WHO</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: A) UNDP</strong>
+        <p>The Human Development Report is released by the United Nations Development Programme.</p>
+    </div>
+</div>
+
+<!-- Q73 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q73: Which country is called the 'Land of White Elephant'?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Thailand</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Myanmar</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Laos</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Cambodia</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: A) Thailand</strong>
+        <p>Thailand is popularly known as the Land of White Elephants.</p>
+    </div>
+</div>
+
+<!-- Q74 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q74: Which organization regulates insurance companies in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>SEBI</span></div>
+        <div class="option"><span class="option-letter">B</span><span>IRDAI</span></div>
+        <div class="option"><span class="option-letter">C</span><span>RBI</span></div>
+        <div class="option"><span class="option-letter">D</span><span>NABARD</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: B) IRDAI</strong>
+        <p>IRDAI regulates the insurance sector in India.</p>
+    </div>
+</div>
+
+<!-- Q75 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q75: World Food Safety Day is observed on?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>5 June</span></div>
+        <div class="option"><span class="option-letter">B</span><span>6 June</span></div>
+        <div class="option"><span class="option-letter">C</span><span>7 June</span></div>
+        <div class="option"><span class="option-letter">D</span><span>8 June</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: C) 7 June</strong>
+        <p>World Food Safety Day is observed every year on 7 June.</p>
+    </div>
+</div>
+
+<!-- Q76 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q76: Which is India's highest civilian award?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Padma Vibhushan</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Bharat Ratna</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Padma Bhushan</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Param Vishisht Seva Medal</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: B) Bharat Ratna</strong>
+        <p>Bharat Ratna is India's highest civilian honour.</p>
+    </div>
+</div>
+
+<!-- Q77 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q77: Which Indian state is known as the 'Land of Five Rivers'?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Haryana</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Punjab</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Uttarakhand</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Rajasthan</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: B) Punjab</strong>
+        <p>Punjab derives its name from the five rivers flowing through the region.</p>
+    </div>
+</div>
+
+<!-- Q78 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q78: Which organization operates India's GAGAN satellite navigation system?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>ISRO & AAI</span></div>
+        <div class="option"><span class="option-letter">B</span><span>DRDO</span></div>
+        <div class="option"><span class="option-letter">C</span><span>NPCI</span></div>
+        <div class="option"><span class="option-letter">D</span><span>BEL</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: A) ISRO & AAI</strong>
+        <p>GAGAN is jointly developed by ISRO and the Airports Authority of India.</p>
+    </div>
+</div>
+
+<!-- Q79 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q79: World Day Against Child Labour is observed on?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>10 June</span></div>
+        <div class="option"><span class="option-letter">B</span><span>11 June</span></div>
+        <div class="option"><span class="option-letter">C</span><span>12 June</span></div>
+        <div class="option"><span class="option-letter">D</span><span>13 June</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: C) 12 June</strong>
+        <p>The day is observed globally on 12 June to eliminate child labour.</p>
+    </div>
+</div>
+
+<!-- Q80 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q80: Which payment system enables instant bank-to-bank transfers in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>NEFT</span></div>
+        <div class="option"><span class="option-letter">B</span><span>RTGS</span></div>
+        <div class="option"><span class="option-letter">C</span><span>UPI</span></div>
+        <div class="option"><span class="option-letter">D</span><span>SWIFT</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: C) UPI</strong>
+        <p>Unified Payments Interface (UPI) allows instant real-time bank-to-bank digital payments in India.</p>
+    </div>
+</div>
+<!-- Q81 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q81: Which day is observed as International Yoga Day?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>19 June</span></div>
+        <div class="option"><span class="option-letter">B</span><span>20 June</span></div>
+        <div class="option"><span class="option-letter">C</span><span>21 June</span></div>
+        <div class="option"><span class="option-letter">D</span><span>22 June</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: C) 21 June</strong>
+        <p>International Yoga Day is celebrated every year on 21 June.</p>
+    </div>
+</div>
+
+<!-- Q82 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q82: Which organization operates India's RuPay card network?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>RBI</span></div>
+        <div class="option"><span class="option-letter">B</span><span>NPCI</span></div>
+        <div class="option"><span class="option-letter">C</span><span>SEBI</span></div>
+        <div class="option"><span class="option-letter">D</span><span>SBI</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: B) NPCI</strong>
+        <p>RuPay is India's domestic card payment network operated by NPCI.</p>
+    </div>
+</div>
+
+<!-- Q83 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q83: Which river is the longest in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Yamuna</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Brahmaputra</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Godavari</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Ganga</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: D) Ganga</strong>
+        <p>The Ganga is the longest river in India.</p>
+    </div>
+</div>
+
+<!-- Q84 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q84: Which ministry implements the PM Internship Scheme?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Ministry of Finance</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Ministry of Corporate Affairs</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Ministry of Education</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Ministry of Labour</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: B) Ministry of Corporate Affairs</strong>
+        <p>The PM Internship Scheme is implemented by the Ministry of Corporate Affairs.</p>
+    </div>
+</div>
+
+<!-- Q85 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q85: World Day to Combat Desertification and Drought is observed on?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>15 June</span></div>
+        <div class="option"><span class="option-letter">B</span><span>16 June</span></div>
+        <div class="option"><span class="option-letter">C</span><span>17 June</span></div>
+        <div class="option"><span class="option-letter">D</span><span>18 June</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: C) 17 June</strong>
+        <p>The UN observes World Day to Combat Desertification and Drought on 17 June.</p>
+    </div>
+</div>
+
+<!-- Q86 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q86: Which Indian state is known as the 'Land of Festivals'?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Nagaland</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Assam</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Manipur</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Sikkim</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: A) Nagaland</strong>
+        <p>Nagaland is popularly known as the Land of Festivals.</p>
+    </div>
+</div>
+
+<!-- Q87 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q87: Which body conducts elections in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Parliament</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Election Commission of India</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Supreme Court</span></div>
+        <div class="option"><span class="option-letter">D</span><span>NITI Aayog</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: B) Election Commission of India</strong>
+        <p>The Election Commission of India conducts free and fair elections.</p>
+    </div>
+</div>
+
+<!-- Q88 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q88: Which country hosted the G20 Summit in 2024?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Brazil</span></div>
+        <div class="option"><span class="option-letter">B</span><span>India</span></div>
+        <div class="option"><span class="option-letter">C</span><span>South Africa</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Indonesia</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: A) Brazil</strong>
+        <p>Brazil hosted the G20 Leaders' Summit in 2024.</p>
+    </div>
+</div>
+
+<!-- Q89 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q89: Which city is the headquarters of ISRO?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Hyderabad</span></div>
+        <div class="option"><span class="option-letter">B</span><span>New Delhi</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Bengaluru</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Chennai</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: C) Bengaluru</strong>
+        <p>ISRO headquarters is located in Bengaluru, Karnataka.</p>
+    </div>
+</div>
+
+<!-- Q90 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q90: Which day is observed as World Blood Donor Day?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>12 June</span></div>
+        <div class="option"><span class="option-letter">B</span><span>13 June</span></div>
+        <div class="option"><span class="option-letter">C</span><span>14 June</span></div>
+        <div class="option"><span class="option-letter">D</span><span>15 June</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: C) 14 June</strong>
+        <p>World Blood Donor Day is celebrated annually on 14 June.</p>
+    </div>
+</div>
+
+<!-- Q91 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q91: Which Indian state has the largest coastline?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Tamil Nadu</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Andhra Pradesh</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Kerala</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Gujarat</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: D) Gujarat</strong>
+        <p>Gujarat has the longest coastline among Indian states.</p>
+    </div>
+</div>
+
+<!-- Q92 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q92: Which organization regulates mutual funds in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>RBI</span></div>
+        <div class="option"><span class="option-letter">B</span><span>SEBI</span></div>
+        <div class="option"><span class="option-letter">C</span><span>IRDAI</span></div>
+        <div class="option"><span class="option-letter">D</span><span>NABARD</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: B) SEBI</strong>
+        <p>SEBI regulates mutual funds and the securities market in India.</p>
+    </div>
+</div>
+
+<!-- Q93 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q93: Which river originates from the Gangotri Glacier?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Yamuna</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Ganga</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Godavari</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Narmada</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: B) Ganga</strong>
+        <p>The Ganga originates as the Bhagirathi from the Gangotri Glacier.</p>
+    </div>
+</div>
+
+<!-- Q94 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q94: Which mission aims to improve urban infrastructure in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>AMRUT</span></div>
+        <div class="option"><span class="option-letter">B</span><span>PMAY</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Smart India Hackathon</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Skill India</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: A) AMRUT</strong>
+        <p>AMRUT focuses on improving water supply, sewerage, and urban infrastructure.</p>
+    </div>
+</div>
+
+<!-- Q95 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q95: Which country will host the G20 Summit in 2025?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>India</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Brazil</span></div>
+        <div class="option"><span class="option-letter">C</span><span>South Africa</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Indonesia</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: C) South Africa</strong>
+        <p>South Africa is the host nation for the 2025 G20 Summit.</p>
+    </div>
+</div>
+<!-- Q96 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q96: Which organization released the Global Gender Gap Report 2025?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>UNDP</span></div>
+        <div class="option"><span class="option-letter">B</span><span>World Economic Forum</span></div>
+        <div class="option"><span class="option-letter">C</span><span>World Bank</span></div>
+        <div class="option"><span class="option-letter">D</span><span>IMF</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: B) World Economic Forum</strong>
+        <p>The World Economic Forum publishes the annual Global Gender Gap Report.</p>
+    </div>
+</div>
+
+<!-- Q97 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q97: Which day is observed as World Refugee Day?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>18 June</span></div>
+        <div class="option"><span class="option-letter">B</span><span>19 June</span></div>
+        <div class="option"><span class="option-letter">C</span><span>20 June</span></div>
+        <div class="option"><span class="option-letter">D</span><span>21 June</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: C) 20 June</strong>
+        <p>World Refugee Day is observed annually on 20 June.</p>
+    </div>
+</div>
+
+<!-- Q98 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q98: Which is India's largest inland saline lake?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Loktak Lake</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Sambhar Lake</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Chilika Lake</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Wular Lake</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: B) Sambhar Lake</strong>
+        <p>Sambhar Lake in Rajasthan is India's largest inland saline lake.</p>
+    </div>
+</div>
+
+<!-- Q99 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q99: Which ministry implements the PM Surya Ghar: Muft Bijli Yojana?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Ministry of New and Renewable Energy</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Ministry of Power</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Ministry of Finance</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Ministry of Rural Development</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: A) Ministry of New and Renewable Energy</strong>
+        <p>The scheme promotes rooftop solar installations across India.</p>
+    </div>
+</div>
+
+<!-- Q100 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q100: International Day of the Tropics is observed on?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>27 June</span></div>
+        <div class="option"><span class="option-letter">B</span><span>28 June</span></div>
+        <div class="option"><span class="option-letter">C</span><span>29 June</span></div>
+        <div class="option"><span class="option-letter">D</span><span>30 June</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: C) 29 June</strong>
+        <p>The United Nations observes the International Day of the Tropics on 29 June.</p>
+    </div>
+</div>
+
+<!-- Q101 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q101: Which Indian state is known as the 'Land of Rising Sun'?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Assam</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Arunachal Pradesh</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Sikkim</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Meghalaya</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: B) Arunachal Pradesh</strong>
+        <p>Arunachal Pradesh is called the Land of the Rising Sun because it receives the first sunrise in India.</p>
+    </div>
+</div>
+
+<!-- Q102 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q102: Which organization conducts India's Population Census?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>NITI Aayog</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Registrar General of India</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Election Commission</span></div>
+        <div class="option"><span class="option-letter">D</span><span>NSO</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: B) Registrar General of India</strong>
+        <p>The Office of the Registrar General and Census Commissioner conducts the Census.</p>
+    </div>
+</div>
+
+<!-- Q103 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q103: Which river is called the 'Sorrow of Bihar'?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Son</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Kosi</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Gandak</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Damodar</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: B) Kosi</strong>
+        <p>The Kosi River is known as the "Sorrow of Bihar" because of its frequent floods.</p>
+    </div>
+</div>
+
+<!-- Q104 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q104: Which ministry is responsible for the Smart Cities Mission?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Ministry of Housing and Urban Affairs</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Ministry of Rural Development</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Ministry of Road Transport</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Ministry of Finance</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: A) Ministry of Housing and Urban Affairs</strong>
+        <p>The Smart Cities Mission is implemented by the Ministry of Housing and Urban Affairs.</p>
+    </div>
+</div>
+
+<!-- Q105 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q105: Which Indian payment system is available in several foreign countries for cross-border digital payments?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>RTGS</span></div>
+        <div class="option"><span class="option-letter">B</span><span>NEFT</span></div>
+        <div class="option"><span class="option-letter">C</span><span>UPI</span></div>
+        <div class="option"><span class="option-letter">D</span><span>IMPS</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: C) UPI</strong>
+        <p>UPI has expanded internationally, enabling cross-border digital payment acceptance in multiple countries.</p>
+    </div>
+</div>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <button class="mat-btn secondary view-more-btn" onclick="loadMore(this, 'week3')">
+                View More Questions <i class="fa-solid fa-angle-down" style="margin-left:8px;"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- WEEK 4 -->
+    <div id="week4" class="week-content" style="display: none;">
+<!-- Q106 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q106: Which organization releases the Global Innovation Index?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>World Bank</span></div>
+        <div class="option"><span class="option-letter">B</span><span>WIPO</span></div>
+        <div class="option"><span class="option-letter">C</span><span>IMF</span></div>
+        <div class="option"><span class="option-letter">D</span><span>UNESCO</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: B) WIPO</strong>
+        <p>The Global Innovation Index is published annually by the World Intellectual Property Organization (WIPO).</p>
+    </div>
+</div>
+
+<!-- Q107 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q107: National Doctors' Day is observed in India on?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>30 June</span></div>
+        <div class="option"><span class="option-letter">B</span><span>1 July</span></div>
+        <div class="option"><span class="option-letter">C</span><span>2 July</span></div>
+        <div class="option"><span class="option-letter">D</span><span>3 July</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: B) 1 July</strong>
+        <p>National Doctors' Day is celebrated on 1 July to honor Dr. Bidhan Chandra Roy.</p>
+    </div>
+</div>
+
+<!-- Q108 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q108: Which is India's largest freshwater lake?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Wular Lake</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Loktak Lake</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Dal Lake</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Vembanad Lake</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: A) Wular Lake</strong>
+        <p>Wular Lake in Jammu & Kashmir is India's largest freshwater lake.</p>
+    </div>
+</div>
+
+<!-- Q109 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q109: Which ministry is responsible for the PM-KISAN Scheme?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Ministry of Rural Development</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Ministry of Agriculture & Farmers Welfare</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Ministry of Finance</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Ministry of Food Processing</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: B) Ministry of Agriculture & Farmers Welfare</strong>
+        <p>PM-KISAN provides income support to eligible farmer families.</p>
+    </div>
+</div>
+
+<!-- Q110 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q110: International Day of Cooperatives is observed in which month?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>April</span></div>
+        <div class="option"><span class="option-letter">B</span><span>May</span></div>
+        <div class="option"><span class="option-letter">C</span><span>July</span></div>
+        <div class="option"><span class="option-letter">D</span><span>August</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: C) July</strong>
+        <p>The International Day of Cooperatives is observed on the first Saturday of July.</p>
+    </div>
+</div>
+
+<!-- Q111 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q111: Which Indian city is called the 'Pink City'?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Jodhpur</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Jaipur</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Udaipur</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Bikaner</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: B) Jaipur</strong>
+        <p>Jaipur is popularly known as the Pink City of India.</p>
+    </div>
+</div>
+
+<!-- Q112 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q112: Which institution formulates India's Monetary Policy?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Finance Commission</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Monetary Policy Committee (MPC)</span></div>
+        <div class="option"><span class="option-letter">C</span><span>NITI Aayog</span></div>
+        <div class="option"><span class="option-letter">D</span><span>SEBI</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: B) Monetary Policy Committee (MPC)</strong>
+        <p>The MPC of the RBI decides India's policy repo rate and monetary policy.</p>
+    </div>
+</div>
+
+<!-- Q113 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q113: Which river is known as the 'Lifeline of Madhya Pradesh'?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Narmada</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Tapti</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Chambal</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Betwa</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: A) Narmada</strong>
+        <p>The Narmada River is often called the Lifeline of Madhya Pradesh.</p>
+    </div>
+</div>
+
+<!-- Q114 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q114: Which ministry implements the National Education Policy (NEP)?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Ministry of Education</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Ministry of Skill Development</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Ministry of Social Justice</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Ministry of Finance</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: A) Ministry of Education</strong>
+        <p>The Ministry of Education is responsible for implementing the National Education Policy.</p>
+    </div>
+</div>
+
+<!-- Q115 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q115: Which day is celebrated as World Population Day?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>9 July</span></div>
+        <div class="option"><span class="option-letter">B</span><span>10 July</span></div>
+        <div class="option"><span class="option-letter">C</span><span>11 July</span></div>
+        <div class="option"><span class="option-letter">D</span><span>12 July</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: C) 11 July</strong>
+        <p>World Population Day is observed every year on 11 July.</p>
+    </div>
+</div>
+
+<!-- Q116 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q116: Which Indian state has the highest literacy rate?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Tamil Nadu</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Kerala</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Goa</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Himachal Pradesh</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: B) Kerala</strong>
+        <p>Kerala has the highest literacy rate among Indian states.</p>
+    </div>
+</div>
+
+<!-- Q117 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q117: Which organization manages India's foreign exchange reserves?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>SEBI</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Reserve Bank of India</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Ministry of Finance</span></div>
+        <div class="option"><span class="option-letter">D</span><span>NABARD</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: B) Reserve Bank of India</strong>
+        <p>The RBI maintains and manages India's foreign exchange reserves.</p>
+    </div>
+</div>
+
+<!-- Q118 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q118: Which river forms the famous Jog Falls?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Krishna</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Sharavathi</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Tungabhadra</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Kaveri</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: B) Sharavathi</strong>
+        <p>Jog Falls in Karnataka is formed by the Sharavathi River.</p>
+    </div>
+</div>
+
+<!-- Q119 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q119: Which mission promotes electric mobility in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>FAME India Scheme</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Digital India</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Skill India</span></div>
+        <div class="option"><span class="option-letter">D</span><span>PM Gati Shakti</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: A) FAME India Scheme</strong>
+        <p>FAME India promotes the adoption of electric and hybrid vehicles.</p>
+    </div>
+</div>
+
+<!-- Q120 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q120: Which Indian satellite navigation system is developed by ISRO?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Galileo</span></div>
+        <div class="option"><span class="option-letter">B</span><span>GPS</span></div>
+        <div class="option"><span class="option-letter">C</span><span>NavIC</span></div>
+        <div class="option"><span class="option-letter">D</span><span>GLONASS</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: C) NavIC</strong>
+        <p>NavIC (Navigation with Indian Constellation) is India's indigenous satellite navigation system developed by ISRO.</p>
+    </div>
+</div>
+
+<!-- Q121 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q121: Which organization releases the Global Peace Index?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>UNESCO</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Institute for Economics & Peace</span></div>
+        <div class="option"><span class="option-letter">C</span><span>World Bank</span></div>
+        <div class="option"><span class="option-letter">D</span><span>IMF</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: B) Institute for Economics & Peace</strong>
+        <p>The Global Peace Index is published annually by the Institute for Economics & Peace (IEP).</p>
+    </div>
+</div>
+
+<!-- Q122 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q122: Which day is celebrated as World Youth Skills Day?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>13 July</span></div>
+        <div class="option"><span class="option-letter">B</span><span>14 July</span></div>
+        <div class="option"><span class="option-letter">C</span><span>15 July</span></div>
+        <div class="option"><span class="option-letter">D</span><span>16 July</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: C) 15 July</strong>
+        <p>World Youth Skills Day is observed every year on 15 July.</p>
+    </div>
+</div>
+
+<!-- Q123 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q123: Which is the largest desert in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Cold Desert</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Thar Desert</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Rann of Kutch</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Ladakh Desert</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: B) Thar Desert</strong>
+        <p>The Thar Desert is the largest desert in India.</p>
+    </div>
+</div>
+
+<!-- Q124 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q124: Which ministry implements the Jal Jeevan Mission?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Ministry of Jal Shakti</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Ministry of Rural Development</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Ministry of Environment</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Ministry of Agriculture</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: A) Ministry of Jal Shakti</strong>
+        <p>Jal Jeevan Mission aims to provide tap water to every rural household.</p>
+    </div>
+</div>
+
+<!-- Q125 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q125: Nelson Mandela International Day is observed on?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>17 July</span></div>
+        <div class="option"><span class="option-letter">B</span><span>18 July</span></div>
+        <div class="option"><span class="option-letter">C</span><span>19 July</span></div>
+        <div class="option"><span class="option-letter">D</span><span>20 July</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: B) 18 July</strong>
+        <p>Nelson Mandela International Day is celebrated on 18 July.</p>
+    </div>
+</div>
+
+<!-- Q126 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q126: Which Indian state is known as the 'Spice Garden of India'?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Karnataka</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Kerala</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Tamil Nadu</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Goa</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: B) Kerala</strong>
+        <p>Kerala is famous as the Spice Garden of India.</p>
+    </div>
+</div>
+
+<!-- Q127 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q127: Which institution issues ₹1 currency notes in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Reserve Bank of India</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Ministry of Finance</span></div>
+        <div class="option"><span class="option-letter">C</span><span>SEBI</span></div>
+        <div class="option"><span class="option-letter">D</span><span>SBI</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: B) Ministry of Finance</strong>
+        <p>₹1 notes are issued by the Ministry of Finance, unlike other notes issued by RBI.</p>
+    </div>
+</div>
+
+<!-- Q128 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q128: Which river is known as the 'Dakshina Ganga'?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Krishna</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Godavari</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Kaveri</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Mahanadi</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: B) Godavari</strong>
+        <p>The Godavari River is popularly called the Dakshina Ganga.</p>
+    </div>
+</div>
+
+<!-- Q129 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q129: Which ministry implements Ayushman Bharat?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Ministry of Health & Family Welfare</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Ministry of AYUSH</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Ministry of Finance</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Ministry of Social Justice</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: A) Ministry of Health & Family Welfare</strong>
+        <p>Ayushman Bharat is India's flagship public health insurance scheme.</p>
+    </div>
+</div>
+
+<!-- Q130 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q130: International Tiger Day is observed on?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>27 July</span></div>
+        <div class="option"><span class="option-letter">B</span><span>28 July</span></div>
+        <div class="option"><span class="option-letter">C</span><span>29 July</span></div>
+        <div class="option"><span class="option-letter">D</span><span>30 July</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: C) 29 July</strong>
+        <p>International Tiger Day is observed annually on 29 July.</p>
+    </div>
+</div>
+
+<!-- Q131 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q131: Which Indian city is known as the 'City of Lakes'?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Udaipur</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Bhopal</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Nainital</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Srinagar</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: A) Udaipur</strong>
+        <p>Udaipur is popularly called the City of Lakes.</p>
+    </div>
+</div>
+
+<!-- Q132 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q132: Which body prepares the Union Budget of India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Reserve Bank of India</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Ministry of Finance</span></div>
+        <div class="option"><span class="option-letter">C</span><span>NITI Aayog</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Finance Commission</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: B) Ministry of Finance</strong>
+        <p>The Union Budget is prepared and presented by the Ministry of Finance.</p>
+    </div>
+</div>
+
+<!-- Q133 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q133: Which is the longest dam in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Bhakra Dam</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Hirakud Dam</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Tehri Dam</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Sardar Sarovar Dam</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: B) Hirakud Dam</strong>
+        <p>Hirakud Dam on the Mahanadi River is India's longest dam.</p>
+    </div>
+</div>
+
+<!-- Q134 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q134: Which ministry implements the Digital India Programme?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Ministry of Electronics & Information Technology</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Ministry of Communications</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Ministry of Science & Technology</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Ministry of Education</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: A) Ministry of Electronics & Information Technology</strong>
+        <p>Digital India is implemented by the Ministry of Electronics and Information Technology (MeitY).</p>
+    </div>
+</div>
+
+<!-- Q135 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q135: World Nature Conservation Day is observed on?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>27 July</span></div>
+        <div class="option"><span class="option-letter">B</span><span>28 July</span></div>
+        <div class="option"><span class="option-letter">C</span><span>29 July</span></div>
+        <div class="option"><span class="option-letter">D</span><span>30 July</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: B) 28 July</strong>
+        <p>World Nature Conservation Day is celebrated on 28 July every year.</p>
+    </div>
+</div>
+
+<!-- Q136 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q136: Which state is known as the 'Apple State of India'?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Uttarakhand</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Himachal Pradesh</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Jammu & Kashmir</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Sikkim</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: B) Himachal Pradesh</strong>
+        <p>Himachal Pradesh is popularly known as the Apple State of India.</p>
+    </div>
+</div>
+
+<!-- Q137 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q137: Which institution regulates banking in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>RBI</span></div>
+        <div class="option"><span class="option-letter">B</span><span>SEBI</span></div>
+        <div class="option"><span class="option-letter">C</span><span>IRDAI</span></div>
+        <div class="option"><span class="option-letter">D</span><span>NABARD</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: A) RBI</strong>
+        <p>The Reserve Bank of India is the regulator of the banking sector.</p>
+    </div>
+</div>
+
+<!-- Q138 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q138: Which river is known as the 'River of Bengal'?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Damodar</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Hooghly</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Teesta</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Mahananda</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: B) Hooghly</strong>
+        <p>The Hooghly River is often referred to as the River of Bengal.</p>
+    </div>
+</div>
+
+<!-- Q139 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q139: Which scheme provides free food grains under the National Food Security Act?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>PM Garib Kalyan Anna Yojana</span></div>
+        <div class="option"><span class="option-letter">B</span><span>PM-KISAN</span></div>
+        <div class="option"><span class="option-letter">C</span><span>MGNREGA</span></div>
+        <div class="option"><span class="option-letter">D</span><span>PMAY</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: A) PM Garib Kalyan Anna Yojana</strong>
+        <p>The scheme provides free food grains to eligible beneficiaries under NFSA.</p>
+    </div>
+</div>
+
+<!-- Q140 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q140: World Hepatitis Day is observed every year on?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>27 July</span></div>
+        <div class="option"><span class="option-letter">B</span><span>28 July</span></div>
+        <div class="option"><span class="option-letter">C</span><span>29 July</span></div>
+        <div class="option"><span class="option-letter">D</span><span>30 July</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">Correct Answer: B) 28 July</strong>
+        <p>World Hepatitis Day is observed annually on 28 July to raise awareness about viral hepatitis.</p>
+    </div>
+</div>
+
+
+        <div style="text-align: center; margin-top: 40px;">
+            <button class="mat-btn secondary view-more-btn" onclick="loadMore(this, 'week4')">
+                View More Questions <i class="fa-solid fa-angle-down" style="margin-left:8px;"></i>
+            </button>
+        </div>
+    </div>
+    
+</section>
+
+<!-- Footer with GK Links -->
+<footer>
+    <div class="footer-grid">
+        <div class="footer-col">
+            <div class="logo" style="margin-bottom: 20px;">
+                <a href="index.html" style="font-size: 20px; font-weight: 800; color: var(--text-color); display:flex; align-items:center; gap:8px; letter-spacing: -0.5px;">
+                    <i class="fa-solid fa-graduation-cap" style="color: var(--primary-color);"></i> GK BYTE
+                </a>
+            </div>
+            <p style="font-size: 0.95rem;">Empowering minds with comprehensive and curated General Knowledge. Your ultimate companion for competitive exams and lifelong learning journeys.</p>
+        </div>
+        
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About Us</a>
+                <a href="quiz.html">GK Quizzes</a>
+                
+                <a href="index.html#contact">Contact Support</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </div>
+        
+        <div class="footer-col">
+            <h4>Subjects</h4>
+            <div class="footer-links">
+                <a href="history.html">History</a>
+                <a href="politics.html">Politics</a>
+                <a href="economics.html">Economics</a>
+                <a href="current-affairs.html">Current Affairs</a>
+                <a href="geography.html">Geography</a>
+                
+            </div>
+        </div>
+        
+        <div class="footer-col">
+            <h4>Newsletter</h4>
+            <p style="margin-bottom: 12px; font-size: 0.95rem;">Subscribe to receive weekly GK updates directly in your inbox.</p>
+            <div class="newsletter">
+                <form action="#" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+                    <input type="email" placeholder="Your email address" required style="width: 100%; margin-bottom: 8px;">
+                    <button type="submit" class="mat-btn" style="width: 100%; padding: 10px 16px;">Subscribe <i class="fa-solid fa-paper-plane" style="margin-left: 8px;"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2026 GK BYTE. All Rights Reserved. Redesigned with Material Design &hearts;</p>
+    </div>
+</footer>
+
+<script>
+    // Scroll to Top Logic
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+    
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            scrollTopBtn.classList.add('show');
+        } else {
+            scrollTopBtn.classList.remove('show');
+        }
+    });
+    scrollTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+    // Theme & Mobile Menu
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.documentElement; 
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    body.setAttribute('data-theme', savedTheme);
+    updateIcon(savedTheme);
+
+    themeToggle.addEventListener('click', () => {
+        const newTheme = body.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+        body.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateIcon(newTheme);
+    });
+
+    function updateIcon(theme) {
+        themeToggle.innerHTML = theme === 'light' ? '<i class="fa-solid fa-moon"></i>' : '<i class="fa-solid fa-sun"></i>';
+    }
+
+    const menuToggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav-menu');
+    menuToggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        const icon = menuToggle.querySelector('i');
+        icon.classList.toggle('fa-bars');
+        icon.classList.toggle('fa-xmark');
+    });
+
+    const dropdown = document.querySelector('.dropdown');
+    dropdown.addEventListener('click', (e) => {
+        if(window.innerWidth <= 768) dropdown.classList.toggle('active');
+    });
+
+    // --- Static Question Pagination Logic ---
+    const PAGE_SIZE = 20;
+
+    function setupPagination() {
+        const weekContents = document.querySelectorAll('.week-content');
+        weekContents.forEach(week => {
+            let cards = week.querySelectorAll('.question-card');
+            cards.forEach((card, index) => {
+                card.style.display = index >= PAGE_SIZE ? 'none' : 'block';
+            });
+            
+            const viewMoreBtn = week.querySelector('.view-more-btn');
+            if (viewMoreBtn) {
+                if (cards.length <= PAGE_SIZE) {
+                    viewMoreBtn.style.display = 'none';
+                } else {
+                    viewMoreBtn.style.display = 'inline-flex';
+                    viewMoreBtn.dataset.visibleCount = PAGE_SIZE;
+                    viewMoreBtn.innerHTML = `View More Questions (${cards.length - PAGE_SIZE} left) <i class="fa-solid fa-angle-down" style="margin-left:8px;"></i>`;
+                }
+            }
+        });
+    }
+
+    window.loadMore = function(btn, weekId) {
+        const week = document.getElementById(weekId);
+        let cards = week.querySelectorAll('.question-card');
+        let visibleCount = parseInt(btn.dataset.visibleCount || PAGE_SIZE);
+        
+        let nextCount = visibleCount + PAGE_SIZE;
+        cards.forEach((card, index) => {
+            if (index < nextCount) card.style.display = 'block';
+        });
+        
+        btn.dataset.visibleCount = nextCount;
+        if (nextCount >= cards.length) {
+            btn.style.display = 'none';
+        } else {
+            btn.innerHTML = `View More Questions (${cards.length - nextCount} left) <i class="fa-solid fa-angle-down" style="margin-left:8px;"></i>`;
+        }
+    };
+
+    window.toggleExplanation = function(btn) {
+        const expBox = btn.nextElementSibling;
+        if (expBox.style.display === 'none' || expBox.style.display === '') {
+            expBox.style.display = 'block';
+            btn.innerHTML = '<i class="fa-solid fa-minus"></i> Hide Explanation';
+            btn.classList.remove('accent');
+            btn.classList.add('secondary');
+        } else {
+            expBox.style.display = 'none';
+            btn.innerHTML = '<i class="fa-solid fa-plus"></i> View Explanation';
+            btn.classList.remove('secondary');
+            btn.classList.add('accent');
+        }
+    };
+
+    // Week Toggling
+    document.querySelectorAll('.week-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            // Remove active from all buttons
+            document.querySelectorAll('.week-btn').forEach(b => b.classList.remove('active'));
+            // Add active to clicked button
+            btn.classList.add('active');
+            
+            // Hide all content
+            document.querySelectorAll('.week-content').forEach(w => w.style.display = 'none');
+            // Show corresponding content
+            document.getElementById(btn.dataset.week).style.display = 'block';
+        });
+    });
+    
+    // Initialize
+    setupPagination();
+</script>
+
+</body>
+</html>

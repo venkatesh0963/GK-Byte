@@ -1,0 +1,3547 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GK BYTE - June History. Weekly curated questions to test your knowledge.">
+    <title>GK BYTE | June History Quiz</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Poppins for Headings, Inter for Body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Variables for Material Design & Theming */
+        :root {
+            /* Light Theme Colors */
+            --bg-color: #f8fafc; 
+            --surface-color: #ffffff;
+            --text-color: #222222;
+            --text-muted: #555555;
+            --primary-color: #2563EB; 
+            --primary-hover: #1d4ed8;
+            --secondary-bg: #f1f5f9;
+            --accent-green: #10b981; 
+            --error-red: #ef4444; 
+            --border-color: #e2e8f0;
+            
+            /* Material Shadows */
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            
+            /* Typography */
+            --font-body: 'Inter', sans-serif;
+            --font-heading: 'Poppins', sans-serif;
+        }
+
+        [data-theme="dark"] {
+            /* Dark Theme Colors */
+            --bg-color: #121212;
+            --surface-color: #1e1e1e;
+            --text-color: #e5e5e5;
+            --text-muted: #a3a3a3;
+            --primary-color: #3b82f6;
+            --primary-hover: #60a5fa;
+            --secondary-bg: #2d2d2d;
+            --border-color: #333333;
+            
+            /* Shadows for Dark Mode */
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-body);
+            font-size: 16px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s ease, color 0.3s ease;
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+        
+        h1, h2, h3, h4 { 
+            font-family: var(--font-heading); 
+            color: var(--text-color);
+            line-height: 1.3;
+        }
+
+        /* Material Utility Classes */
+        .mat-card {
+            background-color: var(--surface-color);
+            border-radius: 12px;
+            box-shadow: var(--shadow-sm);
+            padding: 30px;
+            border: 1px solid var(--border-color);
+        }
+
+        .mat-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background-color: var(--primary-color);
+            color: #ffffff !important;
+            font-weight: 500;
+            font-family: var(--font-body);
+            border-radius: 8px;
+            box-shadow: var(--shadow-sm);
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.2s, box-shadow 0.2s, transform 0.1s;
+            font-size: 1rem;
+            letter-spacing: 0.3px;
+        }
+
+        .mat-btn:hover { 
+            background-color: var(--primary-hover);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .mat-btn:active { 
+            transform: scale(0.98); 
+            box-shadow: var(--shadow-sm); 
+        }
+
+        .mat-btn.secondary { 
+            background-color: transparent;
+            color: var(--primary-color) !important;
+            border: 2px solid var(--primary-color);
+            box-shadow: none;
+        }
+
+        .mat-btn.secondary:hover {
+            background-color: rgba(37, 99, 235, 0.05);
+        }
+        
+        [data-theme="dark"] .mat-btn.secondary:hover {
+            background-color: rgba(59, 130, 246, 0.1);
+        }
+        
+        .mat-btn.accent {
+            background-color: var(--accent-green);
+        }
+        .mat-btn.accent:hover {
+            background-color: #059669;
+        }
+
+        /* Header & Navigation */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: var(--surface-color);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: var(--shadow-sm);
+            border-bottom: 1px solid var(--border-color);
+            transition: background-color 0.3s ease;
+        }
+
+        .logo a {
+            font-family: var(--font-heading);
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--text-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        .logo a i {
+            color: var(--primary-color);
+        }
+
+        nav { display: flex; align-items: center; gap: 24px; }
+        nav ul { display: flex; align-items: center; gap: 8px; }
+
+        nav a.nav-link {
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: background-color 0.2s, color 0.2s;
+            color: var(--text-color);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        nav a.nav-link:hover, .dropdown.active > a.nav-link {
+            background-color: var(--secondary-bg);
+            color: var(--primary-color);
+        }
+
+        /* Dropdown */
+        .dropdown { position: relative; }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 120%;
+            left: 50%;
+            transform: translateX(-50%) translateY(10px);
+            background-color: var(--surface-color);
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            min-width: 220px;
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
+            z-index: 100;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        .dropdown-menu a {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 16px;
+            border-radius: 8px;
+            transition: background-color 0.2s;
+            font-weight: 500;
+            color: var(--text-color);
+            font-size: 0.95rem;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: var(--secondary-bg);
+            color: var(--primary-color);
+        }
+
+        /* Actions (Toggle & Quiz Btn) */
+        .nav-actions { display: flex; align-items: center; gap: 16px; }
+
+        .theme-toggle {
+            background: var(--secondary-bg);
+            border: none;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            cursor: pointer;
+            color: var(--text-color);
+            transition: background-color 0.2s, transform 0.2s;
+        }
+
+        .theme-toggle:hover {
+            background-color: var(--border-color);
+            transform: scale(1.05);
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 28px;
+            color: var(--text-color);
+            cursor: pointer;
+        }
+
+        /* Quiz Page Styles */
+        .section { padding: 60px 5%; max-width: 1200px; margin: 0 auto; min-height: 80vh; }
+        
+        .page-title { 
+            text-align: center; 
+            margin-bottom: 48px; 
+            font-size: 2.5rem; 
+            font-weight: 800;
+        }
+
+        .week-nav { 
+            display: flex; 
+            justify-content: center; 
+            gap: 16px; 
+            margin-bottom: 48px; 
+            flex-wrap: wrap; 
+        }
+        
+        .week-btn { 
+            background-color: var(--surface-color); 
+            color: var(--text-muted); 
+            font-size: 1rem; 
+            padding: 12px 24px; 
+            border-radius: 24px; 
+            transition: all 0.2s; 
+            border: 1px solid var(--border-color); 
+            font-weight: 600; 
+            font-family: var(--font-body);
+            display: flex; 
+            align-items: center; 
+            gap: 8px; 
+            cursor: pointer;
+        }
+        .week-btn:hover { 
+            border-color: var(--primary-color); 
+            color: var(--primary-color); 
+        }
+        .week-btn.active { 
+            background-color: var(--primary-color); 
+            color: white; 
+            border-color: var(--primary-color);
+            box-shadow: var(--shadow-sm); 
+        }
+        
+        .question-card { 
+            margin-bottom: 40px; 
+            text-align: left; 
+            animation: fadeIn 0.4s ease; 
+            display: none; 
+            padding: 32px;
+        }
+        
+        @keyframes fadeIn { 
+            from { opacity: 0; transform: translateY(10px); } 
+            to { opacity: 1; transform: translateY(0); } 
+        }
+
+        .question-text { 
+            font-size: 1.15rem; 
+            font-weight: 600; 
+            margin-bottom: 24px; 
+            padding: 20px 24px; 
+            background-color: var(--secondary-bg); 
+            color: var(--text-color); 
+            border-left: 4px solid var(--primary-color); 
+            border-radius: 8px;
+            line-height: 1.6; 
+        }
+
+        .options-grid { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 16px; 
+            margin-bottom: 24px; 
+        }
+        
+        .option { 
+            background-color: var(--surface-color); 
+            border: 1px solid var(--border-color);
+            padding: 16px 20px; 
+            border-radius: 12px; 
+            font-weight: 500; 
+            transition: all 0.2s ease; 
+            display: flex; 
+            align-items: center; 
+            gap: 16px; 
+            font-size: 1rem; 
+            cursor: pointer;
+        }
+        
+        .option:hover { 
+            border-color: var(--primary-color);
+            background-color: rgba(37, 99, 235, 0.05);
+            color: var(--primary-color); 
+        }
+        
+        [data-theme="dark"] .option:hover {
+            background-color: rgba(59, 130, 246, 0.1);
+        }
+
+        .option-letter { 
+            background: var(--primary-color); 
+            color: white; 
+            width: 32px; 
+            height: 32px; 
+            display: inline-flex; 
+            align-items: center; 
+            justify-content: center; 
+            border-radius: 50%; 
+            font-weight: 600; 
+            font-size: 0.9rem; 
+            flex-shrink: 0; 
+        }
+
+        .explanation-box { 
+            margin-top: 24px; 
+            background-color: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            border-left: 4px solid var(--accent-green); 
+            padding: 20px 24px; 
+            border-radius: 8px; 
+            display: none; 
+            animation: slideDown 0.3s ease; 
+        }
+        
+        [data-theme="dark"] .explanation-box {
+            background-color: rgba(16, 185, 129, 0.15);
+        }
+        
+        @keyframes slideDown { 
+            from { opacity: 0; transform: translateY(-10px); } 
+            to { opacity: 1; transform: translateY(0); } 
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--surface-color); padding: 80px 5% 40px; margin-top: 80px;
+            border-top: 1px solid var(--border-color);
+        }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 40px; max-width: 1280px; margin: 0 auto 60px; }
+        
+        .footer-col { display: flex; flex-direction: column; }
+        .footer-col h4 { font-size: 1.125rem; margin-bottom: 24px; font-weight: 600; color: var(--text-color); }
+        .footer-links { display: flex; flex-direction: column; gap: 12px; }
+        .footer-links a { color: var(--text-muted); transition: color 0.2s; display: inline-block; font-size: 0.95rem; }
+        .footer-links a:hover { color: var(--primary-color); }
+        
+        .newsletter form { display: flex; flex-direction: column; gap: 8px; margin-top: 16px; }
+        .newsletter input {
+            padding: 12px 16px; border: 1px solid var(--border-color); border-radius: 8px;
+            background: var(--bg-color); color: var(--text-color); outline: none;
+            font-family: var(--font-body); transition: border-color 0.2s;
+        }
+        .newsletter input:focus { border-color: var(--primary-color); }
+        
+        .footer-bottom { text-align: center; padding-top: 24px; border-top: 1px solid var(--border-color); color: var(--text-muted); font-size: 0.875rem; }
+
+        @media (max-width: 768px) {
+            .menu-toggle { display: block; }
+            nav {
+                position: absolute; top: 100%; left: 0; width: 100%; background-color: var(--surface-color);
+                padding: 24px 5%; flex-direction: column; box-shadow: var(--shadow-md);
+                opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.3s ease;
+                border-bottom: 1px solid var(--border-color);
+            }
+            nav.active { opacity: 1; visibility: visible; transform: translateY(0); }
+            nav ul { flex-direction: column; width: 100%; gap: 8px; }
+            nav ul li { width: 100%; text-align: center; }
+            nav a.nav-link { width: 100%; justify-content: center; }
+            
+            .dropdown-menu {
+                position: static; transform: none; box-shadow: none; border: none;
+                display: none; opacity: 1; visibility: visible; padding: 10px 0;
+                background-color: transparent;
+            }
+            .dropdown.active .dropdown-menu { display: flex; }
+            
+            .nav-actions { width: 100%; justify-content: center; margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--border-color); }
+            
+            .options-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; text-align: center; }
+        }
+         /* Scroll to Top Button */
+        .scroll-top-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            box-shadow: var(--shadow-md);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+        .scroll-top-btn.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .scroll-top-btn:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+    </style>
+</head>
+<body>
+<!-- Scroll to Top Button -->
+<button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <i class="fa-solid fa-graduation-cap"></i> GK BYTE
+        </a>
+    </div>
+    <nav id="nav-menu">
+        <ul>
+            <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="nav-link"><i class="fa-solid fa-book-open"></i> Subjects <i class="fa-solid fa-chevron-down" style="font-size: 0.8em; margin-left:5px;"></i></a>
+                <div class="dropdown-menu">
+                    <a href="history.html"><i class="fa-solid fa-landmark"></i> History</a>
+                    <a href="politics.html"><i class="fa-solid fa-gavel"></i> Politics</a>
+                    <a href="economics.html"><i class="fa-solid fa-chart-line"></i> Economics</a>
+                    <a href="current-affairs.html"><i class="fa-solid fa-newspaper"></i> Current Affairs</a>
+                    <a href="geography.html"><i class="fa-solid fa-earth-americas"></i> Geography</a>
+                </div>
+            </li>
+            <li><a href="index.html#about" class="nav-link"><i class="fa-solid fa-circle-info"></i> About</a></li>
+            <li><a href="index.html#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="quiz.html" class="mat-btn accent"><i class="fa-solid fa-gamepad"></i> GK Quiz</a>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode"><i class="fa-solid fa-moon"></i></button>
+        </div>
+    </nav>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+</header>
+
+<section class="section">
+    <h1 class="page-title">June History Quiz</h1>
+    
+    <div class="week-nav">
+        <button class="week-btn active" data-week="week1"><i class="fa-regular fa-calendar-check"></i> Week 1</button>
+        <button class="week-btn" data-week="week2"><i class="fa-regular fa-calendar-check"></i> Week 2</button>
+        <button class="week-btn" data-week="week3"><i class="fa-regular fa-calendar-check"></i> Week 3</button>
+        <button class="week-btn" data-week="week4"><i class="fa-regular fa-calendar-check"></i> Week 4</button>
+    </div>
+
+    <!-- WEEK 1 -->
+    <div id="week1" class="week-content" style="display: block;">
+        <!-- Q1 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q1: Who is known as the Father of Indian History?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Megasthenes</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Herodotus</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Kalhana</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Banabhatta</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Kalhana
+        </strong>
+        <p>Kalhana is known as the Father of Indian History for writing the <i>Rajatarangini</i>, a historical chronicle of Kashmir.</p>
+    </div>
+</div>
+
+<!-- Q2 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q2: The Indus Valley Civilization was discovered first at which site?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Lothal</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Harappa</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Dholavira</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Kalibangan</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Harappa
+        </strong>
+        <p>Harappa was the first Indus Valley Civilization site to be discovered in 1921.</p>
+    </div>
+</div>
+
+<!-- Q3 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q3: Who founded the Maurya Empire?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Ashoka</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Bindusara</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Chandragupta Maurya</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Ajatashatru</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Chandragupta Maurya
+        </strong>
+        <p>Chandragupta Maurya established the Maurya Empire in 322 BCE with the guidance of Chanakya.</p>
+    </div>
+</div>
+
+<!-- Q4 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q4: Which Mughal emperor built the Taj Mahal?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Akbar</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Humayun</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Shah Jahan</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Aurangzeb</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Shah Jahan
+        </strong>
+        <p>Shah Jahan built the Taj Mahal in memory of his wife Mumtaz Mahal.</p>
+    </div>
+</div>
+
+<!-- Q5 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q5: Who was the first Governor-General of independent India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Lord Mountbatten</span></div>
+        <div class="option"><span class="option-letter">B</span><span>C. Rajagopalachari</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Dr. Rajendra Prasad</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Jawaharlal Nehru</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Lord Mountbatten
+        </strong>
+        <p>Lord Mountbatten served as the first Governor-General of independent India from 1947 to 1948.</p>
+    </div>
+</div>
+
+<!-- Q6 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q6: The Battle of Plassey was fought in which year?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>1757</span></div>
+        <div class="option"><span class="option-letter">B</span><span>1764</span></div>
+        <div class="option"><span class="option-letter">C</span><span>1857</span></div>
+        <div class="option"><span class="option-letter">D</span><span>1707</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) 1757
+        </strong>
+        <p>The Battle of Plassey (1757) established British political control in Bengal.</p>
+    </div>
+</div>
+
+<!-- Q7 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q7: Who founded the Gupta Empire?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Samudragupta</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Chandragupta I</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Sri Gupta</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Kumaragupta</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Sri Gupta
+        </strong>
+        <p>Sri Gupta is regarded as the founder of the Gupta dynasty.</p>
+    </div>
+</div>
+
+<!-- Q8 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q8: Who gave the slogan "Do or Die" during the Quit India Movement?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Subhas Chandra Bose</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Jawaharlal Nehru</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Mahatma Gandhi</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Sardar Patel</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Mahatma Gandhi
+        </strong>
+        <p>Mahatma Gandhi gave the famous slogan "Do or Die" during the Quit India Movement in 1942.</p>
+    </div>
+</div>
+
+<!-- Q9 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q9: Which Veda is the oldest?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Yajur Veda</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Sama Veda</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Atharva Veda</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Rig Veda</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: D) Rig Veda
+        </strong>
+        <p>The Rig Veda is the oldest of the four Vedas and the oldest known Indo-Aryan text.</p>
+    </div>
+</div>
+
+<!-- Q10 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q10: Who was the first Indian to win the Nobel Prize?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>C. V. Raman</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Rabindranath Tagore</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Mother Teresa</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Amartya Sen</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Rabindranath Tagore
+        </strong>
+        <p>Rabindranath Tagore won the Nobel Prize in Literature in 1913 for <i>Gitanjali</i>.</p>
+    </div>
+</div>
+
+<!-- Q11 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q11: The Battle of Buxar was fought in which year?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>1757</span></div>
+        <div class="option"><span class="option-letter">B</span><span>1761</span></div>
+        <div class="option"><span class="option-letter">C</span><span>1764</span></div>
+        <div class="option"><span class="option-letter">D</span><span>1773</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) 1764
+        </strong>
+        <p>The Battle of Buxar (1764) strengthened the British East India Company's control in India.</p>
+    </div>
+</div>
+
+<!-- Q12 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q12: Who was the last Mughal Emperor?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Bahadur Shah I</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Akbar II</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Bahadur Shah Zafar</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Aurangzeb</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Bahadur Shah Zafar
+        </strong>
+        <p>Bahadur Shah Zafar was the last Mughal Emperor and was exiled after the Revolt of 1857.</p>
+    </div>
+</div>
+
+<!-- Q13 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q13: Who founded the Arya Samaj?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Swami Vivekananda</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Raja Ram Mohan Roy</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Swami Dayananda Saraswati</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Ramakrishna Paramahamsa</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Swami Dayananda Saraswati
+        </strong>
+        <p>Swami Dayananda Saraswati founded the Arya Samaj in 1875 to promote Vedic teachings.</p>
+    </div>
+</div>
+
+<!-- Q14 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q14: The Jallianwala Bagh massacre took place in which year?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>1915</span></div>
+        <div class="option"><span class="option-letter">B</span><span>1917</span></div>
+        <div class="option"><span class="option-letter">C</span><span>1919</span></div>
+        <div class="option"><span class="option-letter">D</span><span>1922</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) 1919
+        </strong>
+        <p>The Jallianwala Bagh massacre occurred on 13 April 1919 in Amritsar.</p>
+    </div>
+</div>
+
+<!-- Q15 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q15: Who was the founder of the Mughal Empire in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Humayun</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Akbar</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Babur</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Sher Shah Suri</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Babur
+        </strong>
+        <p>Babur founded the Mughal Empire after defeating Ibrahim Lodi in the First Battle of Panipat in 1526.</p>
+    </div>
+</div>
+<!-- Q16 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q16: Who founded the Slave Dynasty in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Qutb-ud-din Aibak</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Iltutmish</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Balban</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Razia Sultan</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Qutb-ud-din Aibak
+        </strong>
+        <p>Qutb-ud-din Aibak founded the Slave (Mamluk) Dynasty in 1206.</p>
+    </div>
+</div>
+
+<!-- Q17 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q17: Which battle marked the beginning of Mughal rule in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Battle of Khanwa</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Battle of Haldighati</span></div>
+        <div class="option"><span class="option-letter">C</span><span>First Battle of Panipat</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Battle of Plassey</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) First Battle of Panipat
+        </strong>
+        <p>Babur defeated Ibrahim Lodi in 1526, establishing Mughal rule in India.</p>
+    </div>
+</div>
+
+<!-- Q18 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q18: Who was the founder of the Vijayanagara Empire?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Krishnadevaraya</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Harihara I and Bukka Raya I</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Deva Raya II</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Saluva Narasimha</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Harihara I and Bukka Raya I
+        </strong>
+        <p>The Vijayanagara Empire was founded in 1336 by Harihara I and Bukka Raya I.</p>
+    </div>
+</div>
+
+<!-- Q19 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q19: Who was the first woman ruler of the Delhi Sultanate?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Nur Jahan</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Razia Sultan</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Chand Bibi</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Rani Durgavati</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Razia Sultan
+        </strong>
+        <p>Razia Sultan became the first and only woman ruler of the Delhi Sultanate.</p>
+    </div>
+</div>
+
+<!-- Q20 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q20: Who introduced the Mansabdari system?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Babur</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Akbar</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Aurangzeb</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Humayun</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Akbar
+        </strong>
+        <p>Akbar introduced the Mansabdari system to organize the Mughal military and administration.</p>
+    </div>
+</div>
+
+<!-- Q21 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q21: The Third Battle of Panipat was fought in which year?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>1526</span></div>
+        <div class="option"><span class="option-letter">B</span><span>1556</span></div>
+        <div class="option"><span class="option-letter">C</span><span>1761</span></div>
+        <div class="option"><span class="option-letter">D</span><span>1857</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) 1761
+        </strong>
+        <p>The Third Battle of Panipat (1761) was fought between the Marathas and Ahmad Shah Abdali.</p>
+    </div>
+</div>
+
+<!-- Q22 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q22: Who founded the Brahmo Samaj?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Swami Vivekananda</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Raja Ram Mohan Roy</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Ishwar Chandra Vidyasagar</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Swami Dayananda Saraswati</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Raja Ram Mohan Roy
+        </strong>
+        <p>Raja Ram Mohan Roy founded the Brahmo Samaj in 1828.</p>
+    </div>
+</div>
+
+<!-- Q23 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q23: Who was known as the Iron Man of India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Subhas Chandra Bose</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Sardar Vallabhbhai Patel</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Bal Gangadhar Tilak</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Lal Bahadur Shastri</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Sardar Vallabhbhai Patel
+        </strong>
+        <p>Sardar Patel is known as the Iron Man of India for integrating the princely states.</p>
+    </div>
+</div>
+
+<!-- Q24 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q24: The Simon Commission arrived in India in which year?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>1919</span></div>
+        <div class="option"><span class="option-letter">B</span><span>1927</span></div>
+        <div class="option"><span class="option-letter">C</span><span>1928</span></div>
+        <div class="option"><span class="option-letter">D</span><span>1930</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) 1928
+        </strong>
+        <p>The Simon Commission reached India in 1928 and was boycotted because it had no Indian members.</p>
+    </div>
+</div>
+
+<!-- Q25 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q25: Who gave the slogan "Swaraj is my birthright"?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Mahatma Gandhi</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Bal Gangadhar Tilak</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Lala Lajpat Rai</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Bipin Chandra Pal</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Bal Gangadhar Tilak
+        </strong>
+        <p>Bal Gangadhar Tilak popularized the slogan "Swaraj is my birthright and I shall have it."</p>
+    </div>
+</div>
+
+<!-- Q26 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q26: Who founded the Khalsa in 1699?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Guru Nanak</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Guru Gobind Singh</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Guru Arjan Dev</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Guru Tegh Bahadur</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Guru Gobind Singh
+        </strong>
+        <p>Guru Gobind Singh established the Khalsa at Anandpur Sahib in 1699.</p>
+    </div>
+</div>
+
+<!-- Q27 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q27: Which governor-general introduced the Doctrine of Lapse?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Lord Wellesley</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Lord Dalhousie</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Lord Curzon</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Lord Ripon</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Lord Dalhousie
+        </strong>
+        <p>Lord Dalhousie introduced the Doctrine of Lapse to annex princely states without natural heirs.</p>
+    </div>
+</div>
+
+<!-- Q28 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q28: The Champaran Satyagraha was launched in which year?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>1915</span></div>
+        <div class="option"><span class="option-letter">B</span><span>1917</span></div>
+        <div class="option"><span class="option-letter">C</span><span>1919</span></div>
+        <div class="option"><span class="option-letter">D</span><span>1920</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) 1917
+        </strong>
+        <p>Champaran Satyagraha (1917) was Mahatma Gandhi's first major movement in India.</p>
+    </div>
+</div>
+
+<!-- Q29 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q29: Which ruler built the Buland Darwaza?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Babur</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Akbar</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Shah Jahan</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Aurangzeb</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Akbar
+        </strong>
+        <p>Akbar built the Buland Darwaza at Fatehpur Sikri to commemorate his victory over Gujarat.</p>
+    </div>
+</div>
+
+<!-- Q30 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q30: Who founded the Forward Bloc in 1939?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Bhagat Singh</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Subhas Chandra Bose</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Jawaharlal Nehru</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Sardar Patel</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Subhas Chandra Bose
+        </strong>
+        <p>Subhas Chandra Bose founded the All India Forward Bloc in 1939 after resigning from the Indian National Congress.</p>
+    </div>
+</div>
+<!-- Q31 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q31: Who was the founder of the Satavahana Dynasty?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Gautamiputra Satakarni</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Simuka</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Satakarni I</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Pulumavi</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Simuka
+        </strong>
+        <p>Simuka is regarded as the founder of the Satavahana Dynasty in the Deccan region.</p>
+    </div>
+</div>
+
+<!-- Q32 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q32: Which Mughal emperor introduced the Din-i-Ilahi?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Babur</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Humayun</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Akbar</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Jahangir</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Akbar
+        </strong>
+        <p>Akbar introduced Din-i-Ilahi in 1582 as a syncretic religious movement promoting tolerance.</p>
+    </div>
+</div>
+
+<!-- Q33 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q33: Who established the Ramakrishna Mission?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Ramakrishna Paramahamsa</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Swami Vivekananda</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Dayananda Saraswati</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Raja Ram Mohan Roy</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Swami Vivekananda
+        </strong>
+        <p>Swami Vivekananda founded the Ramakrishna Mission in 1897 to promote social service and spiritual development.</p>
+    </div>
+</div>
+
+<!-- Q34 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q34: Which Act transferred the administration of India from the East India Company to the British Crown?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Regulating Act, 1773</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Pitts India Act, 1784</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Government of India Act, 1858</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Indian Councils Act, 1909</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Government of India Act, 1858
+        </strong>
+        <p>Following the Revolt of 1857, the Government of India Act, 1858 abolished East India Company rule and transferred power to the British Crown.</p>
+    </div>
+</div>
+
+<!-- Q35 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q35: Who was the first Indian woman to become the President of the Indian National Congress?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Sarojini Naidu</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Annie Besant</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Vijaya Lakshmi Pandit</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Sucheta Kripalani</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Sarojini Naidu
+        </strong>
+        <p>Sarojini Naidu became the first Indian woman President of the Indian National Congress in 1925 at the Kanpur Session. (Annie Besant was the first woman overall, but she was of Irish origin.)</p>
+    </div>
+</div>
+        
+        <div style="text-align: center; margin-top: 40px;">
+            <button class="mat-btn secondary view-more-btn" onclick="loadMore(this, 'week1')">
+                View More Questions <i class="fa-solid fa-angle-down" style="margin-left:8px;"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- WEEK 2 -->
+    <div id="week2" class="week-content" style="display: none;">
+<!-- Q36 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q36: Who founded the Chola Dynasty?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Karikala Chola</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Vijayalaya Chola</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Rajaraja Chola I</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Rajendra Chola I</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Vijayalaya Chola
+        </strong>
+        <p>Vijayalaya Chola founded the Medieval Chola Dynasty in the 9th century CE.</p>
+    </div>
+</div>
+
+<!-- Q37 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q37: Which battle established British supremacy in South India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Battle of Plassey</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Battle of Buxar</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Battle of Wandiwash</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Battle of Panipat</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Battle of Wandiwash
+        </strong>
+        <p>The Battle of Wandiwash (1760) ended French power in India and established British supremacy in South India.</p>
+    </div>
+</div>
+
+<!-- Q38 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q38: Who was the founder of the Pala Dynasty?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Dharmapala</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Gopala</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Devapala</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Mahipala</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Gopala
+        </strong>
+        <p>Gopala founded the Pala Dynasty in Bengal during the 8th century CE.</p>
+    </div>
+</div>
+
+<!-- Q39 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q39: Who established the Indian National Army (INA)?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Subhas Chandra Bose</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Rash Behari Bose</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Mohan Singh</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Lala Lajpat Rai</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Mohan Singh
+        </strong>
+        <p>The Indian National Army (INA) was first formed in 1942 by Captain Mohan Singh. Later, Subhas Chandra Bose reorganized and led it.</p>
+    </div>
+</div>
+
+<!-- Q40 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q40: Who wrote the book 'Arthashastra'?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Kalidasa</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Chanakya (Kautilya)</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Patanjali</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Panini</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Chanakya (Kautilya)
+        </strong>
+        <p>The Arthashastra, written by Kautilya (Chanakya), is an ancient treatise on politics, economics, and administration.</p>
+    </div>
+</div>
+
+<!-- Q41 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q41: Which Mughal emperor abolished the Jizya tax?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Babur</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Akbar</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Jahangir</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Shah Jahan</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Akbar
+        </strong>
+        <p>Akbar abolished the Jizya tax in 1564 as part of his policy of religious tolerance.</p>
+    </div>
+</div>
+
+<!-- Q42 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q42: Who was the founder of the Rashtrakuta Dynasty?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Dantidurga</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Amoghavarsha I</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Krishna I</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Govinda III</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Dantidurga
+        </strong>
+        <p>Dantidurga founded the Rashtrakuta Dynasty in the 8th century CE.</p>
+    </div>
+</div>
+
+<!-- Q43 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q43: Which session of the Indian National Congress demanded Poorna Swaraj?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Bombay Session</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Lahore Session (1929)</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Calcutta Session</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Karachi Session</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Lahore Session (1929)
+        </strong>
+        <p>The Lahore Session of 1929, presided over by Jawaharlal Nehru, declared Poorna Swaraj as the goal.</p>
+    </div>
+</div>
+
+<!-- Q44 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q44: Who built the Brihadeshwara Temple at Thanjavur?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Rajendra Chola I</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Karikala Chola</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Rajaraja Chola I</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Krishnadevaraya</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Rajaraja Chola I
+        </strong>
+        <p>Rajaraja Chola I built the Brihadeshwara Temple, a UNESCO World Heritage Site.</p>
+    </div>
+</div>
+
+<!-- Q45 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q45: Which Viceroy announced the Partition of Bengal in 1905?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Lord Curzon</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Lord Ripon</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Lord Minto</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Lord Hardinge</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Lord Curzon
+        </strong>
+        <p>Lord Curzon partitioned Bengal in 1905, leading to the Swadeshi Movement.</p>
+    </div>
+</div>
+
+<!-- Q46 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q46: Who founded the Pallava Dynasty?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Simhavishnu</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Mahendravarman I</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Narasimhavarman I</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Simha Vishnu Pallava</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Simhavishnu
+        </strong>
+        <p>Simhavishnu is regarded as the founder of the Imperial Pallava Dynasty.</p>
+    </div>
+</div>
+
+<!-- Q47 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q47: The Cripps Mission came to India in which year?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>1940</span></div>
+        <div class="option"><span class="option-letter">B</span><span>1941</span></div>
+        <div class="option"><span class="option-letter">C</span><span>1942</span></div>
+        <div class="option"><span class="option-letter">D</span><span>1945</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) 1942
+        </strong>
+        <p>Sir Stafford Cripps came to India in 1942 with constitutional proposals during World War II.</p>
+    </div>
+</div>
+
+<!-- Q48 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q48: Who was the founder of the Sena Dynasty?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Ballala Sena</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Lakshmana Sena</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Samanta Sena</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Vijaya Sena</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Samanta Sena
+        </strong>
+        <p>Samanta Sena founded the Sena Dynasty, which later ruled Bengal.</p>
+    </div>
+</div>
+
+<!-- Q49 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q49: Who was the first Indian Governor-General of independent India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Lord Mountbatten</span></div>
+        <div class="option"><span class="option-letter">B</span><span>C. Rajagopalachari</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Dr. Rajendra Prasad</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Jawaharlal Nehru</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) C. Rajagopalachari
+        </strong>
+        <p>C. Rajagopalachari became the first and only Indian Governor-General of independent India in 1948.</p>
+    </div>
+</div>
+
+<!-- Q50 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q50: Which Indian freedom fighter gave the slogan "Jai Hind"?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Bhagat Singh</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Subhas Chandra Bose</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Mahatma Gandhi</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Jawaharlal Nehru</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Subhas Chandra Bose
+        </strong>
+        <p>Netaji Subhas Chandra Bose popularized the slogan "Jai Hind" during the Indian freedom movement.</p>
+    </div>
+</div>
+<!-- Q51 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q51: Who founded the Gupta Empire?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Samudragupta</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Chandragupta I</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Sri Gupta</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Kumaragupta I</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Sri Gupta
+        </strong>
+        <p>Sri Gupta is regarded as the founder of the Gupta Dynasty.</p>
+    </div>
+</div>
+
+<!-- Q52 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q52: Which movement was launched after the Jallianwala Bagh massacre?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Civil Disobedience Movement</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Quit India Movement</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Non-Cooperation Movement</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Swadeshi Movement</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Non-Cooperation Movement
+        </strong>
+        <p>Mahatma Gandhi launched the Non-Cooperation Movement in 1920 following the Jallianwala Bagh massacre and the Khilafat issue.</p>
+    </div>
+</div>
+
+<!-- Q53 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q53: Who built the Qutub Minar?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Iltutmish</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Qutb-ud-din Aibak</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Balban</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Alauddin Khilji</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Qutb-ud-din Aibak
+        </strong>
+        <p>Qutb-ud-din Aibak started the construction of Qutub Minar, which was later completed by Iltutmish.</p>
+    </div>
+</div>
+
+<!-- Q54 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q54: Which dynasty built the Khajuraho Temples?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Chandel Dynasty</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Chola Dynasty</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Pala Dynasty</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Gupta Dynasty</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Chandel Dynasty
+        </strong>
+        <p>The Khajuraho Temples were built by the Chandel rulers between the 10th and 12th centuries.</p>
+    </div>
+</div>
+
+<!-- Q55 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q55: Who presided over the Lahore Session of the Indian National Congress in 1929?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Mahatma Gandhi</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Subhas Chandra Bose</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Jawaharlal Nehru</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Sardar Patel</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Jawaharlal Nehru
+        </strong>
+        <p>Jawaharlal Nehru presided over the Lahore Session where Poorna Swaraj was declared.</p>
+    </div>
+</div>
+
+<!-- Q56 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q56: Which ruler built the Grand Trunk Road?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Akbar</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Sher Shah Suri</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Babur</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Humayun</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Sher Shah Suri
+        </strong>
+        <p>Sher Shah Suri improved and extended the Grand Trunk Road across northern India.</p>
+    </div>
+</div>
+
+<!-- Q57 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q57: The famous Nalanda University was located in which present-day state?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Uttar Pradesh</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Bihar</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Odisha</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Madhya Pradesh</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Bihar
+        </strong>
+        <p>Nalanda University, one of the world's oldest universities, was located in present-day Bihar.</p>
+    </div>
+</div>
+
+<!-- Q58 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q58: Which Mughal emperor was known as 'Zinda Pir'?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Akbar</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Jahangir</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Aurangzeb</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Shah Jahan</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Aurangzeb
+        </strong>
+        <p>Aurangzeb was known as 'Zinda Pir' because of his simple lifestyle and religious devotion.</p>
+    </div>
+</div>
+
+<!-- Q59 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q59: Who founded the Theosophical Society in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Annie Besant</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Madame H.P. Blavatsky and H.S. Olcott</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Swami Vivekananda</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Raja Ram Mohan Roy</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Madame H.P. Blavatsky and H.S. Olcott
+        </strong>
+        <p>The Theosophical Society established its headquarters at Adyar, Chennai, under Blavatsky and Olcott.</p>
+    </div>
+</div>
+
+<!-- Q60 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q60: Who was the first Viceroy of India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Lord Canning</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Lord Dalhousie</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Lord Curzon</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Lord Ripon</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Lord Canning
+        </strong>
+        <p>Lord Canning became the first Viceroy of India after the Government of India Act, 1858.</p>
+    </div>
+</div>
+
+<!-- Q61 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q61: Which dynasty built the Sun Temple at Konark?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Eastern Ganga Dynasty</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Chola Dynasty</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Pallava Dynasty</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Chalukya Dynasty</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Eastern Ganga Dynasty
+        </strong>
+        <p>The Konark Sun Temple was built by King Narasimhadeva I of the Eastern Ganga Dynasty.</p>
+    </div>
+</div>
+
+<!-- Q62 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q62: The Cabinet Mission came to India in which year?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>1945</span></div>
+        <div class="option"><span class="option-letter">B</span><span>1946</span></div>
+        <div class="option"><span class="option-letter">C</span><span>1947</span></div>
+        <div class="option"><span class="option-letter">D</span><span>1942</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) 1946
+        </strong>
+        <p>The Cabinet Mission visited India in 1946 to propose a constitutional framework for independence.</p>
+    </div>
+</div>
+
+<!-- Q63 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q63: Who defeated Ibrahim Lodi in the First Battle of Panipat?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Akbar</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Babur</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Humayun</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Sher Shah Suri</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Babur
+        </strong>
+        <p>Babur defeated Ibrahim Lodi in 1526 and established the Mughal Empire in India.</p>
+    </div>
+</div>
+
+<!-- Q64 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q64: Who founded the Bahmani Kingdom?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Muhammad Shah I</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Alauddin Hasan Bahman Shah</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Mahmud Gawan</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Firuz Shah Bahmani</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Alauddin Hasan Bahman Shah
+        </strong>
+        <p>The Bahmani Kingdom was founded in 1347 by Alauddin Hasan Bahman Shah.</p>
+    </div>
+</div>
+
+<!-- Q65 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q65: Which movement is associated with the slogan "Quit India"?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Civil Disobedience Movement</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Non-Cooperation Movement</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Quit India Movement</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Swadeshi Movement</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Quit India Movement
+        </strong>
+        <p>The Quit India Movement was launched by Mahatma Gandhi on 8 August 1942 with the call "Quit India."</p>
+    </div>
+</div>
+ 
+<!-- Q66 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q66: Who was the founder of the Lodhi Dynasty?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Bahlul Lodhi</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Sikandar Lodhi</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Ibrahim Lodhi</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Daulat Khan Lodhi</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Bahlul Lodhi
+        </strong>
+        <p>Bahlul Lodhi founded the Lodhi Dynasty in 1451 and was the first Afghan ruler of the Delhi Sultanate.</p>
+    </div>
+</div>
+
+<!-- Q67 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q67: Which Indian ruler is known as the 'Napoleon of India'?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Chandragupta Maurya</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Ashoka</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Samudragupta</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Harshavardhana</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Samudragupta
+        </strong>
+        <p>Historian V.A. Smith called Samudragupta the "Napoleon of India" because of his military conquests.</p>
+    </div>
+</div>
+
+<!-- Q68 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q68: Who founded the All India Muslim League in 1906?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Sir Syed Ahmad Khan</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Aga Khan III</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Muhammad Ali Jinnah</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Allama Iqbal</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Aga Khan III
+        </strong>
+        <p>The All India Muslim League was established at Dhaka in 1906 under the leadership of Aga Khan III and other Muslim leaders.</p>
+    </div>
+</div>
+
+<!-- Q69 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q69: Which Chola ruler sent naval expeditions to Southeast Asia?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Karikala Chola</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Rajaraja Chola I</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Rajendra Chola I</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Vijayalaya Chola</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Rajendra Chola I
+        </strong>
+        <p>Rajendra Chola I led successful naval expeditions to Sri Lanka and Southeast Asia.</p>
+    </div>
+</div>
+
+<!-- Q70 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q70: The Dandi March started in which year?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>1920</span></div>
+        <div class="option"><span class="option-letter">B</span><span>1930</span></div>
+        <div class="option"><span class="option-letter">C</span><span>1942</span></div>
+        <div class="option"><span class="option-letter">D</span><span>1919</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) 1930
+        </strong>
+        <p>The Dandi March (Salt March) began on 12 March 1930 from Sabarmati Ashram.</p>
+    </div>
+</div>
+
+
+
+        <div style="text-align: center; margin-top: 40px;">
+            <button class="mat-btn secondary view-more-btn" onclick="loadMore(this, 'week2')">
+                View More Questions <i class="fa-solid fa-angle-down" style="margin-left:8px;"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- WEEK 3 -->
+    <div id="week3" class="week-content" style="display: none;">
+<!-- Q71 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q71: Which dynasty built the famous Kailasa Temple at Ellora?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Chalukya</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Rashtrakuta</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Pallava</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Chola</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Rashtrakuta
+        </strong>
+        <p>The Kailasa Temple at Ellora was constructed by the Rashtrakuta king Krishna I.</p>
+    </div>
+</div>
+
+<!-- Q72 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q72: Who was the first Indian to become President of the Indian National Congress?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Dadabhai Naoroji</span></div>
+        <div class="option"><span class="option-letter">B</span><span>W.C. Bonnerjee</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Surendranath Banerjee</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Gopal Krishna Gokhale</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) W.C. Bonnerjee
+        </strong>
+        <p>Womesh Chandra Bonnerjee was the first President of the Indian National Congress in 1885.</p>
+    </div>
+</div>
+
+<!-- Q73 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q73: Who built the Charminar in Hyderabad?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Quli Qutb Shah</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Muhammad Quli Qutb Shah</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Abdullah Qutb Shah</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Ibrahim Qutb Shah</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Muhammad Quli Qutb Shah
+        </strong>
+        <p>Muhammad Quli Qutb Shah built the Charminar in 1591 to commemorate the founding of Hyderabad.</p>
+    </div>
+</div>
+
+<!-- Q74 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q74: Which Viceroy is associated with the Ilbert Bill controversy?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Lord Curzon</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Lord Ripon</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Lord Lytton</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Lord Dufferin</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Lord Ripon
+        </strong>
+        <p>The Ilbert Bill controversy occurred during Lord Ripon's tenure as Viceroy in 1883.</p>
+    </div>
+</div>
+
+<!-- Q75 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q75: Which Indian ruler adopted Buddhism after the Kalinga War?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Chandragupta Maurya</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Bindusara</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Ashoka</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Harshavardhana</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Ashoka
+        </strong>
+        <p>After the Kalinga War (261 BCE), Emperor Ashoka embraced Buddhism and promoted peace and non-violence.</p>
+    </div>
+</div>
+
+
+ <!-- Q76 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q76: Which Sultan shifted the capital from Delhi to Daulatabad?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Alauddin Khilji</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Ghiyasuddin Tughlaq</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Muhammad bin Tughlaq</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Firoz Shah Tughlaq</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Muhammad bin Tughlaq
+        </strong>
+        <p>Muhammad bin Tughlaq shifted the capital from Delhi to Daulatabad, though the experiment was unsuccessful.</p>
+    </div>
+</div>
+
+<!-- Q77 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q77: The Battle of Haldighati was fought between Maharana Pratap and which Mughal commander?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Raja Man Singh</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Abdul Rahim Khan-i-Khana</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Bairam Khan</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Asaf Khan</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Raja Man Singh
+        </strong>
+        <p>The Battle of Haldighati (1576) was fought between Maharana Pratap and the Mughal army led by Raja Man Singh.</p>
+    </div>
+</div>
+
+<!-- Q78 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q78: Who established the Arya Samaj in 1875?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Raja Ram Mohan Roy</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Swami Vivekananda</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Swami Dayananda Saraswati</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Ramakrishna Paramahamsa</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Swami Dayananda Saraswati
+        </strong>
+        <p>Swami Dayananda Saraswati founded the Arya Samaj in 1875 to promote Vedic values and social reform.</p>
+    </div>
+</div>
+
+<!-- Q79 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q79: Which dynasty built the Shore Temple at Mahabalipuram?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Pallava Dynasty</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Chola Dynasty</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Pandya Dynasty</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Rashtrakuta Dynasty</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Pallava Dynasty
+        </strong>
+        <p>The Shore Temple at Mahabalipuram was built during the reign of Pallava king Narasimhavarman II.</p>
+    </div>
+</div>
+
+<!-- Q80 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q80: The Simon Commission arrived in India in which year?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>1925</span></div>
+        <div class="option"><span class="option-letter">B</span><span>1927</span></div>
+        <div class="option"><span class="option-letter">C</span><span>1928</span></div>
+        <div class="option"><span class="option-letter">D</span><span>1930</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) 1928
+        </strong>
+        <p>The Simon Commission reached India in 1928 and faced widespread protests because it had no Indian members.</p>
+    </div>
+</div>
+
+<!-- Q81 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q81: Who was the last ruler of the Maurya Dynasty?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Ashoka</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Dasharatha</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Brihadratha</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Bindusara</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Brihadratha
+        </strong>
+        <p>Brihadratha, the last Mauryan ruler, was killed by Pushyamitra Shunga, who founded the Shunga Dynasty.</p>
+    </div>
+</div>
+
+<!-- Q82 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q82: Which Governor-General introduced the Doctrine of Lapse?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Lord William Bentinck</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Lord Dalhousie</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Lord Cornwallis</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Lord Wellesley</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Lord Dalhousie
+        </strong>
+        <p>Lord Dalhousie introduced the Doctrine of Lapse to annex princely states without a natural heir.</p>
+    </div>
+</div>
+
+<!-- Q83 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q83: Who founded the Shunga Dynasty?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Agnimitra</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Pushyamitra Shunga</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Vasumitra</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Bhadraka</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Pushyamitra Shunga
+        </strong>
+        <p>Pushyamitra Shunga established the Shunga Dynasty after overthrowing the last Mauryan ruler.</p>
+    </div>
+</div>
+
+<!-- Q84 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q84: Which session of the Indian National Congress adopted the resolution for Fundamental Rights?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Lahore Session (1929)</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Karachi Session (1931)</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Lucknow Session (1916)</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Surat Session (1907)</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Karachi Session (1931)
+        </strong>
+        <p>The Karachi Session of 1931 adopted the resolution on Fundamental Rights and National Economic Programme.</p>
+    </div>
+</div>
+
+<!-- Q85 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q85: Who was the first Sultan of the Delhi Sultanate?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Iltutmish</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Qutb-ud-din Aibak</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Balban</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Razia Sultan</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Qutb-ud-din Aibak
+        </strong>
+        <p>Qutb-ud-din Aibak founded the Mamluk (Slave) Dynasty and became the first Sultan of Delhi.</p>
+    </div>
+</div>
+
+<!-- Q86 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q86: Which European power was the first to establish a trading center in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>British</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Dutch</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Portuguese</span></div>
+        <div class="option"><span class="option-letter">D</span><span>French</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Portuguese
+        </strong>
+        <p>The Portuguese were the first Europeans to establish trading centers in India after Vasco da Gama's arrival in 1498.</p>
+    </div>
+</div>
+
+<!-- Q87 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q87: Who established the Vijayanagara Empire in 1336?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Harihara I and Bukka Raya I</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Krishnadevaraya</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Deva Raya II</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Saluva Narasimha</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Harihara I and Bukka Raya I
+        </strong>
+        <p>Harihara I and Bukka Raya I founded the Vijayanagara Empire in 1336.</p>
+    </div>
+</div>
+
+<!-- Q88 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q88: The Poona Pact was signed in which year?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>1930</span></div>
+        <div class="option"><span class="option-letter">B</span><span>1932</span></div>
+        <div class="option"><span class="option-letter">C</span><span>1935</span></div>
+        <div class="option"><span class="option-letter">D</span><span>1940</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) 1932
+        </strong>
+        <p>The Poona Pact was signed in 1932 between Mahatma Gandhi and Dr. B.R. Ambedkar.</p>
+    </div>
+</div>
+
+<!-- Q89 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q89: Which dynasty built the Dilwara Temples at Mount Abu?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Solanki (Chaulukya) Dynasty</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Chola Dynasty</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Pallava Dynasty</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Paramara Dynasty</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Solanki (Chaulukya) Dynasty
+        </strong>
+        <p>The Dilwara Jain Temples were constructed during the rule of the Solanki (Chaulukya) rulers of Gujarat.</p>
+    </div>
+</div>
+
+<!-- Q90 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q90: Who gave the slogan "Swaraj is my birthright and I shall have it"?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Lala Lajpat Rai</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Bal Gangadhar Tilak</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Bipin Chandra Pal</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Gopal Krishna Gokhale</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Bal Gangadhar Tilak
+        </strong>
+        <p>Bal Gangadhar Tilak inspired millions with the famous slogan, "Swaraj is my birthright and I shall have it."</p>
+    </div>
+</div>
+<!-- Q91 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q91: Who founded the Kushan Dynasty in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Kanishka</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Kujula Kadphises</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Vima Kadphises</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Huvishka</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Kujula Kadphises
+        </strong>
+        <p>Kujula Kadphises founded the Kushan Dynasty by uniting the Yuezhi tribes.</p>
+    </div>
+</div>
+
+<!-- Q92 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q92: Which Governor-General abolished the practice of Sati in 1829?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Lord Cornwallis</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Lord Hastings</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Lord William Bentinck</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Lord Dalhousie</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Lord William Bentinck
+        </strong>
+        <p>Lord William Bentinck abolished Sati in 1829 with support from Raja Ram Mohan Roy.</p>
+    </div>
+</div>
+
+<!-- Q93 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q93: Which ruler built Fatehpur Sikri?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Babur</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Akbar</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Shah Jahan</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Jahangir</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Akbar
+        </strong>
+        <p>Akbar built Fatehpur Sikri as his capital after the conquest of Gujarat.</p>
+    </div>
+</div>
+
+<!-- Q94 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q94: The Battle of Buxar was fought in which year?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>1757</span></div>
+        <div class="option"><span class="option-letter">B</span><span>1761</span></div>
+        <div class="option"><span class="option-letter">C</span><span>1764</span></div>
+        <div class="option"><span class="option-letter">D</span><span>1773</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) 1764
+        </strong>
+        <p>The Battle of Buxar (1764) established the British East India Company's dominance in eastern India.</p>
+    </div>
+</div>
+
+<!-- Q95 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q95: Who was the founder of the Slave (Mamluk) Dynasty?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Iltutmish</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Qutb-ud-din Aibak</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Balban</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Razia Sultan</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Qutb-ud-din Aibak
+        </strong>
+        <p>Qutb-ud-din Aibak founded the Slave (Mamluk) Dynasty in 1206.</p>
+    </div>
+</div>
+
+<!-- Q96 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q96: Which session of the Indian National Congress marked the split between Moderates and Extremists?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Bombay Session</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Surat Session</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Lucknow Session</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Karachi Session</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Surat Session
+        </strong>
+        <p>The Congress split into Moderates and Extremists during the Surat Session of 1907.</p>
+    </div>
+</div>
+
+<!-- Q97 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q97: Which ancient Indian university was visited by the Chinese traveler Xuanzang?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Takshashila</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Vikramashila</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Nalanda</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Vallabhi</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Nalanda
+        </strong>
+        <p>Xuanzang studied and stayed at Nalanda University during the reign of Harshavardhana.</p>
+    </div>
+</div>
+
+<!-- Q98 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q98: Which ruler issued the famous Rock and Pillar Edicts?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Chandragupta Maurya</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Bindusara</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Ashoka</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Samudragupta</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Ashoka
+        </strong>
+        <p>Ashoka's Rock and Pillar Edicts spread his policy of Dhamma across the empire.</p>
+    </div>
+</div>
+
+<!-- Q99 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q99: Who was the founder of the Maratha Empire?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Sambhaji</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Shivaji Maharaj</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Baji Rao I</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Balaji Vishwanath</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Shivaji Maharaj
+        </strong>
+        <p>Chhatrapati Shivaji Maharaj founded the Maratha Empire in the 17th century.</p>
+    </div>
+</div>
+
+<!-- Q100 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q100: Which Act introduced Provincial Autonomy in British India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Indian Councils Act, 1909</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Government of India Act, 1919</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Government of India Act, 1935</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Indian Independence Act, 1947</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Government of India Act, 1935
+        </strong>
+        <p>The Government of India Act, 1935 introduced Provincial Autonomy and proposed an All-India Federation.</p>
+    </div>
+</div>
+
+<!-- Q101 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q101: Who was the founder of the Mughal Empire in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Humayun</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Akbar</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Babur</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Sher Shah Suri</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Babur
+        </strong>
+        <p>Babur founded the Mughal Empire after winning the First Battle of Panipat in 1526.</p>
+    </div>
+</div>
+
+<!-- Q102 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q102: Which ruler was known as 'Devanampriya Priyadarsi'?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Ashoka</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Chandragupta Maurya</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Harsha</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Kanishka</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Ashoka
+        </strong>
+        <p>Ashoka referred to himself as "Devanampriya Priyadarsi" in his inscriptions.</p>
+    </div>
+</div>
+
+<!-- Q103 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q103: The Vernacular Press Act was passed during whose Viceroyalty?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Lord Ripon</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Lord Curzon</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Lord Lytton</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Lord Mayo</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Lord Lytton
+        </strong>
+        <p>The Vernacular Press Act of 1878 was enacted by Lord Lytton to curb the Indian-language press.</p>
+    </div>
+</div>
+
+<!-- Q104 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q104: Who was the first woman ruler of the Delhi Sultanate?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Razia Sultan</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Nur Jahan</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Chand Bibi</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Rani Durgavati</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Razia Sultan
+        </strong>
+        <p>Razia Sultan was the first and only woman to rule the Delhi Sultanate.</p>
+    </div>
+</div>
+
+<!-- Q105 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q105: Who established the Brahmo Samaj in 1828?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Swami Dayananda Saraswati</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Raja Ram Mohan Roy</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Ishwar Chandra Vidyasagar</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Keshab Chandra Sen</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Raja Ram Mohan Roy
+        </strong>
+        <p>Raja Ram Mohan Roy founded the Brahmo Samaj in 1828 to promote religious and social reforms.</p>
+    </div>
+</div>
+        
+        <div style="text-align: center; margin-top: 40px;">
+            <button class="mat-btn secondary view-more-btn" onclick="loadMore(this, 'week3')">
+                View More Questions <i class="fa-solid fa-angle-down" style="margin-left:8px;"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- WEEK 4 -->
+    <div id="week4" class="week-content" style="display: none;">
+<!-- Q106 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q106: Which Gupta ruler is known for the Allahabad Pillar Inscription?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Chandragupta I</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Samudragupta</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Chandragupta II</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Kumaragupta I</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Samudragupta
+        </strong>
+        <p>The Allahabad Pillar Inscription, composed by Harisena, describes the military achievements of Samudragupta.</p>
+    </div>
+</div>
+
+<!-- Q107 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q107: The Third Battle of Panipat was fought in which year?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>1757</span></div>
+        <div class="option"><span class="option-letter">B</span><span>1761</span></div>
+        <div class="option"><span class="option-letter">C</span><span>1764</span></div>
+        <div class="option"><span class="option-letter">D</span><span>1775</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) 1761
+        </strong>
+        <p>The Third Battle of Panipat (1761) was fought between the Marathas and Ahmad Shah Abdali.</p>
+    </div>
+</div>
+
+<!-- Q108 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q108: Who was the founder of the Satavahana Dynasty?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Gautamiputra Satakarni</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Simuka</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Pulumavi</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Yajna Sri Satakarni</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Simuka
+        </strong>
+        <p>Simuka is regarded as the founder of the Satavahana Dynasty.</p>
+    </div>
+</div>
+
+<!-- Q109 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q109: Which Mughal emperor introduced the Mansabdari system?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Babur</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Humayun</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Akbar</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Jahangir</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Akbar
+        </strong>
+        <p>Akbar introduced the Mansabdari system to organize the military and civil administration.</p>
+    </div>
+</div>
+
+<!-- Q110 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q110: The Permanent Settlement was introduced in Bengal by whom?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Lord Cornwallis</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Lord Wellesley</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Lord Hastings</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Lord Dalhousie</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Lord Cornwallis
+        </strong>
+        <p>Lord Cornwallis introduced the Permanent Settlement in Bengal in 1793.</p>
+    </div>
+</div>
+
+<!-- Q111 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q111: Which king founded the Chola Dynasty?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Karikala Chola</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Rajaraja Chola I</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Vijayalaya Chola</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Rajendra Chola I</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Vijayalaya Chola
+        </strong>
+        <p>Vijayalaya Chola established the Imperial Chola Dynasty in the 9th century.</p>
+    </div>
+</div>
+
+<!-- Q112 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q112: Who gave the slogan "Inquilab Zindabad"?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Subhas Chandra Bose</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Bhagat Singh</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Lala Lajpat Rai</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Chandrashekhar Azad</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Bhagat Singh
+        </strong>
+        <p>Bhagat Singh popularized the slogan "Inquilab Zindabad" during the freedom struggle.</p>
+    </div>
+</div>
+
+<!-- Q113 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q113: Which dynasty ruled over Kalinga before Ashoka's conquest?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Nanda Dynasty</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Mahameghavahana Dynasty</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Independent Kingdom of Kalinga</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Gupta Dynasty</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Independent Kingdom of Kalinga
+        </strong>
+        <p>Before Ashoka's conquest, Kalinga existed as an independent and prosperous kingdom.</p>
+    </div>
+</div>
+
+<!-- Q114 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q114: Which Viceroy announced the partition of Bengal in 1905?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Lord Curzon</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Lord Minto</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Lord Ripon</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Lord Lytton</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Lord Curzon
+        </strong>
+        <p>Lord Curzon partitioned Bengal in 1905, leading to the Swadeshi Movement.</p>
+    </div>
+</div>
+
+<!-- Q115 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q115: Which ruler built the Brihadeeswara Temple at Thanjavur?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Rajendra Chola I</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Rajaraja Chola I</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Karikala Chola</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Vijayalaya Chola</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Rajaraja Chola I
+        </strong>
+        <p>Rajaraja Chola I constructed the Brihadeeswara Temple, a UNESCO World Heritage Site.</p>
+    </div>
+</div>
+
+<!-- Q116 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q116: Who was the first Indian Governor-General of independent India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Lord Mountbatten</span></div>
+        <div class="option"><span class="option-letter">B</span><span>C. Rajagopalachari</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Dr. Rajendra Prasad</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Jawaharlal Nehru</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) C. Rajagopalachari
+        </strong>
+        <p>C. Rajagopalachari became the first and only Indian Governor-General of independent India in 1948.</p>
+    </div>
+</div>
+
+<!-- Q117 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q117: Which famous traveler visited the court of Chandragupta II?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Xuanzang</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Fa-Hien</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Megasthenes</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Al-Biruni</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Fa-Hien
+        </strong>
+        <p>Chinese traveler Fa-Hien visited India during the reign of Chandragupta II.</p>
+    </div>
+</div>
+
+<!-- Q118 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q118: The Revolt of 1857 began at which place?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Delhi</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Meerut</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Kanpur</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Lucknow</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Meerut
+        </strong>
+        <p>The Revolt of 1857 started at Meerut on 10 May 1857 before spreading across northern India.</p>
+    </div>
+</div>
+
+<!-- Q119 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q119: Who founded the Pallava Dynasty?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Mahendravarman I</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Narasimhavarman I</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Simhavishnu</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Simhavarman</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: D) Simhavarman
+        </strong>
+        <p>Simhavarman is traditionally regarded as an early founder of the Pallava Dynasty.</p>
+    </div>
+</div>
+
+<!-- Q120 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q120: Who founded the Indian National Army (INA)?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Subhas Chandra Bose</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Rash Behari Bose</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Captain Mohan Singh</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Sardar Patel</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Captain Mohan Singh
+        </strong>
+        <p>The Indian National Army was first founded by Captain Mohan Singh in 1942 and was later reorganized and led by Subhas Chandra Bose.</p>
+    </div>
+</div>
+<!-- Q121 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q121: Who founded the Maurya Empire?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Ashoka</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Bindusara</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Chandragupta Maurya</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Bimbisara</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Chandragupta Maurya
+        </strong>
+        <p>Chandragupta Maurya founded the Maurya Empire around 321 BCE with the guidance of Chanakya.</p>
+    </div>
+</div>
+
+<!-- Q122 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q122: Which Mughal emperor built the Red Fort in Delhi?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Akbar</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Jahangir</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Shah Jahan</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Aurangzeb</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Shah Jahan
+        </strong>
+        <p>Shah Jahan built the Red Fort in Delhi after shifting the Mughal capital from Agra.</p>
+    </div>
+</div>
+
+<!-- Q123 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q123: The Treaty of Seringapatam was signed in which year?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>1782</span></div>
+        <div class="option"><span class="option-letter">B</span><span>1792</span></div>
+        <div class="option"><span class="option-letter">C</span><span>1799</span></div>
+        <div class="option"><span class="option-letter">D</span><span>1802</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) 1792
+        </strong>
+        <p>The Treaty of Seringapatam (1792) ended the Third Anglo-Mysore War between Tipu Sultan and the British.</p>
+    </div>
+</div>
+
+<!-- Q124 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q124: Which Gupta ruler was known as Vikramaditya?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Samudragupta</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Chandragupta II</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Kumaragupta I</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Skandagupta</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Chandragupta II
+        </strong>
+        <p>Chandragupta II earned the title Vikramaditya and presided over the Golden Age of the Gupta Empire.</p>
+    </div>
+</div>
+
+<!-- Q125 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q125: Which Indian freedom fighter founded the Azad Hind Government in 1943?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Bhagat Singh</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Subhas Chandra Bose</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Jawaharlal Nehru</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Sardar Vallabhbhai Patel</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Subhas Chandra Bose
+        </strong>
+        <p>Netaji Subhas Chandra Bose proclaimed the Provisional Government of Free India (Azad Hind Government) in Singapore in 1943.</p>
+    </div>
+</div>
+
+<!-- Q126 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q126: Which ruler defeated Harshavardhana on the banks of the Narmada River?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Pulakeshin II</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Krishnadevaraya</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Rajaraja Chola I</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Narasimhavarman I</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Pulakeshin II
+        </strong>
+        <p>Pulakeshin II of the Chalukya Dynasty successfully stopped Harshavardhana's southward expansion.</p>
+    </div>
+</div>
+
+<!-- Q127 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q127: The First Round Table Conference was held in which city?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Delhi</span></div>
+        <div class="option"><span class="option-letter">B</span><span>London</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Mumbai</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Karachi</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) London
+        </strong>
+        <p>The First Round Table Conference was held in London from November 1930 to January 1931.</p>
+    </div>
+</div>
+
+<!-- Q128 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q128: Who built the Buland Darwaza at Fatehpur Sikri?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Babur</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Humayun</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Akbar</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Shah Jahan</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Akbar
+        </strong>
+        <p>Akbar built the Buland Darwaza in 1601 to commemorate his victory over Gujarat.</p>
+    </div>
+</div>
+
+<!-- Q129 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q129: Which dynasty constructed the rock-cut temples at Badami?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Pallava Dynasty</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Chalukya Dynasty</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Rashtrakuta Dynasty</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Pandya Dynasty</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Chalukya Dynasty
+        </strong>
+        <p>The Badami Cave Temples were built by the Early Chalukyas during the 6th and 7th centuries.</p>
+    </div>
+</div>
+
+<!-- Q130 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q130: Which Act transferred the administration of India from the East India Company to the British Crown?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Charter Act of 1833</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Government of India Act, 1858</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Indian Councils Act, 1861</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Government of India Act, 1919</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Government of India Act, 1858
+        </strong>
+        <p>The Government of India Act, 1858 ended the rule of the East India Company and transferred power to the British Crown after the Revolt of 1857.</p>
+    </div>
+</div>
+<!-- Q131 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q131: Who was the founder of the Gupta Dynasty?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Samudragupta</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Chandragupta I</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Sri Gupta</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Kumaragupta I</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Sri Gupta
+        </strong>
+        <p>Sri Gupta is regarded as the founder of the Gupta Dynasty, which later reached its peak under Samudragupta and Chandragupta II.</p>
+    </div>
+</div>
+
+<!-- Q132 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q132: Which battle marked the beginning of British political supremacy in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Battle of Plassey</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Battle of Buxar</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Battle of Wandiwash</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Battle of Panipat</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Battle of Plassey
+        </strong>
+        <p>The Battle of Plassey (1757) marked the beginning of British political dominance in India.</p>
+    </div>
+</div>
+
+<!-- Q133 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q133: Which Chola ruler led a naval expedition to Southeast Asia?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Karikala Chola</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Rajaraja Chola I</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Rajendra Chola I</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Vijayalaya Chola</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Rajendra Chola I
+        </strong>
+        <p>Rajendra Chola I led successful naval expeditions against the Srivijaya Empire in Southeast Asia.</p>
+    </div>
+</div>
+
+<!-- Q134 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q134: Which movement was launched after the partition of Bengal in 1905?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Quit India Movement</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Swadeshi Movement</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Civil Disobedience Movement</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Home Rule Movement</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Swadeshi Movement
+        </strong>
+        <p>The Swadeshi Movement began in 1905 as a protest against the partition of Bengal.</p>
+    </div>
+</div>
+
+<!-- Q135 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q135: Who was the court poet of Samudragupta?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Kalidasa</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Banabhatta</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Harisena</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Varahamihira</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Harisena
+        </strong>
+        <p>Harisena composed the Allahabad Pillar Inscription praising the achievements of Samudragupta.</p>
+    </div>
+</div>
+
+<!-- Q136 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q136: Which Mughal emperor abolished the Jizya tax?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Babur</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Humayun</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Akbar</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Aurangzeb</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Akbar
+        </strong>
+        <p>Akbar abolished the Jizya tax in 1564 as part of his policy of religious tolerance.</p>
+    </div>
+</div>
+
+<!-- Q137 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q137: Which Indian leader presided over the Lahore Session of the Indian National Congress in 1929?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Mahatma Gandhi</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Jawaharlal Nehru</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Sardar Vallabhbhai Patel</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Subhas Chandra Bose</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Jawaharlal Nehru
+        </strong>
+        <p>Jawaharlal Nehru presided over the Lahore Session (1929), where the demand for Purna Swaraj was adopted.</p>
+    </div>
+</div>
+
+<!-- Q138 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q138: Which dynasty built the Kailasa Temple at Ellora?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Pallava Dynasty</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Rashtrakuta Dynasty</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Chalukya Dynasty</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Chola Dynasty</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Rashtrakuta Dynasty
+        </strong>
+        <p>The monolithic Kailasa Temple at Ellora was built by the Rashtrakuta king Krishna I.</p>
+    </div>
+</div>
+
+<!-- Q139 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q139: Who was the first Viceroy of India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Lord Canning</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Lord Dalhousie</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Lord Ripon</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Lord Curzon</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Lord Canning
+        </strong>
+        <p>Lord Canning became the first Viceroy of India after the Government of India Act, 1858.</p>
+    </div>
+</div>
+
+<!-- Q140 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q140: Which event officially marked the end of the Mughal Empire in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Battle of Plassey (1757)</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Battle of Buxar (1764)</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Revolt of 1857 and the exile of Bahadur Shah II</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Delhi Durbar (1877)</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Revolt of 1857 and the exile of Bahadur Shah II
+        </strong>
+        <p>After the Revolt of 1857, Bahadur Shah II was exiled to Rangoon, marking the formal end of the Mughal Empire.</p>
+    </div>
+</div>
+        
+        <div style="text-align: center; margin-top: 40px;">
+            <button class="mat-btn secondary view-more-btn" onclick="loadMore(this, 'week4')">
+                View More Questions <i class="fa-solid fa-angle-down" style="margin-left:8px;"></i>
+            </button>
+        </div>
+    </div>
+
+</section>
+
+<!-- Footer with GK Links -->
+<footer>
+    <div class="footer-grid">
+        <div class="footer-col">
+            <div class="logo" style="margin-bottom: 20px;">
+                <a href="index.html" style="font-size: 20px; font-weight: 800; color: var(--text-color); display:flex; align-items:center; gap:8px; letter-spacing: -0.5px;">
+                    <i class="fa-solid fa-graduation-cap" style="color: var(--primary-color);"></i> GK BYTE
+                </a>
+            </div>
+            <p style="font-size: 0.95rem;">Empowering minds with comprehensive and curated General Knowledge. Your ultimate companion for competitive exams and lifelong learning journeys.</p>
+        </div>
+        
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About Us</a>
+                <a href="quiz.html">GK Quizzes</a>
+                
+                <a href="index.html#contact">Contact Support</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </div>
+        
+        <div class="footer-col">
+            <h4>Subjects</h4>
+            <div class="footer-links">
+                <a href="history.html">History</a>
+                <a href="politics.html">Politics</a>
+                <a href="economics.html">Economics</a>
+                <a href="current-affairs.html">Current Affairs</a>
+                <a href="geography.html">Geography</a>
+                
+            </div>
+        </div>
+        
+        <div class="footer-col">
+            <h4>Newsletter</h4>
+            <p style="margin-bottom: 12px; font-size: 0.95rem;">Subscribe to receive weekly GK updates directly in your inbox.</p>
+            <div class="newsletter">
+                <form action="#" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+                    <input type="email" placeholder="Your email address" required style="width: 100%; margin-bottom: 8px;">
+                    <button type="submit" class="mat-btn" style="width: 100%; padding: 10px 16px;">Subscribe <i class="fa-solid fa-paper-plane" style="margin-left: 8px;"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2026 GK BYTE. All Rights Reserved. Redesigned with Material Design &hearts;</p>
+    </div>
+</footer>
+
+<script>
+    // Scroll to Top Logic
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+    
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            scrollTopBtn.classList.add('show');
+        } else {
+            scrollTopBtn.classList.remove('show');
+        }
+    });
+    scrollTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+    // Theme & Mobile Menu
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.documentElement; 
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    body.setAttribute('data-theme', savedTheme);
+    updateIcon(savedTheme);
+
+    themeToggle.addEventListener('click', () => {
+        const newTheme = body.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+        body.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateIcon(newTheme);
+    });
+
+    function updateIcon(theme) {
+        themeToggle.innerHTML = theme === 'light' ? '<i class="fa-solid fa-moon"></i>' : '<i class="fa-solid fa-sun"></i>';
+    }
+
+    const menuToggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav-menu');
+    menuToggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        const icon = menuToggle.querySelector('i');
+        icon.classList.toggle('fa-bars');
+        icon.classList.toggle('fa-xmark');
+    });
+
+    const dropdown = document.querySelector('.dropdown');
+    dropdown.addEventListener('click', (e) => {
+        if(window.innerWidth <= 768) dropdown.classList.toggle('active');
+    });
+
+    // --- Static Question Pagination Logic ---
+    const PAGE_SIZE = 20;
+
+    function setupPagination() {
+        const weekContents = document.querySelectorAll('.week-content');
+        weekContents.forEach(week => {
+            let cards = week.querySelectorAll('.question-card');
+            cards.forEach((card, index) => {
+                card.style.display = index >= PAGE_SIZE ? 'none' : 'block';
+            });
+            
+            const viewMoreBtn = week.querySelector('.view-more-btn');
+            if (viewMoreBtn) {
+                if (cards.length <= PAGE_SIZE) {
+                    viewMoreBtn.style.display = 'none';
+                } else {
+                    viewMoreBtn.style.display = 'inline-flex';
+                    viewMoreBtn.dataset.visibleCount = PAGE_SIZE;
+                    viewMoreBtn.innerHTML = `View More Questions (${cards.length - PAGE_SIZE} left) <i class="fa-solid fa-angle-down" style="margin-left:8px;"></i>`;
+                }
+            }
+        });
+    }
+
+    window.loadMore = function(btn, weekId) {
+        const week = document.getElementById(weekId);
+        let cards = week.querySelectorAll('.question-card');
+        let visibleCount = parseInt(btn.dataset.visibleCount || PAGE_SIZE);
+        
+        let nextCount = visibleCount + PAGE_SIZE;
+        cards.forEach((card, index) => {
+            if (index < nextCount) card.style.display = 'block';
+        });
+        
+        btn.dataset.visibleCount = nextCount;
+        if (nextCount >= cards.length) {
+            btn.style.display = 'none';
+        } else {
+            btn.innerHTML = `View More Questions (${cards.length - nextCount} left) <i class="fa-solid fa-angle-down" style="margin-left:8px;"></i>`;
+        }
+    };
+
+    window.toggleExplanation = function(btn) {
+        const expBox = btn.nextElementSibling;
+        if (expBox.style.display === 'none' || expBox.style.display === '') {
+            expBox.style.display = 'block';
+            btn.innerHTML = '<i class="fa-solid fa-minus"></i> Hide Explanation';
+            btn.classList.remove('accent');
+            btn.classList.add('secondary');
+        } else {
+            expBox.style.display = 'none';
+            btn.innerHTML = '<i class="fa-solid fa-plus"></i> View Explanation';
+            btn.classList.remove('secondary');
+            btn.classList.add('accent');
+        }
+    };
+
+    // Week Toggling
+    document.querySelectorAll('.week-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            // Remove active from all buttons
+            document.querySelectorAll('.week-btn').forEach(b => b.classList.remove('active'));
+            // Add active to clicked button
+            btn.classList.add('active');
+            
+            // Hide all content
+            document.querySelectorAll('.week-content').forEach(w => w.style.display = 'none');
+            // Show corresponding content
+            document.getElementById(btn.dataset.week).style.display = 'block';
+        });
+    });
+    
+    // Initialize
+    setupPagination();
+</script>
+
+</body>
+</html>

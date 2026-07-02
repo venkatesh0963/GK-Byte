@@ -1,0 +1,3543 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GK BYTE - June Geography. Weekly curated questions to test your knowledge.">
+    <title>GK BYTE | June Geography Quiz</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Poppins for Headings, Inter for Body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Variables for Material Design & Theming */
+        :root {
+            /* Light Theme Colors */
+            --bg-color: #f8fafc; 
+            --surface-color: #ffffff;
+            --text-color: #222222;
+            --text-muted: #555555;
+            --primary-color: #2563EB; 
+            --primary-hover: #1d4ed8;
+            --secondary-bg: #f1f5f9;
+            --accent-green: #10b981; 
+            --error-red: #ef4444; 
+            --border-color: #e2e8f0;
+            
+            /* Material Shadows */
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            
+            /* Typography */
+            --font-body: 'Inter', sans-serif;
+            --font-heading: 'Poppins', sans-serif;
+        }
+
+        [data-theme="dark"] {
+            /* Dark Theme Colors */
+            --bg-color: #121212;
+            --surface-color: #1e1e1e;
+            --text-color: #e5e5e5;
+            --text-muted: #a3a3a3;
+            --primary-color: #3b82f6;
+            --primary-hover: #60a5fa;
+            --secondary-bg: #2d2d2d;
+            --border-color: #333333;
+            
+            /* Shadows for Dark Mode */
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-body);
+            font-size: 16px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s ease, color 0.3s ease;
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+        
+        h1, h2, h3, h4 { 
+            font-family: var(--font-heading); 
+            color: var(--text-color);
+            line-height: 1.3;
+        }
+
+        /* Material Utility Classes */
+        .mat-card {
+            background-color: var(--surface-color);
+            border-radius: 12px;
+            box-shadow: var(--shadow-sm);
+            padding: 30px;
+            border: 1px solid var(--border-color);
+        }
+
+        .mat-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background-color: var(--primary-color);
+            color: #ffffff !important;
+            font-weight: 500;
+            font-family: var(--font-body);
+            border-radius: 8px;
+            box-shadow: var(--shadow-sm);
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.2s, box-shadow 0.2s, transform 0.1s;
+            font-size: 1rem;
+            letter-spacing: 0.3px;
+        }
+
+        .mat-btn:hover { 
+            background-color: var(--primary-hover);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .mat-btn:active { 
+            transform: scale(0.98); 
+            box-shadow: var(--shadow-sm); 
+        }
+
+        .mat-btn.secondary { 
+            background-color: transparent;
+            color: var(--primary-color) !important;
+            border: 2px solid var(--primary-color);
+            box-shadow: none;
+        }
+
+        .mat-btn.secondary:hover {
+            background-color: rgba(37, 99, 235, 0.05);
+        }
+        
+        [data-theme="dark"] .mat-btn.secondary:hover {
+            background-color: rgba(59, 130, 246, 0.1);
+        }
+        
+        .mat-btn.accent {
+            background-color: var(--accent-green);
+        }
+        .mat-btn.accent:hover {
+            background-color: #059669;
+        }
+
+        /* Header & Navigation */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: var(--surface-color);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: var(--shadow-sm);
+            border-bottom: 1px solid var(--border-color);
+            transition: background-color 0.3s ease;
+        }
+
+        .logo a {
+            font-family: var(--font-heading);
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--text-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        .logo a i {
+            color: var(--primary-color);
+        }
+
+        nav { display: flex; align-items: center; gap: 24px; }
+        nav ul { display: flex; align-items: center; gap: 8px; }
+
+        nav a.nav-link {
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: background-color 0.2s, color 0.2s;
+            color: var(--text-color);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        nav a.nav-link:hover, .dropdown.active > a.nav-link {
+            background-color: var(--secondary-bg);
+            color: var(--primary-color);
+        }
+
+        /* Dropdown */
+        .dropdown { position: relative; }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 120%;
+            left: 50%;
+            transform: translateX(-50%) translateY(10px);
+            background-color: var(--surface-color);
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            min-width: 220px;
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
+            z-index: 100;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        .dropdown-menu a {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 16px;
+            border-radius: 8px;
+            transition: background-color 0.2s;
+            font-weight: 500;
+            color: var(--text-color);
+            font-size: 0.95rem;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: var(--secondary-bg);
+            color: var(--primary-color);
+        }
+
+        /* Actions (Toggle & Quiz Btn) */
+        .nav-actions { display: flex; align-items: center; gap: 16px; }
+
+        .theme-toggle {
+            background: var(--secondary-bg);
+            border: none;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            cursor: pointer;
+            color: var(--text-color);
+            transition: background-color 0.2s, transform 0.2s;
+        }
+
+        .theme-toggle:hover {
+            background-color: var(--border-color);
+            transform: scale(1.05);
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 28px;
+            color: var(--text-color);
+            cursor: pointer;
+        }
+
+        /* Quiz Page Styles */
+        .section { padding: 60px 5%; max-width: 1200px; margin: 0 auto; min-height: 80vh; }
+        
+        .page-title { 
+            text-align: center; 
+            margin-bottom: 48px; 
+            font-size: 2.5rem; 
+            font-weight: 800;
+        }
+
+        .week-nav { 
+            display: flex; 
+            justify-content: center; 
+            gap: 16px; 
+            margin-bottom: 48px; 
+            flex-wrap: wrap; 
+        }
+        
+        .week-btn { 
+            background-color: var(--surface-color); 
+            color: var(--text-muted); 
+            font-size: 1rem; 
+            padding: 12px 24px; 
+            border-radius: 24px; 
+            transition: all 0.2s; 
+            border: 1px solid var(--border-color); 
+            font-weight: 600; 
+            font-family: var(--font-body);
+            display: flex; 
+            align-items: center; 
+            gap: 8px; 
+            cursor: pointer;
+        }
+        .week-btn:hover { 
+            border-color: var(--primary-color); 
+            color: var(--primary-color); 
+        }
+        .week-btn.active { 
+            background-color: var(--primary-color); 
+            color: white; 
+            border-color: var(--primary-color);
+            box-shadow: var(--shadow-sm); 
+        }
+        
+        .question-card { 
+            margin-bottom: 40px; 
+            text-align: left; 
+            animation: fadeIn 0.4s ease; 
+            display: none; 
+            padding: 32px;
+        }
+        
+        @keyframes fadeIn { 
+            from { opacity: 0; transform: translateY(10px); } 
+            to { opacity: 1; transform: translateY(0); } 
+        }
+
+        .question-text { 
+            font-size: 1.15rem; 
+            font-weight: 600; 
+            margin-bottom: 24px; 
+            padding: 20px 24px; 
+            background-color: var(--secondary-bg); 
+            color: var(--text-color); 
+            border-left: 4px solid var(--primary-color); 
+            border-radius: 8px;
+            line-height: 1.6; 
+        }
+
+        .options-grid { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 16px; 
+            margin-bottom: 24px; 
+        }
+        
+        .option { 
+            background-color: var(--surface-color); 
+            border: 1px solid var(--border-color);
+            padding: 16px 20px; 
+            border-radius: 12px; 
+            font-weight: 500; 
+            transition: all 0.2s ease; 
+            display: flex; 
+            align-items: center; 
+            gap: 16px; 
+            font-size: 1rem; 
+            cursor: pointer;
+        }
+        
+        .option:hover { 
+            border-color: var(--primary-color);
+            background-color: rgba(37, 99, 235, 0.05);
+            color: var(--primary-color); 
+        }
+        
+        [data-theme="dark"] .option:hover {
+            background-color: rgba(59, 130, 246, 0.1);
+        }
+
+        .option-letter { 
+            background: var(--primary-color); 
+            color: white; 
+            width: 32px; 
+            height: 32px; 
+            display: inline-flex; 
+            align-items: center; 
+            justify-content: center; 
+            border-radius: 50%; 
+            font-weight: 600; 
+            font-size: 0.9rem; 
+            flex-shrink: 0; 
+        }
+
+        .explanation-box { 
+            margin-top: 24px; 
+            background-color: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            border-left: 4px solid var(--accent-green); 
+            padding: 20px 24px; 
+            border-radius: 8px; 
+            display: none; 
+            animation: slideDown 0.3s ease; 
+        }
+        
+        [data-theme="dark"] .explanation-box {
+            background-color: rgba(16, 185, 129, 0.15);
+        }
+        
+        @keyframes slideDown { 
+            from { opacity: 0; transform: translateY(-10px); } 
+            to { opacity: 1; transform: translateY(0); } 
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--surface-color); padding: 80px 5% 40px; margin-top: 80px;
+            border-top: 1px solid var(--border-color);
+        }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 40px; max-width: 1280px; margin: 0 auto 60px; }
+        
+        .footer-col { display: flex; flex-direction: column; }
+        .footer-col h4 { font-size: 1.125rem; margin-bottom: 24px; font-weight: 600; color: var(--text-color); }
+        .footer-links { display: flex; flex-direction: column; gap: 12px; }
+        .footer-links a { color: var(--text-muted); transition: color 0.2s; display: inline-block; font-size: 0.95rem; }
+        .footer-links a:hover { color: var(--primary-color); }
+        
+        .newsletter form { display: flex; flex-direction: column; gap: 8px; margin-top: 16px; }
+        .newsletter input {
+            padding: 12px 16px; border: 1px solid var(--border-color); border-radius: 8px;
+            background: var(--bg-color); color: var(--text-color); outline: none;
+            font-family: var(--font-body); transition: border-color 0.2s;
+        }
+        .newsletter input:focus { border-color: var(--primary-color); }
+        
+        .footer-bottom { text-align: center; padding-top: 24px; border-top: 1px solid var(--border-color); color: var(--text-muted); font-size: 0.875rem; }
+
+        @media (max-width: 768px) {
+            .menu-toggle { display: block; }
+            nav {
+                position: absolute; top: 100%; left: 0; width: 100%; background-color: var(--surface-color);
+                padding: 24px 5%; flex-direction: column; box-shadow: var(--shadow-md);
+                opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.3s ease;
+                border-bottom: 1px solid var(--border-color);
+            }
+            nav.active { opacity: 1; visibility: visible; transform: translateY(0); }
+            nav ul { flex-direction: column; width: 100%; gap: 8px; }
+            nav ul li { width: 100%; text-align: center; }
+            nav a.nav-link { width: 100%; justify-content: center; }
+            
+            .dropdown-menu {
+                position: static; transform: none; box-shadow: none; border: none;
+                display: none; opacity: 1; visibility: visible; padding: 10px 0;
+                background-color: transparent;
+            }
+            .dropdown.active .dropdown-menu { display: flex; }
+            
+            .nav-actions { width: 100%; justify-content: center; margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--border-color); }
+            
+            .options-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; text-align: center; }
+        }
+         /* Scroll to Top Button */
+        .scroll-top-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            box-shadow: var(--shadow-md);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+        .scroll-top-btn.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .scroll-top-btn:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+    </style>
+</head>
+<body>
+<!-- Scroll to Top Button -->
+<button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <i class="fa-solid fa-graduation-cap"></i> GK BYTE
+        </a>
+    </div>
+    <nav id="nav-menu">
+        <ul>
+            <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="nav-link"><i class="fa-solid fa-book-open"></i> Subjects <i class="fa-solid fa-chevron-down" style="font-size: 0.8em; margin-left:5px;"></i></a>
+                <div class="dropdown-menu">
+                    <a href="history.html"><i class="fa-solid fa-landmark"></i> History</a>
+                    <a href="politics.html"><i class="fa-solid fa-gavel"></i> Politics</a>
+                    <a href="economics.html"><i class="fa-solid fa-chart-line"></i> Economics</a>
+                    <a href="current-affairs.html"><i class="fa-solid fa-newspaper"></i> Current Affairs</a>
+                    <a href="geography.html"><i class="fa-solid fa-earth-americas"></i> Geography</a>
+                </div>
+            </li>
+            <li><a href="index.html#about" class="nav-link"><i class="fa-solid fa-circle-info"></i> About</a></li>
+            <li><a href="index.html#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="quiz.html" class="mat-btn accent"><i class="fa-solid fa-gamepad"></i> GK Quiz</a>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode"><i class="fa-solid fa-moon"></i></button>
+        </div>
+    </nav>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+</header>
+
+<section class="section">
+    <h1 class="page-title">June Geography Quiz</h1>
+    
+    <div class="week-nav">
+        <button class="week-btn active" data-week="week1"><i class="fa-regular fa-calendar-check"></i> Week 1</button>
+        <button class="week-btn" data-week="week2"><i class="fa-regular fa-calendar-check"></i> Week 2</button>
+        <button class="week-btn" data-week="week3"><i class="fa-regular fa-calendar-check"></i> Week 3</button>
+        <button class="week-btn" data-week="week4"><i class="fa-regular fa-calendar-check"></i> Week 4</button>
+    </div>
+
+    <!-- WEEK 1 -->
+    <div id="week1" class="week-content" style="display: block;">
+        <!-- Q1 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q1: Which is the largest continent in the world by area?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Africa</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Europe</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Asia</span></div>
+        <div class="option"><span class="option-letter">D</span><span>North America</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Asia
+        </strong>
+        <p>Asia is the largest continent, covering about 30% of the Earth's total land area.</p>
+    </div>
+</div>
+
+<!-- Q2 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q2: Which is the longest river in the world?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Amazon</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Nile</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Yangtze</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Mississippi</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Nile
+        </strong>
+        <p>The Nile River, flowing through northeastern Africa, is traditionally regarded as the world's longest river.</p>
+    </div>
+</div>
+
+<!-- Q3 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q3: Which is the highest mountain peak in the world?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>K2</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Kanchenjunga</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Mount Everest</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Lhotse</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Mount Everest
+        </strong>
+        <p>Mount Everest, located in the Himalayas, is the highest peak above sea level at 8,848.86 metres.</p>
+    </div>
+</div>
+
+<!-- Q4 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q4: Which is the largest ocean on Earth?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Atlantic Ocean</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Indian Ocean</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Arctic Ocean</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Pacific Ocean</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: D) Pacific Ocean
+        </strong>
+        <p>The Pacific Ocean is the largest and deepest ocean on Earth.</p>
+    </div>
+</div>
+
+<!-- Q5 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q5: Which desert is the largest hot desert in the world?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Gobi Desert</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Sahara Desert</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Thar Desert</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Kalahari Desert</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Sahara Desert
+        </strong>
+        <p>The Sahara Desert in North Africa is the world's largest hot desert.</p>
+    </div>
+</div>
+
+<!-- Q6 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q6: Which latitude is known as the Equator?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>23.5° North</span></div>
+        <div class="option"><span class="option-letter">B</span><span>66.5° North</span></div>
+        <div class="option"><span class="option-letter">C</span><span>0° Latitude</span></div>
+        <div class="option"><span class="option-letter">D</span><span>90° Latitude</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) 0° Latitude
+        </strong>
+        <p>The Equator is located at 0° latitude and divides the Earth into the Northern and Southern Hemispheres.</p>
+    </div>
+</div>
+
+<!-- Q7 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q7: Which is the largest country in the world by area?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Canada</span></div>
+        <div class="option"><span class="option-letter">B</span><span>China</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Russia</span></div>
+        <div class="option"><span class="option-letter">D</span><span>United States</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Russia
+        </strong>
+        <p>Russia is the largest country in the world, extending across Europe and Asia.</p>
+    </div>
+</div>
+
+<!-- Q8 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q8: Which line divides the Earth into the Northern and Southern Hemispheres?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Tropic of Cancer</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Prime Meridian</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Equator</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Arctic Circle</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Equator
+        </strong>
+        <p>The Equator is an imaginary line at 0° latitude that divides the Earth into two equal halves.</p>
+    </div>
+</div>
+
+<!-- Q9 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q9: Which is the smallest continent in the world?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Europe</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Australia</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Antarctica</span></div>
+        <div class="option"><span class="option-letter">D</span><span>South America</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Australia
+        </strong>
+        <p>Australia is the smallest continent by land area.</p>
+    </div>
+</div>
+
+<!-- Q10 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q10: Which ocean lies between Africa, Asia, and Australia?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Pacific Ocean</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Atlantic Ocean</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Indian Ocean</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Southern Ocean</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Indian Ocean
+        </strong>
+        <p>The Indian Ocean is bounded by Africa, Asia, Australia, and the Southern Ocean.</p>
+    </div>
+</div>
+
+<!-- Q11 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q11: Which is the largest island in the world?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Greenland</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Madagascar</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Borneo</span></div>
+        <div class="option"><span class="option-letter">D</span><span>New Guinea</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Greenland
+        </strong>
+        <p>Greenland is the world's largest island that is not considered a continent.</p>
+    </div>
+</div>
+
+<!-- Q12 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q12: Which imaginary line passes through Greenwich, England?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Equator</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Prime Meridian</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Tropic of Capricorn</span></div>
+        <div class="option"><span class="option-letter">D</span><span>International Date Line</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Prime Meridian
+        </strong>
+        <p>The Prime Meridian (0° longitude) passes through Greenwich in London.</p>
+    </div>
+</div>
+
+<!-- Q13 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q13: Which plateau is known as the "Roof of the World"?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Deccan Plateau</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Tibetan Plateau</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Colorado Plateau</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Brazilian Plateau</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Tibetan Plateau
+        </strong>
+        <p>The Tibetan Plateau is called the "Roof of the World" because of its high average elevation.</p>
+    </div>
+</div>
+
+<!-- Q14 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q14: Which is the largest freshwater lake in the world by surface area?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Lake Superior</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Lake Victoria</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Lake Baikal</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Lake Tanganyika</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Lake Superior
+        </strong>
+        <p>Lake Superior is the largest freshwater lake in the world by surface area.</p>
+    </div>
+</div>
+
+<!-- Q15 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q15: Which mountain range separates Europe and Asia?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Andes</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Alps</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Ural Mountains</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Rocky Mountains</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Ural Mountains
+        </strong>
+        <p>The Ural Mountains form the traditional natural boundary between Europe and Asia.</p>
+    </div>
+</div>
+<!-- Q16 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q16: Which is the deepest ocean in the world?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Atlantic Ocean</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Indian Ocean</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Pacific Ocean</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Arctic Ocean</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Pacific Ocean
+        </strong>
+        <p>The Pacific Ocean contains the Mariana Trench, the deepest part of the world's oceans.</p>
+    </div>
+</div>
+
+<!-- Q17 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q17: Which river is known as the "Sorrow of Bihar"?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Godavari</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Kosi</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Krishna</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Narmada</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Kosi
+        </strong>
+        <p>The Kosi River frequently changes its course and causes severe floods in Bihar.</p>
+    </div>
+</div>
+
+<!-- Q18 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q18: Which is the largest peninsula in the world?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Indian Peninsula</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Arabian Peninsula</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Iberian Peninsula</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Scandinavian Peninsula</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Arabian Peninsula
+        </strong>
+        <p>The Arabian Peninsula is the largest peninsula in the world.</p>
+    </div>
+</div>
+
+<!-- Q19 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q19: Which is the smallest ocean in the world?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Indian Ocean</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Southern Ocean</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Arctic Ocean</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Atlantic Ocean</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Arctic Ocean
+        </strong>
+        <p>The Arctic Ocean is the smallest and shallowest of the world's oceans.</p>
+    </div>
+</div>
+
+<!-- Q20 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q20: Which is the largest delta in the world?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Nile Delta</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Mississippi Delta</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Sundarbans Delta</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Mekong Delta</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Sundarbans Delta
+        </strong>
+        <p>The Ganga-Brahmaputra (Sundarbans) Delta is the world's largest delta.</p>
+    </div>
+</div>
+
+<!-- Q21 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q21: Which country is known as the "Land of the Rising Sun"?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>China</span></div>
+        <div class="option"><span class="option-letter">B</span><span>South Korea</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Japan</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Thailand</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Japan
+        </strong>
+        <p>Japan is called the "Land of the Rising Sun" because it lies east of the Asian continent.</p>
+    </div>
+</div>
+
+<!-- Q22 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q22: Which is the largest coral reef system in the world?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Belize Barrier Reef</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Great Barrier Reef</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Red Sea Reef</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Maldives Reef</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Great Barrier Reef
+        </strong>
+        <p>The Great Barrier Reef, off Australia's coast, is the world's largest coral reef system.</p>
+    </div>
+</div>
+
+<!-- Q23 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q23: Which is the highest waterfall in the world?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Victoria Falls</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Niagara Falls</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Angel Falls</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Iguazu Falls</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Angel Falls
+        </strong>
+        <p>Angel Falls in Venezuela is the highest uninterrupted waterfall in the world.</p>
+    </div>
+</div>
+
+<!-- Q24 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q24: Which is the largest bay in the world?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Bay of Bengal</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Hudson Bay</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Gulf of Mexico</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Bay of Biscay</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Bay of Bengal
+        </strong>
+        <p>The Bay of Bengal is the largest bay in the world.</p>
+    </div>
+</div>
+
+<!-- Q25 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q25: Which continent has the most countries?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Asia</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Africa</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Europe</span></div>
+        <div class="option"><span class="option-letter">D</span><span>South America</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Africa
+        </strong>
+        <p>Africa has 54 internationally recognized sovereign countries.</p>
+    </div>
+</div>
+
+<!-- Q26 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q26: Which is the largest inland sea in the world?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Black Sea</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Caspian Sea</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Red Sea</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Dead Sea</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Caspian Sea
+        </strong>
+        <p>The Caspian Sea is the world's largest enclosed inland body of water.</p>
+    </div>
+</div>
+
+<!-- Q27 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q27: Which line marks 23½° North latitude?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Equator</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Tropic of Cancer</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Tropic of Capricorn</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Prime Meridian</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Tropic of Cancer
+        </strong>
+        <p>The Tropic of Cancer is located at approximately 23½° North latitude.</p>
+    </div>
+</div>
+
+<!-- Q28 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q28: Which country has the longest coastline in the world?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Australia</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Russia</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Canada</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Indonesia</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Canada
+        </strong>
+        <p>Canada has the world's longest coastline, stretching over 200,000 km.</p>
+    </div>
+</div>
+
+<!-- Q29 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q29: Which is the coldest continent on Earth?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Europe</span></div>
+        <div class="option"><span class="option-letter">B</span><span>North America</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Antarctica</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Asia</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Antarctica
+        </strong>
+        <p>Antarctica is the coldest, driest, and windiest continent.</p>
+    </div>
+</div>
+
+<!-- Q30 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q30: Which is the world's largest archipelago?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Philippines</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Indonesia</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Japan</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Maldives</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Indonesia
+        </strong>
+        <p>Indonesia is the world's largest archipelagic nation with over 17,000 islands.</p>
+    </div>
+</div>
+<!-- Q31 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q31: Which is the largest plateau in the world?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Deccan Plateau</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Tibetan Plateau</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Colorado Plateau</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Brazilian Plateau</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Tibetan Plateau
+        </strong>
+        <p>The Tibetan Plateau is the largest and highest plateau in the world, often called the "Roof of the World."</p>
+    </div>
+</div>
+
+<!-- Q32 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q32: Which strait separates Asia from North America?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Strait of Gibraltar</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Bering Strait</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Strait of Malacca</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Bab-el-Mandeb</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Bering Strait
+        </strong>
+        <p>The Bering Strait separates Russia (Asia) from Alaska (North America).</p>
+    </div>
+</div>
+
+<!-- Q33 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q33: Which country is known as the "Land of a Thousand Lakes"?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Sweden</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Norway</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Finland</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Iceland</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Finland
+        </strong>
+        <p>Finland is called the "Land of a Thousand Lakes" because it has over 188,000 lakes.</p>
+    </div>
+</div>
+
+<!-- Q34 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q34: Which continent is crossed by both the Equator and the Prime Meridian?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Asia</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Africa</span></div>
+        <div class="option"><span class="option-letter">C</span><span>South America</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Europe</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Africa
+        </strong>
+        <p>Africa is the only continent crossed by both the Equator (0° latitude) and the Prime Meridian (0° longitude).</p>
+    </div>
+</div>
+
+<!-- Q35 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q35: Which is the largest tropical rainforest in the world?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Congo Rainforest</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Daintree Rainforest</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Amazon Rainforest</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Valdivian Rainforest</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Amazon Rainforest
+        </strong>
+        <p>The Amazon Rainforest in South America is the largest tropical rainforest on Earth and is home to immense biodiversity.</p>
+    </div>
+</div>
+
+        
+        <div style="text-align: center; margin-top: 40px;">
+            <button class="mat-btn secondary view-more-btn" onclick="loadMore(this, 'week1')">
+                View More Questions <i class="fa-solid fa-angle-down" style="margin-left:8px;"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- WEEK 2 -->
+    <div id="week2" class="week-content" style="display: none;">
+<!-- Q36 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q36: Which is the largest river island in the world?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Majuli</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Sri Lanka</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Borneo</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Greenland</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Majuli
+        </strong>
+        <p>Majuli, located in the Brahmaputra River in Assam, is the world's largest inhabited river island.</p>
+    </div>
+</div>
+
+<!-- Q37 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q37: Which is the saltiest ocean in the world?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Atlantic Ocean</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Pacific Ocean</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Indian Ocean</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Arctic Ocean</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Atlantic Ocean
+        </strong>
+        <p>The Atlantic Ocean has the highest average salinity among the world's oceans.</p>
+    </div>
+</div>
+
+<!-- Q38 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q38: Which country has the largest population in the world?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>China</span></div>
+        <div class="option"><span class="option-letter">B</span><span>India</span></div>
+        <div class="option"><span class="option-letter">C</span><span>United States</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Indonesia</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) India
+        </strong>
+        <p>India is currently the world's most populous country, surpassing China.</p>
+    </div>
+</div>
+
+<!-- Q39 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q39: Which mountain range separates Europe from Asia?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Andes</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Rockies</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Ural Mountains</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Alps</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Ural Mountains
+        </strong>
+        <p>The Ural Mountains are traditionally regarded as the natural boundary between Europe and Asia.</p>
+    </div>
+</div>
+
+<!-- Q40 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q40: Which is the largest gulf in the world?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Gulf of Mexico</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Persian Gulf</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Gulf of Aden</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Gulf of California</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Gulf of Mexico
+        </strong>
+        <p>The Gulf of Mexico is the largest gulf in the world by surface area.</p>
+    </div>
+</div>
+
+<!-- Q41 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q41: Which country is called the "Land of Midnight Sun"?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Norway</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Japan</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Brazil</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Australia</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Norway
+        </strong>
+        <p>Norway experiences the Midnight Sun during summer in areas north of the Arctic Circle.</p>
+    </div>
+</div>
+
+<!-- Q42 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q42: Which is the largest peninsula in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Deccan Plateau</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Deccan Peninsula</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Saurashtra Peninsula</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Malabar Coast</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Deccan Peninsula
+        </strong>
+        <p>The Deccan Peninsula forms the largest peninsular region of India.</p>
+    </div>
+</div>
+
+<!-- Q43 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q43: Which is the largest freshwater lake in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Dal Lake</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Wular Lake</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Loktak Lake</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Chilika Lake</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Wular Lake
+        </strong>
+        <p>Wular Lake in Jammu and Kashmir is India's largest freshwater lake.</p>
+    </div>
+</div>
+
+<!-- Q44 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q44: Which Indian river is known as the "Dakshin Ganga"?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Krishna</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Godavari</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Kaveri</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Mahanadi</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Godavari
+        </strong>
+        <p>The Godavari River is popularly known as the "Dakshin Ganga" (Ganga of the South).</p>
+    </div>
+</div>
+
+<!-- Q45 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q45: Which state has the longest coastline in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Tamil Nadu</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Andhra Pradesh</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Gujarat</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Maharashtra</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Gujarat
+        </strong>
+        <p>Gujarat has the longest coastline among Indian states, measuring about 1,600 km.</p>
+    </div>
+</div>
+
+<!-- Q46 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q46: Which is the largest desert in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Thar Desert</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Rann of Kutch</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Ladakh Desert</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Cold Desert</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Thar Desert
+        </strong>
+        <p>The Thar Desert, also known as the Great Indian Desert, is India's largest desert.</p>
+    </div>
+</div>
+
+<!-- Q47 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q47: Which is the southernmost point of mainland India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Indira Point</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Kanyakumari</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Rameswaram</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Kochi</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Kanyakumari
+        </strong>
+        <p>Kanyakumari is the southernmost point of mainland India, while Indira Point is the southernmost point of India.</p>
+    </div>
+</div>
+
+<!-- Q48 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q48: Which is the highest plateau in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Malwa Plateau</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Ladakh Plateau</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Deccan Plateau</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Chota Nagpur Plateau</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Ladakh Plateau
+        </strong>
+        <p>The Ladakh Plateau is India's highest plateau, located in the northern Himalayas.</p>
+    </div>
+</div>
+
+<!-- Q49 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q49: Which pass connects Srinagar with Leh?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Nathu La</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Zoji La</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Shipki La</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Bomdi La</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Zoji La
+        </strong>
+        <p>Zoji La is a major Himalayan mountain pass connecting Srinagar with Leh.</p>
+    </div>
+</div>
+
+<!-- Q50 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q50: Which Indian state is known as the "Spice Garden of India"?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Karnataka</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Kerala</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Tamil Nadu</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Goa</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Kerala
+        </strong>
+        <p>Kerala is known as the "Spice Garden of India" because of its abundant production of spices such as pepper, cardamom, and cloves.</p>
+    </div>
+</div>
+<!-- Q51 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q51: Which Indian river forms the famous Jog Falls?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Godavari</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Sharavathi</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Krishna</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Tungabhadra</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Sharavathi
+        </strong>
+        <p>Jog Falls is formed by the Sharavathi River in Karnataka.</p>
+    </div>
+</div>
+
+<!-- Q52 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q52: Which is the highest peak in South India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Doddabetta</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Mullayanagiri</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Anamudi</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Mahendragiri</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Anamudi
+        </strong>
+        <p>Anamudi (2,695 m) in Kerala is the highest peak in South India.</p>
+    </div>
+</div>
+
+<!-- Q53 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q53: Which is the largest mangrove forest in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Bhitarkanika</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Pichavaram</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Sundarbans</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Godavari Mangroves</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Sundarbans
+        </strong>
+        <p>The Sundarbans in West Bengal is India's largest mangrove forest.</p>
+    </div>
+</div>
+
+<!-- Q54 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q54: Which is the longest dam in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Bhakra Dam</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Hirakud Dam</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Tehri Dam</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Sardar Sarovar Dam</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Hirakud Dam
+        </strong>
+        <p>Hirakud Dam on the Mahanadi River is the longest earthen dam in India.</p>
+    </div>
+</div>
+
+<!-- Q55 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q55: Which state has the largest forest area in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Madhya Pradesh</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Arunachal Pradesh</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Maharashtra</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Odisha</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Madhya Pradesh
+        </strong>
+        <p>Madhya Pradesh has the largest forest area among Indian states.</p>
+    </div>
+</div>
+
+<!-- Q56 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q56: Which is the largest brackish water lagoon in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Pulicat Lake</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Chilika Lake</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Loktak Lake</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Vembanad Lake</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Chilika Lake
+        </strong>
+        <p>Chilika Lake in Odisha is the largest brackish water lagoon in India.</p>
+    </div>
+</div>
+
+<!-- Q57 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q57: Which river is called the "River of Karnataka"?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Tungabhadra</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Krishna</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Kaveri</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Sharavathi</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Kaveri
+        </strong>
+        <p>The Kaveri is often referred to as the lifeline or river of Karnataka.</p>
+    </div>
+</div>
+
+<!-- Q58 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q58: Which Indian state shares the longest international border?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Punjab</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Rajasthan</span></div>
+        <div class="option"><span class="option-letter">C</span><span>West Bengal</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Jammu & Kashmir</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Rajasthan
+        </strong>
+        <p>Rajasthan shares the longest international border with Pakistan.</p>
+    </div>
+</div>
+
+<!-- Q59 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q59: Which plateau is rich in mineral resources in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Malwa Plateau</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Shillong Plateau</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Chota Nagpur Plateau</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Deccan Plateau</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Chota Nagpur Plateau
+        </strong>
+        <p>Chota Nagpur Plateau is India's richest mineral-producing region.</p>
+    </div>
+</div>
+
+<!-- Q60 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q60: Which Indian state is the largest producer of coffee?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Kerala</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Tamil Nadu</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Karnataka</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Andhra Pradesh</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Karnataka
+        </strong>
+        <p>Karnataka produces about 70% of India's coffee.</p>
+    </div>
+</div>
+<!-- Q61 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q61: Which is the largest tea-producing state in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>West Bengal</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Kerala</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Assam</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Tamil Nadu</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Assam
+        </strong>
+        <p>Assam is the largest tea-producing state in India and is famous for Assam Tea.</p>
+    </div>
+</div>
+
+<!-- Q62 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q62: Which is the highest dam in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Bhakra Dam</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Tehri Dam</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Hirakud Dam</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Sardar Sarovar Dam</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Tehri Dam
+        </strong>
+        <p>Tehri Dam in Uttarakhand is the highest dam in India.</p>
+    </div>
+</div>
+
+<!-- Q63 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q63: Which is the longest river in South India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Krishna</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Godavari</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Kaveri</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Tungabhadra</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Godavari
+        </strong>
+        <p>Godavari is the longest river in South India and is known as the Dakshin Ganga.</p>
+    </div>
+</div>
+
+<!-- Q64 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q64: Which is the largest saltwater lake in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Pulicat Lake</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Chilika Lake</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Sambhar Lake</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Loktak Lake</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Chilika Lake
+        </strong>
+        <p>Chilika Lake in Odisha is India's largest saltwater lagoon.</p>
+    </div>
+</div>
+
+<!-- Q65 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q65: Which Indian state is known as the "Land of Five Rivers"?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Haryana</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Punjab</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Uttar Pradesh</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Rajasthan</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Punjab
+        </strong>
+        <p>The name Punjab means "Land of Five Rivers."</p>
+    </div>
+</div>
+
+<!-- Q66 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q66: Which is the highest waterfall in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Jog Falls</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Dudhsagar Falls</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Kunchikal Falls</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Athirappilly Falls</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Kunchikal Falls
+        </strong>
+        <p>Kunchikal Falls in Karnataka is the highest waterfall in India.</p>
+    </div>
+</div>
+
+<!-- Q67 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q67: Which is the largest delta in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Mahanadi Delta</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Krishna Delta</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Sundarbans Delta</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Godavari Delta</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Sundarbans Delta
+        </strong>
+        <p>The Sundarbans (Ganga-Brahmaputra) Delta is the largest delta in India and the world.</p>
+    </div>
+</div>
+
+<!-- Q68 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q68: Which river flows through the Grand Canyon?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Mississippi</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Colorado</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Amazon</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Yukon</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Colorado
+        </strong>
+        <p>The Colorado River carved the famous Grand Canyon in the United States.</p>
+    </div>
+</div>
+
+<!-- Q69 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q69: Which Indian state has the highest literacy rate?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Tamil Nadu</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Kerala</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Maharashtra</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Goa</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Kerala
+        </strong>
+        <p>Kerala has the highest literacy rate among Indian states.</p>
+    </div>
+</div>
+
+
+        <div style="text-align: center; margin-top: 40px;">
+            <button class="mat-btn secondary view-more-btn" onclick="loadMore(this, 'week2')">
+                View More Questions <i class="fa-solid fa-angle-down" style="margin-left:8px;"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- WEEK 3 -->
+    <div id="week3" class="week-content" style="display: none;">
+<!-- Q70 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q70: Which is the longest National Highway in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>NH-16</span></div>
+        <div class="option"><span class="option-letter">B</span><span>NH-44</span></div>
+        <div class="option"><span class="option-letter">C</span><span>NH-27</span></div>
+        <div class="option"><span class="option-letter">D</span><span>NH-48</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) NH-44
+        </strong>
+        <p>NH-44 is the longest National Highway in India, connecting Srinagar to Kanyakumari.</p>
+    </div>
+</div>
+
+<!-- Q71 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q71: Which is the smallest state in India by area?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Goa</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Sikkim</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Tripura</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Mizoram</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Goa
+        </strong>
+        <p>Goa is India's smallest state by area.</p>
+    </div>
+</div>
+
+<!-- Q72 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q72: Which is the largest state in India by area?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Madhya Pradesh</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Maharashtra</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Rajasthan</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Uttar Pradesh</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Rajasthan
+        </strong>
+        <p>Rajasthan is the largest state in India by area.</p>
+    </div>
+</div>
+
+<!-- Q73 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q73: Which Indian state has the longest coastline?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Andhra Pradesh</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Tamil Nadu</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Gujarat</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Maharashtra</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Gujarat
+        </strong>
+        <p>Gujarat has the longest coastline among Indian states.</p>
+    </div>
+</div>
+
+<!-- Q74 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q74: Which river is known as the "Yellow River"?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Yangtze</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Mekong</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Huang He</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Amur</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Huang He
+        </strong>
+        <p>The Huang He in China is popularly known as the Yellow River.</p>
+    </div>
+</div>
+
+<!-- Q75 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q75: Which is the largest continent by population?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Africa</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Europe</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Asia</span></div>
+        <div class="option"><span class="option-letter">D</span><span>North America</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Asia
+        </strong>
+        <p>Asia is the most populous continent, home to nearly 60% of the world's population.</p>
+    </div>
+</div> 
+        <!-- Q76 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q76: Which is the highest active volcano in the world?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Mount Etna</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Ojos del Salado</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Mount Fuji</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Mauna Loa</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Ojos del Salado
+        </strong>
+        <p>Ojos del Salado, located on the Argentina–Chile border, is the world's highest active volcano.</p>
+    </div>
+</div>
+
+<!-- Q77 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q77: Which Indian state is known as the "Land of Rising Sun"?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Assam</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Arunachal Pradesh</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Sikkim</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Nagaland</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Arunachal Pradesh
+        </strong>
+        <p>Arunachal Pradesh is called the "Land of the Rising Sun" because it receives the first sunrise in India.</p>
+    </div>
+</div>
+
+<!-- Q78 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q78: Which is the largest river basin in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Godavari Basin</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Ganga Basin</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Krishna Basin</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Narmada Basin</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Ganga Basin
+        </strong>
+        <p>The Ganga Basin is the largest river basin in India, covering about one-fourth of the country's area.</p>
+    </div>
+</div>
+
+<!-- Q79 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q79: Which is the highest plateau in the world?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Colorado Plateau</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Tibetan Plateau</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Deccan Plateau</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Iranian Plateau</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Tibetan Plateau
+        </strong>
+        <p>The Tibetan Plateau is the world's highest and largest plateau.</p>
+    </div>
+</div>
+
+<!-- Q80 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q80: Which is the world's largest cold desert?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Gobi Desert</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Ladakh Desert</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Antarctic Desert</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Patagonian Desert</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Antarctic Desert
+        </strong>
+        <p>Antarctica is the world's largest cold desert due to its extremely low precipitation.</p>
+    </div>
+</div>
+
+<!-- Q81 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q81: Which river is called the "Lifeline of Egypt"?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Amazon</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Nile</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Congo</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Niger</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Nile
+        </strong>
+        <p>The Nile River is known as the "Lifeline of Egypt" because it supports agriculture and settlements.</p>
+    </div>
+</div>
+
+<!-- Q82 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q82: Which Indian state has the highest population?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Bihar</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Maharashtra</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Uttar Pradesh</span></div>
+        <div class="option"><span class="option-letter">D</span><span>West Bengal</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Uttar Pradesh
+        </strong>
+        <p>Uttar Pradesh is the most populous state in India.</p>
+    </div>
+</div>
+
+<!-- Q83 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q83: Which Indian state has the lowest population?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Goa</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Sikkim</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Mizoram</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Arunachal Pradesh</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Sikkim
+        </strong>
+        <p>Sikkim is the least populous state in India.</p>
+    </div>
+</div>
+
+<!-- Q84 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q84: Which is the largest freshwater lake in the world by volume?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Lake Superior</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Lake Victoria</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Lake Baikal</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Lake Tanganyika</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Lake Baikal
+        </strong>
+        <p>Lake Baikal in Russia contains about 20% of the world's unfrozen freshwater.</p>
+    </div>
+</div>
+
+<!-- Q85 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q85: Which continent has no permanent human population?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Australia</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Antarctica</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Europe</span></div>
+        <div class="option"><span class="option-letter">D</span><span>South America</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Antarctica
+        </strong>
+        <p>Antarctica has no permanent residents, only temporary research personnel.</p>
+    </div>
+</div>
+
+<!-- Q86 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q86: Which is the world's largest peninsula after the Arabian Peninsula?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Indian Peninsula</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Scandinavian Peninsula</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Iberian Peninsula</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Malay Peninsula</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Scandinavian Peninsula
+        </strong>
+        <p>The Scandinavian Peninsula is the second-largest peninsula in the world.</p>
+    </div>
+</div>
+
+<!-- Q87 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q87: Which Indian state is called the "Apple State of India"?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Punjab</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Himachal Pradesh</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Uttarakhand</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Jammu & Kashmir</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Himachal Pradesh
+        </strong>
+        <p>Himachal Pradesh is widely known as the "Apple State of India" due to its large apple production.</p>
+    </div>
+</div>
+
+<!-- Q88 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q88: Which river originates from Amarkantak Plateau?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Godavari</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Narmada</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Krishna</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Kaveri</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Narmada
+        </strong>
+        <p>The Narmada River originates from the Amarkantak Plateau in Madhya Pradesh.</p>
+    </div>
+</div>
+
+<!-- Q89 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q89: Which ocean surrounds the Maldives?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Pacific Ocean</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Atlantic Ocean</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Indian Ocean</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Southern Ocean</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Indian Ocean
+        </strong>
+        <p>The Maldives is an island nation located in the Indian Ocean.</p>
+    </div>
+</div>
+
+<!-- Q90 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q90: Which Indian state is known as the "Land of Festivals"?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Kerala</span></div>
+        <div class="option"><span class="option-letter">B</span><span>West Bengal</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Nagaland</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Rajasthan</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Nagaland
+        </strong>
+        <p>Nagaland is popularly known as the "Land of Festivals" because of its numerous tribal festivals celebrated throughout the year.</p>
+    </div>
+</div>
+<!-- Q91 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q91: Which is the largest island in the world?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Greenland</span></div>
+        <div class="option"><span class="option-letter">B</span><span>New Guinea</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Borneo</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Madagascar</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Greenland
+        </strong>
+        <p>Greenland is the world's largest island that is not considered a continent.</p>
+    </div>
+</div>
+
+<!-- Q92 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q92: Which is the deepest ocean trench in the world?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Tonga Trench</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Java Trench</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Mariana Trench</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Puerto Rico Trench</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Mariana Trench
+        </strong>
+        <p>The Mariana Trench in the Pacific Ocean contains the deepest known point on Earth, Challenger Deep.</p>
+    </div>
+</div>
+
+<!-- Q93 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q93: Which Indian state has the largest coastline on the east coast?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Tamil Nadu</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Andhra Pradesh</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Odisha</span></div>
+        <div class="option"><span class="option-letter">D</span><span>West Bengal</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Andhra Pradesh
+        </strong>
+        <p>Andhra Pradesh has the longest coastline among the states on India's eastern coast.</p>
+    </div>
+</div>
+
+<!-- Q94 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q94: Which mountain pass connects India and Tibet in Sikkim?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Zoji La</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Nathu La</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Shipki La</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Bomdi La</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Nathu La
+        </strong>
+        <p>Nathu La Pass in Sikkim connects India with Tibet and is an important trade route.</p>
+    </div>
+</div>
+
+<!-- Q95 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q95: Which is the largest coral reef system in the world?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Belize Barrier Reef</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Red Sea Reef</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Great Barrier Reef</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Florida Reef</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Great Barrier Reef
+        </strong>
+        <p>The Great Barrier Reef, off Australia's coast, is the world's largest coral reef system.</p>
+    </div>
+</div>
+
+<!-- Q96 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q96: Which Indian river is known as the "Sorrow of Bihar"?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Damodar</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Kosi</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Son</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Gandak</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Kosi
+        </strong>
+        <p>The Kosi River is called the "Sorrow of Bihar" because of its frequent floods.</p>
+    </div>
+</div>
+
+<!-- Q97 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q97: Which is the highest mountain peak in Africa?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Mount Kenya</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Mount Kilimanjaro</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Atlas Peak</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Rwenzori Peak</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Mount Kilimanjaro
+        </strong>
+        <p>Mount Kilimanjaro in Tanzania is Africa's highest mountain.</p>
+    </div>
+</div>
+
+<!-- Q98 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q98: Which is the world's largest bay?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Hudson Bay</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Bay of Bengal</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Bay of Biscay</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Chesapeake Bay</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Bay of Bengal
+        </strong>
+        <p>The Bay of Bengal is the largest bay in the world.</p>
+    </div>
+</div>
+
+<!-- Q99 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q99: Which Indian state has the largest area under forests in percentage?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Madhya Pradesh</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Mizoram</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Chhattisgarh</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Arunachal Pradesh</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Mizoram
+        </strong>
+        <p>Mizoram has the highest percentage of forest cover relative to its geographical area.</p>
+    </div>
+</div>
+
+<!-- Q100 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q100: Which is the largest hot desert in the world?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Arabian Desert</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Thar Desert</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Sahara Desert</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Kalahari Desert</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Sahara Desert
+        </strong>
+        <p>The Sahara Desert in Africa is the largest hot desert in the world.</p>
+    </div>
+</div>
+
+<!-- Q101 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q101: Which Indian state is known as the "Land of Red River and Blue Hills"?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Assam</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Manipur</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Meghalaya</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Nagaland</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Manipur
+        </strong>
+        <p>Manipur is popularly known as the "Land of Red River and Blue Hills."</p>
+    </div>
+</div>
+
+<!-- Q102 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q102: Which is the longest mountain range in the world?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Rocky Mountains</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Himalayas</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Andes</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Alps</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Andes
+        </strong>
+        <p>The Andes Mountains in South America are the world's longest continental mountain range.</p>
+    </div>
+</div>
+
+<!-- Q103 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q103: Which river is known as the "Sorrow of Bengal"?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Damodar</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Hooghly</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Teesta</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Mahananda</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Damodar
+        </strong>
+        <p>The Damodar River was historically called the "Sorrow of Bengal" due to frequent flooding.</p>
+    </div>
+</div>
+
+<!-- Q104 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q104: Which continent is called the "Dark Continent"?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Asia</span></div>
+        <div class="option"><span class="option-letter">B</span><span>South America</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Africa</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Australia</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Africa
+        </strong>
+        <p>Africa was historically referred to as the "Dark Continent" by European explorers.</p>
+    </div>
+</div>
+
+<!-- Q105 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q105: Which is the world's largest archipelago?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Japan</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Indonesia</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Philippines</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Maldives</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Indonesia
+        </strong>
+        <p>Indonesia is the world's largest archipelago, consisting of over 17,000 islands.</p>
+    </div>
+</div>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <button class="mat-btn secondary view-more-btn" onclick="loadMore(this, 'week3')">
+                View More Questions <i class="fa-solid fa-angle-down" style="margin-left:8px;"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- WEEK 4 -->
+    <div id="week4" class="week-content" style="display: none;">
+<!-- Q106 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q106: Which is the largest plateau in the world?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Deccan Plateau</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Tibetan Plateau</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Colorado Plateau</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Brazilian Plateau</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Tibetan Plateau
+        </strong>
+        <p>The Tibetan Plateau is the world's largest and highest plateau, often called the "Roof of the World."</p>
+    </div>
+</div>
+
+<!-- Q107 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q107: Which is the longest glacier in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Gangotri Glacier</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Siachen Glacier</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Zemu Glacier</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Pindari Glacier</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Siachen Glacier
+        </strong>
+        <p>Siachen Glacier in the Karakoram Range is the longest glacier in India.</p>
+    </div>
+</div>
+
+<!-- Q108 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q108: Which is the deepest lake in the world?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Lake Superior</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Lake Victoria</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Lake Baikal</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Caspian Sea</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Lake Baikal
+        </strong>
+        <p>Lake Baikal in Russia is the deepest lake in the world, reaching about 1,642 meters.</p>
+    </div>
+</div>
+
+<!-- Q109 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q109: Which Indian state is known as the "Land of Thunder Dragon"?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Sikkim</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Arunachal Pradesh</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Bhutan</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Assam</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Bhutan
+        </strong>
+        <p>Bhutan is popularly known as the "Land of the Thunder Dragon." (Note: Bhutan is a country, not an Indian state.)</p>
+    </div>
+</div>
+
+<!-- Q110 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q110: Which is the smallest continent by area?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Europe</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Australia</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Antarctica</span></div>
+        <div class="option"><span class="option-letter">D</span><span>South America</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Australia
+        </strong>
+        <p>Australia is the smallest continent in terms of land area.</p>
+    </div>
+</div>
+
+<!-- Q111 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q111: Which river is known as the "Father of African Rivers"?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Congo</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Niger</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Nile</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Zambezi</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Nile
+        </strong>
+        <p>The Nile River is often referred to as the "Father of African Rivers."</p>
+    </div>
+</div>
+
+<!-- Q112 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q112: Which is the largest freshwater lake in Africa?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Lake Tanganyika</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Lake Victoria</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Lake Malawi</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Lake Chad</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Lake Victoria
+        </strong>
+        <p>Lake Victoria is Africa's largest freshwater lake by surface area.</p>
+    </div>
+</div>
+
+<!-- Q113 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q113: Which is the highest waterfall in the world?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Niagara Falls</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Victoria Falls</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Angel Falls</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Iguazu Falls</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Angel Falls
+        </strong>
+        <p>Angel Falls in Venezuela is the world's highest uninterrupted waterfall.</p>
+    </div>
+</div>
+
+<!-- Q114 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q114: Which Indian state is the largest producer of rice?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Punjab</span></div>
+        <div class="option"><span class="option-letter">B</span><span>West Bengal</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Uttar Pradesh</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Andhra Pradesh</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) West Bengal
+        </strong>
+        <p>West Bengal is India's largest producer of rice.</p>
+    </div>
+</div>
+
+<!-- Q115 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q115: Which is the longest river in Europe?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Danube</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Volga</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Rhine</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Seine</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Volga
+        </strong>
+        <p>The Volga River in Russia is the longest river in Europe.</p>
+    </div>
+</div>
+
+<!-- Q116 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q116: Which Indian river flows through the Marble Rocks at Bhedaghat?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Tapti</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Narmada</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Mahanadi</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Godavari</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Narmada
+        </strong>
+        <p>The Narmada River flows through the famous Marble Rocks at Bhedaghat in Madhya Pradesh.</p>
+    </div>
+</div>
+
+<!-- Q117 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q117: Which is the driest continent on Earth?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Australia</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Africa</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Antarctica</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Asia</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Antarctica
+        </strong>
+        <p>Antarctica is the driest continent because it receives extremely little precipitation.</p>
+    </div>
+</div>
+
+<!-- Q118 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q118: Which Indian state has the highest number of national parks?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Madhya Pradesh</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Andaman & Nicobar Islands</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Rajasthan</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Assam</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Madhya Pradesh
+        </strong>
+        <p>Madhya Pradesh has the highest number of national parks among Indian states.</p>
+    </div>
+</div>
+
+<!-- Q119 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q119: Which is the largest river in South America?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Paraná</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Orinoco</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Amazon</span></div>
+        <div class="option"><span class="option-letter">D</span><span>São Francisco</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Amazon
+        </strong>
+        <p>The Amazon River is the largest river in South America and carries the greatest volume of water in the world.</p>
+    </div>
+</div>
+
+<!-- Q120 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q120: Which Indian state is known as the "Land of Seven Sisters"?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Assam</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Arunachal Pradesh</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Nagaland</span></div>
+        <div class="option"><span class="option-letter">D</span><span>None of the above</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: D) None of the above
+        </strong>
+        <p>"Seven Sisters" refers collectively to the seven northeastern states of India, not to any single state.</p>
+    </div>
+</div>
+        <!-- Q121 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q121: Which is the longest canal in the world?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Suez Canal</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Panama Canal</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Grand Canal of China</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Kiel Canal</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Grand Canal of China
+        </strong>
+        <p>The Grand Canal of China is the world's longest artificial waterway, stretching over 1,700 km.</p>
+    </div>
+</div>
+
+<!-- Q122 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q122: Which is the largest inland sea in the world?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Black Sea</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Caspian Sea</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Aral Sea</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Dead Sea</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Caspian Sea
+        </strong>
+        <p>The Caspian Sea is the world's largest enclosed inland body of water.</p>
+    </div>
+</div>
+
+<!-- Q123 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q123: Which Indian state shares the longest international border?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Punjab</span></div>
+        <div class="option"><span class="option-letter">B</span><span>West Bengal</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Rajasthan</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Arunachal Pradesh</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) West Bengal
+        </strong>
+        <p>West Bengal shares the longest international border among Indian states, mainly with Bangladesh.</p>
+    </div>
+</div>
+
+<!-- Q124 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q124: Which is the largest peninsula in the world?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Indian Peninsula</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Arabian Peninsula</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Scandinavian Peninsula</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Iberian Peninsula</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Arabian Peninsula
+        </strong>
+        <p>The Arabian Peninsula is the largest peninsula in the world, covering about 3.2 million sq km.</p>
+    </div>
+</div>
+
+<!-- Q125 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q125: Which river is known as the "Yellow River"?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Yangtze</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Huang He</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Mekong</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Amur</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Huang He
+        </strong>
+        <p>The Huang He is called the Yellow River because of the large amount of yellow silt it carries.</p>
+    </div>
+</div>
+
+<!-- Q126 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q126: Which is the highest mountain peak in Australia?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Mount Kosciuszko</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Mount Cook</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Mount Wilhelm</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Mount Ossa</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Mount Kosciuszko
+        </strong>
+        <p>Mount Kosciuszko is the highest mountain on the Australian mainland.</p>
+    </div>
+</div>
+
+<!-- Q127 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q127: Which Indian river forms the famous Jog Falls?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Krishna</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Sharavathi</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Tungabhadra</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Kaveri</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Sharavathi
+        </strong>
+        <p>Jog Falls in Karnataka is formed by the Sharavathi River and is one of India's highest waterfalls.</p>
+    </div>
+</div>
+
+<!-- Q128 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q128: Which is the largest delta in the world?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Nile Delta</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Mississippi Delta</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Sundarbans Delta</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Mekong Delta</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Sundarbans Delta
+        </strong>
+        <p>The Sundarbans (Ganga–Brahmaputra Delta) is the largest delta in the world.</p>
+    </div>
+</div>
+
+<!-- Q129 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q129: Which country has the largest number of time zones?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Russia</span></div>
+        <div class="option"><span class="option-letter">B</span><span>United States</span></div>
+        <div class="option"><span class="option-letter">C</span><span>France</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Canada</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) France
+        </strong>
+        <p>Including its overseas territories, France has the highest number of time zones (12).</p>
+    </div>
+</div>
+
+<!-- Q130 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q130: Which Indian state is known as the "Spice Garden of India"?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Tamil Nadu</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Kerala</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Karnataka</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Goa</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Kerala
+        </strong>
+        <p>Kerala is known as the "Spice Garden of India" because of its extensive production of spices such as pepper, cardamom, and cloves.</p>
+    </div>
+</div>
+<!-- Q131 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q131: Which is the largest gulf in the world?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Gulf of Mexico</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Persian Gulf</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Gulf of Guinea</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Gulf of Aden</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Gulf of Mexico
+        </strong>
+        <p>The Gulf of Mexico is the largest gulf in the world, bordered by the United States, Mexico, and Cuba.</p>
+    </div>
+</div>
+
+<!-- Q132 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q132: Which Indian state has the longest coastline?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Tamil Nadu</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Andhra Pradesh</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Gujarat</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Maharashtra</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Gujarat
+        </strong>
+        <p>Gujarat has the longest coastline among all Indian states, extending about 1,600 km.</p>
+    </div>
+</div>
+
+<!-- Q133 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q133: Which is the highest peak in South America?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Mount Chimborazo</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Aconcagua</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Huascarán</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Illimani</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Aconcagua
+        </strong>
+        <p>Aconcagua, located in Argentina, is the highest mountain in South America.</p>
+    </div>
+</div>
+
+<!-- Q134 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q134: Which is the world's largest freshwater island?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Victoria Island</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Manitoulin Island</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Baffin Island</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Newfoundland</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Manitoulin Island
+        </strong>
+        <p>Manitoulin Island in Canada is the largest freshwater island in the world.</p>
+    </div>
+</div>
+
+<!-- Q135 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q135: Which river crosses the Equator twice?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Amazon River</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Congo River</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Nile River</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Niger River</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Congo River
+        </strong>
+        <p>The Congo River is one of the few rivers in the world that crosses the Equator twice.</p>
+    </div>
+</div>
+
+<!-- Q136 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q136: Which is the largest tropical rainforest in the world?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Congo Rainforest</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Daintree Rainforest</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Amazon Rainforest</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Sundarbans</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Amazon Rainforest
+        </strong>
+        <p>The Amazon Rainforest is the world's largest tropical rainforest, spread across South America.</p>
+    </div>
+</div>
+
+<!-- Q137 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q137: Which Indian state is the largest producer of tea?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>West Bengal</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Assam</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Kerala</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Tamil Nadu</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Assam
+        </strong>
+        <p>Assam is India's largest tea-producing state and is famous for Assam Tea.</p>
+    </div>
+</div>
+
+<!-- Q138 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q138: Which ocean is the smallest in the world?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Indian Ocean</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Arctic Ocean</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Southern Ocean</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Atlantic Ocean</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Arctic Ocean
+        </strong>
+        <p>The Arctic Ocean is the smallest and shallowest of the world's five oceans.</p>
+    </div>
+</div>
+
+<!-- Q139 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q139: Which is the highest dam in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Bhakra Dam</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Tehri Dam</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Sardar Sarovar Dam</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Hirakud Dam</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Tehri Dam
+        </strong>
+        <p>Tehri Dam in Uttarakhand is India's highest dam, standing about 260.5 meters tall.</p>
+    </div>
+</div>
+
+<!-- Q140 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q140: Which is the largest saltwater lake in the world?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Lake Superior</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Dead Sea</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Caspian Sea</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Aral Sea</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Caspian Sea
+        </strong>
+        <p>The Caspian Sea is the world's largest enclosed saltwater body and is commonly referred to as the largest saltwater lake.</p>
+    </div>
+</div>
+        <div style="text-align: center; margin-top: 40px;">
+            <button class="mat-btn secondary view-more-btn" onclick="loadMore(this, 'week4')">
+                View More Questions <i class="fa-solid fa-angle-down" style="margin-left:8px;"></i>
+            </button>
+        </div>
+    </div>
+
+</section>
+
+<!-- Footer with GK Links -->
+<footer>
+    <div class="footer-grid">
+        <div class="footer-col">
+            <div class="logo" style="margin-bottom: 20px;">
+                <a href="index.html" style="font-size: 20px; font-weight: 800; color: var(--text-color); display:flex; align-items:center; gap:8px; letter-spacing: -0.5px;">
+                    <i class="fa-solid fa-graduation-cap" style="color: var(--primary-color);"></i> GK BYTE
+                </a>
+            </div>
+            <p style="font-size: 0.95rem;">Empowering minds with comprehensive and curated General Knowledge. Your ultimate companion for competitive exams and lifelong learning journeys.</p>
+        </div>
+        
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About Us</a>
+                <a href="quiz.html">GK Quizzes</a>
+                
+                <a href="index.html#contact">Contact Support</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </div>
+        
+        <div class="footer-col">
+            <h4>Subjects</h4>
+            <div class="footer-links">
+                <a href="history.html">History</a>
+                <a href="politics.html">Politics</a>
+                <a href="economics.html">Economics</a>
+                <a href="current-affairs.html">Current Affairs</a>
+                <a href="geography.html">Geography</a>
+                
+            </div>
+        </div>
+        
+        <div class="footer-col">
+            <h4>Newsletter</h4>
+            <p style="margin-bottom: 12px; font-size: 0.95rem;">Subscribe to receive weekly GK updates directly in your inbox.</p>
+            <div class="newsletter">
+                <form action="#" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+                    <input type="email" placeholder="Your email address" required style="width: 100%; margin-bottom: 8px;">
+                    <button type="submit" class="mat-btn" style="width: 100%; padding: 10px 16px;">Subscribe <i class="fa-solid fa-paper-plane" style="margin-left: 8px;"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2026 GK BYTE. All Rights Reserved. Redesigned with Material Design &hearts;</p>
+    </div>
+</footer>
+
+<script>
+    // Scroll to Top Logic
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+    
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            scrollTopBtn.classList.add('show');
+        } else {
+            scrollTopBtn.classList.remove('show');
+        }
+    });
+    scrollTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+    // Theme & Mobile Menu
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.documentElement; 
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    body.setAttribute('data-theme', savedTheme);
+    updateIcon(savedTheme);
+
+    themeToggle.addEventListener('click', () => {
+        const newTheme = body.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+        body.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateIcon(newTheme);
+    });
+
+    function updateIcon(theme) {
+        themeToggle.innerHTML = theme === 'light' ? '<i class="fa-solid fa-moon"></i>' : '<i class="fa-solid fa-sun"></i>';
+    }
+
+    const menuToggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav-menu');
+    menuToggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        const icon = menuToggle.querySelector('i');
+        icon.classList.toggle('fa-bars');
+        icon.classList.toggle('fa-xmark');
+    });
+
+    const dropdown = document.querySelector('.dropdown');
+    dropdown.addEventListener('click', (e) => {
+        if(window.innerWidth <= 768) dropdown.classList.toggle('active');
+    });
+
+    // --- Static Question Pagination Logic ---
+    const PAGE_SIZE = 20;
+
+    function setupPagination() {
+        const weekContents = document.querySelectorAll('.week-content');
+        weekContents.forEach(week => {
+            let cards = week.querySelectorAll('.question-card');
+            cards.forEach((card, index) => {
+                card.style.display = index >= PAGE_SIZE ? 'none' : 'block';
+            });
+            
+            const viewMoreBtn = week.querySelector('.view-more-btn');
+            if (viewMoreBtn) {
+                if (cards.length <= PAGE_SIZE) {
+                    viewMoreBtn.style.display = 'none';
+                } else {
+                    viewMoreBtn.style.display = 'inline-flex';
+                    viewMoreBtn.dataset.visibleCount = PAGE_SIZE;
+                    viewMoreBtn.innerHTML = `View More Questions (${cards.length - PAGE_SIZE} left) <i class="fa-solid fa-angle-down" style="margin-left:8px;"></i>`;
+                }
+            }
+        });
+    }
+
+    window.loadMore = function(btn, weekId) {
+        const week = document.getElementById(weekId);
+        let cards = week.querySelectorAll('.question-card');
+        let visibleCount = parseInt(btn.dataset.visibleCount || PAGE_SIZE);
+        
+        let nextCount = visibleCount + PAGE_SIZE;
+        cards.forEach((card, index) => {
+            if (index < nextCount) card.style.display = 'block';
+        });
+        
+        btn.dataset.visibleCount = nextCount;
+        if (nextCount >= cards.length) {
+            btn.style.display = 'none';
+        } else {
+            btn.innerHTML = `View More Questions (${cards.length - nextCount} left) <i class="fa-solid fa-angle-down" style="margin-left:8px;"></i>`;
+        }
+    };
+
+    window.toggleExplanation = function(btn) {
+        const expBox = btn.nextElementSibling;
+        if (expBox.style.display === 'none' || expBox.style.display === '') {
+            expBox.style.display = 'block';
+            btn.innerHTML = '<i class="fa-solid fa-minus"></i> Hide Explanation';
+            btn.classList.remove('accent');
+            btn.classList.add('secondary');
+        } else {
+            expBox.style.display = 'none';
+            btn.innerHTML = '<i class="fa-solid fa-plus"></i> View Explanation';
+            btn.classList.remove('secondary');
+            btn.classList.add('accent');
+        }
+    };
+
+    // Week Toggling
+    document.querySelectorAll('.week-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            // Remove active from all buttons
+            document.querySelectorAll('.week-btn').forEach(b => b.classList.remove('active'));
+            // Add active to clicked button
+            btn.classList.add('active');
+            
+            // Hide all content
+            document.querySelectorAll('.week-content').forEach(w => w.style.display = 'none');
+            // Show corresponding content
+            document.getElementById(btn.dataset.week).style.display = 'block';
+        });
+    });
+    
+    // Initialize
+    setupPagination();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GK BYTE - History Subject Archive. Browse through all past monthly content in descending order.">
+    <title>GK BYTE | History Subject Archive</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Poppins for Headings, Inter for Body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Variables for Material Design & Theming */
+        :root {
+            /* Light Theme Colors */
+            --bg-color: #f8fafc; 
+            --surface-color: #ffffff;
+            --text-color: #222222;
+            --text-muted: #555555;
+            --primary-color: #2563EB; 
+            --primary-hover: #1d4ed8;
+            --secondary-bg: #f1f5f9;
+            --accent-green: #10b981; 
+            --error-red: #ef4444; 
+            --border-color: #e2e8f0;
+            
+            /* Material Shadows */
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            
+            /* Typography */
+            --font-body: 'Inter', sans-serif;
+            --font-heading: 'Poppins', sans-serif;
+        }
+
+        [data-theme="dark"] {
+            /* Dark Theme Colors */
+            --bg-color: #121212;
+            --surface-color: #1e1e1e;
+            --text-color: #e5e5e5;
+            --text-muted: #a3a3a3;
+            --primary-color: #3b82f6;
+            --primary-hover: #60a5fa;
+            --secondary-bg: #2d2d2d;
+            --border-color: #333333;
+            
+            /* Shadows for Dark Mode */
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-body);
+            font-size: 16px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s ease, color 0.3s ease;
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+        
+        h1, h2, h3, h4 { 
+            font-family: var(--font-heading); 
+            color: var(--text-color);
+            line-height: 1.3;
+        }
+
+        /* Material Utility Classes */
+        .mat-card {
+            background-color: var(--surface-color);
+            border-radius: 12px;
+            box-shadow: var(--shadow-sm);
+            padding: 30px;
+            border: 1px solid var(--border-color);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .mat-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .mat-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background-color: var(--primary-color);
+            color: #ffffff !important;
+            font-weight: 500;
+            font-family: var(--font-body);
+            border-radius: 8px;
+            box-shadow: var(--shadow-sm);
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.2s, box-shadow 0.2s, transform 0.1s;
+            font-size: 1rem;
+            letter-spacing: 0.3px;
+        }
+
+        .mat-btn:hover { 
+            background-color: var(--primary-hover);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .mat-btn:active { 
+            transform: scale(0.98); 
+            box-shadow: var(--shadow-sm); 
+        }
+
+        .mat-btn.secondary { 
+            background-color: transparent;
+            color: var(--primary-color) !important;
+            border: 2px solid var(--primary-color);
+            box-shadow: none;
+        }
+
+        .mat-btn.secondary:hover {
+            background-color: rgba(37, 99, 235, 0.05);
+        }
+        
+        [data-theme="dark"] .mat-btn.secondary:hover {
+            background-color: rgba(59, 130, 246, 0.1);
+        }
+        
+        .mat-btn.accent {
+            background-color: var(--accent-green);
+        }
+        .mat-btn.accent:hover {
+            background-color: #059669;
+        }
+
+        /* Header & Navigation */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: var(--surface-color);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: var(--shadow-sm);
+            border-bottom: 1px solid var(--border-color);
+            transition: background-color 0.3s ease;
+        }
+
+        .logo a {
+            font-family: var(--font-heading);
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--text-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        .logo a i {
+            color: var(--primary-color);
+        }
+
+        nav { display: flex; align-items: center; gap: 24px; }
+        nav ul { display: flex; align-items: center; gap: 8px; }
+
+        nav a.nav-link {
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: background-color 0.2s, color 0.2s;
+            color: var(--text-color);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        nav a.nav-link:hover, .dropdown.active > a.nav-link {
+            background-color: var(--secondary-bg);
+            color: var(--primary-color);
+        }
+
+        /* Dropdown */
+        .dropdown { position: relative; }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 120%;
+            left: 50%;
+            transform: translateX(-50%) translateY(10px);
+            background-color: var(--surface-color);
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            min-width: 220px;
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
+            z-index: 100;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        .dropdown-menu a {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 16px;
+            border-radius: 8px;
+            transition: background-color 0.2s;
+            font-weight: 500;
+            color: var(--text-color);
+            font-size: 0.95rem;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: var(--secondary-bg);
+            color: var(--primary-color);
+        }
+
+        /* Actions */
+        .nav-actions { display: flex; align-items: center; gap: 16px; }
+
+        .theme-toggle {
+            background: var(--secondary-bg);
+            border: none;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            cursor: pointer;
+            color: var(--text-color);
+            transition: background-color 0.2s, transform 0.2s;
+        }
+
+        .theme-toggle:hover {
+            background-color: var(--border-color);
+            transform: scale(1.05);
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 28px;
+            color: var(--text-color);
+            cursor: pointer;
+        }
+
+        /* Archive Specific Styles */
+        .section { padding: 60px 5%; max-width: 1400px; margin: 0 auto; min-height: 80vh; }
+        
+        .page-title { 
+            text-align: center; 
+            margin-bottom: 24px; 
+            font-size: 2.5rem; 
+            font-weight: 800;
+        }
+
+        .subtitle {
+            text-align: center; 
+            color: var(--text-muted); 
+            font-size: 1.15rem; 
+            margin-bottom: 48px; 
+            max-width: 800px; 
+            margin-left: auto; 
+            margin-right: auto;
+        }
+
+        .year-header { 
+            margin: 60px 0 30px; 
+            font-size: 2rem; 
+            font-weight: 700;
+            color: var(--primary-color); 
+            border-bottom: 2px solid var(--border-color); 
+            padding-bottom: 12px; 
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .cards { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+            gap: 30px; 
+        }
+        
+        .card { 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: space-between; 
+            align-items: center; 
+            text-align: center; 
+            height: 100%; 
+        }
+        
+        .month-highlight { 
+            width: 100%; 
+            padding: 24px 20px; 
+            margin-bottom: 24px; 
+            font-size: 1.5rem; 
+            font-weight: 700; 
+            color: var(--text-color); 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            gap: 12px;
+            background-color: var(--secondary-bg);
+            border-radius: 8px;
+        }
+        
+        .month-highlight i { 
+            color: var(--primary-color); 
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--surface-color); padding: 80px 5% 40px; margin-top: 80px;
+            border-top: 1px solid var(--border-color);
+        }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 40px; max-width: 1280px; margin: 0 auto 60px; }
+        
+        .footer-col { display: flex; flex-direction: column; }
+        .footer-col h4 { font-size: 1.125rem; margin-bottom: 24px; font-weight: 600; color: var(--text-color); }
+        .footer-links { display: flex; flex-direction: column; gap: 12px; }
+        .footer-links a { color: var(--text-muted); transition: color 0.2s; display: inline-block; font-size: 0.95rem; }
+        .footer-links a:hover { color: var(--primary-color); }
+        
+        .newsletter form { display: flex; flex-direction: column; gap: 8px; margin-top: 16px; }
+        .newsletter input {
+            padding: 12px 16px; border: 1px solid var(--border-color); border-radius: 8px;
+            background: var(--bg-color); color: var(--text-color); outline: none;
+            font-family: var(--font-body); transition: border-color 0.2s;
+        }
+        .newsletter input:focus { border-color: var(--primary-color); }
+        
+        .footer-bottom { text-align: center; padding-top: 24px; border-top: 1px solid var(--border-color); color: var(--text-muted); font-size: 0.875rem; }
+
+        @media (max-width: 768px) {
+            .menu-toggle { display: block; }
+            nav {
+                position: absolute; top: 100%; left: 0; width: 100%; background-color: var(--surface-color);
+                padding: 24px 5%; flex-direction: column; box-shadow: var(--shadow-md);
+                opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.3s ease;
+                border-bottom: 1px solid var(--border-color);
+            }
+            nav.active { opacity: 1; visibility: visible; transform: translateY(0); }
+            nav ul { flex-direction: column; width: 100%; gap: 8px; }
+            nav ul li { width: 100%; text-align: center; }
+            nav a.nav-link { width: 100%; justify-content: center; }
+            
+            .dropdown-menu {
+                position: static; transform: none; box-shadow: none; border: none;
+                display: none; opacity: 1; visibility: visible; padding: 10px 0;
+                background-color: transparent;
+            }
+            .dropdown.active .dropdown-menu { display: flex; }
+            
+            .nav-actions { width: 100%; justify-content: center; margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--border-color); }
+            
+            .footer-grid { grid-template-columns: 1fr; text-align: center; }
+        }
+        
+        /* Scroll to Top Button */
+        .scroll-top-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            box-shadow: var(--shadow-md);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+        .scroll-top-btn.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .scroll-top-btn:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <i class="fa-solid fa-graduation-cap"></i> GK BYTE
+        </a>
+    </div>
+    <nav id="nav-menu">
+        <ul>
+            <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="nav-link"><i class="fa-solid fa-book-open"></i> Subjects <i class="fa-solid fa-chevron-down" style="font-size: 0.8em; margin-left:5px;"></i></a>
+                <div class="dropdown-menu">
+                    <a href="history.html"><i class="fa-solid fa-landmark"></i> History</a>
+                    <a href="politics.html"><i class="fa-solid fa-gavel"></i> Politics</a>
+                    <a href="economics.html"><i class="fa-solid fa-chart-line"></i> Economics</a>
+                    <a href="current-affairs.html"><i class="fa-solid fa-newspaper"></i> Current Affairs</a>
+                    <a href="geography.html"><i class="fa-solid fa-earth-americas"></i> Geography</a>
+                </div>
+            </li>
+            <li><a href="index.html#about" class="nav-link"><i class="fa-solid fa-circle-info"></i> About</a></li>
+            <li><a href="index.html#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="quiz.html" class="mat-btn accent"><i class="fa-solid fa-gamepad"></i> GK Quiz</a>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode"><i class="fa-solid fa-moon"></i></button>
+        </div>
+    </nav>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+</header>
+
+<section class="section">
+    <h1 class="page-title">History Subject Archive</h1>
+    <p class="subtitle">
+        Browse through our comprehensive collection of past General Knowledge content. Navigate chronologically descending from the latest updates back through previous years.
+    </p>
+    
+    <!-- 2026 -->
+    <h2 class="year-header"><i class="fa-regular fa-calendar-days"></i> 2026</h2>
+    <div class="cards">
+        <div class="card mat-card">
+            <div class="month-highlight"><i class="fa-solid fa-sun"></i> June</div>
+            <a href="history-june.html" class="mat-btn">View Details <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<!-- Scroll to Top Button -->
+<button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+<!-- Footer with GK Links -->
+<footer>
+    <div class="footer-grid">
+        <div class="footer-col">
+            <div class="logo" style="margin-bottom: 20px;">
+                <a href="index.html" style="font-size: 20px; font-weight: 800; color: var(--text-color); display:flex; align-items:center; gap:8px; letter-spacing: -0.5px;">
+                    <i class="fa-solid fa-graduation-cap" style="color: var(--primary-color);"></i> GK BYTE
+                </a>
+            </div>
+            <p style="font-size: 0.95rem;">Empowering minds with comprehensive and curated General Knowledge. Your ultimate companion for competitive exams and lifelong learning journeys.</p>
+        </div>
+        
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About Us</a>
+                <a href="quiz.html">GK Quizzes</a>
+                
+                <a href="index.html#contact">Contact Support</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </div>
+        
+        <div class="footer-col">
+            <h4>Subjects</h4>
+            <div class="footer-links">
+                <a href="history.html">History</a>
+                <a href="politics.html">Politics</a>
+                <a href="economics.html">Economics</a>
+                <a href="current-affairs.html">Current Affairs</a>
+                <a href="geography.html">Geography</a>
+                
+            </div>
+        </div>
+        
+        <div class="footer-col">
+            <h4>Newsletter</h4>
+            <p style="margin-bottom: 12px; font-size: 0.95rem;">Subscribe to receive weekly GK updates directly in your inbox.</p>
+            <div class="newsletter">
+                <form action="#" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+                    <input type="email" placeholder="Your email address" required style="width: 100%; margin-bottom: 8px;">
+                    <button type="submit" class="mat-btn" style="width: 100%; padding: 10px 16px;">Subscribe <i class="fa-solid fa-paper-plane" style="margin-left: 8px;"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2026 GK BYTE. All Rights Reserved. Redesigned with Material Design &hearts;</p>
+    </div>
+</footer>
+
+<script>
+     // Scroll to Top Logic
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+    
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            scrollTopBtn.classList.add('show');
+        } else {
+            scrollTopBtn.classList.remove('show');
+        }
+    });
+    scrollTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+    // Theme & Mobile Menu
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.documentElement; 
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    body.setAttribute('data-theme', savedTheme);
+    updateIcon(savedTheme);
+
+    themeToggle.addEventListener('click', () => {
+        const newTheme = body.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+        body.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateIcon(newTheme);
+    });
+
+    function updateIcon(theme) {
+        themeToggle.innerHTML = theme === 'light' ? '<i class="fa-solid fa-moon"></i>' : '<i class="fa-solid fa-sun"></i>';
+    }
+
+    const menuToggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav-menu');
+    menuToggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        const icon = menuToggle.querySelector('i');
+        icon.classList.toggle('fa-bars');
+        icon.classList.toggle('fa-xmark');
+    });
+
+    const dropdown = document.querySelector('.dropdown');
+    dropdown.addEventListener('click', (e) => {
+        if(window.innerWidth <= 768) dropdown.classList.toggle('active');
+    });
+</script>
+
+</body>
+</html>

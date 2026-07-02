@@ -1,0 +1,3564 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GK BYTE - March Economics. Weekly curated questions to test your knowledge.">
+    <title>GK BYTE | June Economics Quiz</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Poppins for Headings, Inter for Body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Variables for Material Design & Theming */
+        :root {
+            /* Light Theme Colors */
+            --bg-color: #f8fafc; 
+            --surface-color: #ffffff;
+            --text-color: #222222;
+            --text-muted: #555555;
+            --primary-color: #2563EB; 
+            --primary-hover: #1d4ed8;
+            --secondary-bg: #f1f5f9;
+            --accent-green: #10b981; 
+            --error-red: #ef4444; 
+            --border-color: #e2e8f0;
+            
+            /* Material Shadows */
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            
+            /* Typography */
+            --font-body: 'Inter', sans-serif;
+            --font-heading: 'Poppins', sans-serif;
+        }
+
+        [data-theme="dark"] {
+            /* Dark Theme Colors */
+            --bg-color: #121212;
+            --surface-color: #1e1e1e;
+            --text-color: #e5e5e5;
+            --text-muted: #a3a3a3;
+            --primary-color: #3b82f6;
+            --primary-hover: #60a5fa;
+            --secondary-bg: #2d2d2d;
+            --border-color: #333333;
+            
+            /* Shadows for Dark Mode */
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-body);
+            font-size: 16px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s ease, color 0.3s ease;
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+        
+        h1, h2, h3, h4 { 
+            font-family: var(--font-heading); 
+            color: var(--text-color);
+            line-height: 1.3;
+        }
+
+        /* Material Utility Classes */
+        .mat-card {
+            background-color: var(--surface-color);
+            border-radius: 12px;
+            box-shadow: var(--shadow-sm);
+            padding: 30px;
+            border: 1px solid var(--border-color);
+        }
+
+        .mat-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background-color: var(--primary-color);
+            color: #ffffff !important;
+            font-weight: 500;
+            font-family: var(--font-body);
+            border-radius: 8px;
+            box-shadow: var(--shadow-sm);
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.2s, box-shadow 0.2s, transform 0.1s;
+            font-size: 1rem;
+            letter-spacing: 0.3px;
+        }
+
+        .mat-btn:hover { 
+            background-color: var(--primary-hover);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .mat-btn:active { 
+            transform: scale(0.98); 
+            box-shadow: var(--shadow-sm); 
+        }
+
+        .mat-btn.secondary { 
+            background-color: transparent;
+            color: var(--primary-color) !important;
+            border: 2px solid var(--primary-color);
+            box-shadow: none;
+        }
+
+        .mat-btn.secondary:hover {
+            background-color: rgba(37, 99, 235, 0.05);
+        }
+        
+        [data-theme="dark"] .mat-btn.secondary:hover {
+            background-color: rgba(59, 130, 246, 0.1);
+        }
+        
+        .mat-btn.accent {
+            background-color: var(--accent-green);
+        }
+        .mat-btn.accent:hover {
+            background-color: #059669;
+        }
+
+        /* Header & Navigation */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: var(--surface-color);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: var(--shadow-sm);
+            border-bottom: 1px solid var(--border-color);
+            transition: background-color 0.3s ease;
+        }
+
+        .logo a {
+            font-family: var(--font-heading);
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--text-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        .logo a i {
+            color: var(--primary-color);
+        }
+
+        nav { display: flex; align-items: center; gap: 24px; }
+        nav ul { display: flex; align-items: center; gap: 8px; }
+
+        nav a.nav-link {
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: background-color 0.2s, color 0.2s;
+            color: var(--text-color);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        nav a.nav-link:hover, .dropdown.active > a.nav-link {
+            background-color: var(--secondary-bg);
+            color: var(--primary-color);
+        }
+
+        /* Dropdown */
+        .dropdown { position: relative; }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 120%;
+            left: 50%;
+            transform: translateX(-50%) translateY(10px);
+            background-color: var(--surface-color);
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            min-width: 220px;
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
+            z-index: 100;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        .dropdown-menu a {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 16px;
+            border-radius: 8px;
+            transition: background-color 0.2s;
+            font-weight: 500;
+            color: var(--text-color);
+            font-size: 0.95rem;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: var(--secondary-bg);
+            color: var(--primary-color);
+        }
+
+        /* Actions (Toggle & Quiz Btn) */
+        .nav-actions { display: flex; align-items: center; gap: 16px; }
+
+        .theme-toggle {
+            background: var(--secondary-bg);
+            border: none;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            cursor: pointer;
+            color: var(--text-color);
+            transition: background-color 0.2s, transform 0.2s;
+        }
+
+        .theme-toggle:hover {
+            background-color: var(--border-color);
+            transform: scale(1.05);
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 28px;
+            color: var(--text-color);
+            cursor: pointer;
+        }
+
+        /* Quiz Page Styles */
+        .section { padding: 60px 5%; max-width: 1200px; margin: 0 auto; min-height: 80vh; }
+        
+        .page-title { 
+            text-align: center; 
+            margin-bottom: 48px; 
+            font-size: 2.5rem; 
+            font-weight: 800;
+        }
+
+        .week-nav { 
+            display: flex; 
+            justify-content: center; 
+            gap: 16px; 
+            margin-bottom: 48px; 
+            flex-wrap: wrap; 
+        }
+        
+        .week-btn { 
+            background-color: var(--surface-color); 
+            color: var(--text-muted); 
+            font-size: 1rem; 
+            padding: 12px 24px; 
+            border-radius: 24px; 
+            transition: all 0.2s; 
+            border: 1px solid var(--border-color); 
+            font-weight: 600; 
+            font-family: var(--font-body);
+            display: flex; 
+            align-items: center; 
+            gap: 8px; 
+            cursor: pointer;
+        }
+        .week-btn:hover { 
+            border-color: var(--primary-color); 
+            color: var(--primary-color); 
+        }
+        .week-btn.active { 
+            background-color: var(--primary-color); 
+            color: white; 
+            border-color: var(--primary-color);
+            box-shadow: var(--shadow-sm); 
+        }
+        
+        .question-card { 
+            margin-bottom: 40px; 
+            text-align: left; 
+            animation: fadeIn 0.4s ease; 
+            display: none; 
+            padding: 32px;
+        }
+        
+        @keyframes fadeIn { 
+            from { opacity: 0; transform: translateY(10px); } 
+            to { opacity: 1; transform: translateY(0); } 
+        }
+
+        .question-text { 
+            font-size: 1.15rem; 
+            font-weight: 600; 
+            margin-bottom: 24px; 
+            padding: 20px 24px; 
+            background-color: var(--secondary-bg); 
+            color: var(--text-color); 
+            border-left: 4px solid var(--primary-color); 
+            border-radius: 8px;
+            line-height: 1.6; 
+        }
+
+        .options-grid { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 16px; 
+            margin-bottom: 24px; 
+        }
+        
+        .option { 
+            background-color: var(--surface-color); 
+            border: 1px solid var(--border-color);
+            padding: 16px 20px; 
+            border-radius: 12px; 
+            font-weight: 500; 
+            transition: all 0.2s ease; 
+            display: flex; 
+            align-items: center; 
+            gap: 16px; 
+            font-size: 1rem; 
+            cursor: pointer;
+        }
+        
+        .option:hover { 
+            border-color: var(--primary-color);
+            background-color: rgba(37, 99, 235, 0.05);
+            color: var(--primary-color); 
+        }
+        
+        [data-theme="dark"] .option:hover {
+            background-color: rgba(59, 130, 246, 0.1);
+        }
+
+        .option-letter { 
+            background: var(--primary-color); 
+            color: white; 
+            width: 32px; 
+            height: 32px; 
+            display: inline-flex; 
+            align-items: center; 
+            justify-content: center; 
+            border-radius: 50%; 
+            font-weight: 600; 
+            font-size: 0.9rem; 
+            flex-shrink: 0; 
+        }
+
+        .explanation-box { 
+            margin-top: 24px; 
+            background-color: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            border-left: 4px solid var(--accent-green); 
+            padding: 20px 24px; 
+            border-radius: 8px; 
+            display: none; 
+            animation: slideDown 0.3s ease; 
+        }
+        
+        [data-theme="dark"] .explanation-box {
+            background-color: rgba(16, 185, 129, 0.15);
+        }
+        
+        @keyframes slideDown { 
+            from { opacity: 0; transform: translateY(-10px); } 
+            to { opacity: 1; transform: translateY(0); } 
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--surface-color); padding: 80px 5% 40px; margin-top: 80px;
+            border-top: 1px solid var(--border-color);
+        }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 40px; max-width: 1280px; margin: 0 auto 60px; }
+        
+        .footer-col { display: flex; flex-direction: column; }
+        .footer-col h4 { font-size: 1.125rem; margin-bottom: 24px; font-weight: 600; color: var(--text-color); }
+        .footer-links { display: flex; flex-direction: column; gap: 12px; }
+        .footer-links a { color: var(--text-muted); transition: color 0.2s; display: inline-block; font-size: 0.95rem; }
+        .footer-links a:hover { color: var(--primary-color); }
+        
+        .newsletter form { display: flex; flex-direction: column; gap: 8px; margin-top: 16px; }
+        .newsletter input {
+            padding: 12px 16px; border: 1px solid var(--border-color); border-radius: 8px;
+            background: var(--bg-color); color: var(--text-color); outline: none;
+            font-family: var(--font-body); transition: border-color 0.2s;
+        }
+        .newsletter input:focus { border-color: var(--primary-color); }
+        
+        .footer-bottom { text-align: center; padding-top: 24px; border-top: 1px solid var(--border-color); color: var(--text-muted); font-size: 0.875rem; }
+
+        @media (max-width: 768px) {
+            .menu-toggle { display: block; }
+            nav {
+                position: absolute; top: 100%; left: 0; width: 100%; background-color: var(--surface-color);
+                padding: 24px 5%; flex-direction: column; box-shadow: var(--shadow-md);
+                opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.3s ease;
+                border-bottom: 1px solid var(--border-color);
+            }
+            nav.active { opacity: 1; visibility: visible; transform: translateY(0); }
+            nav ul { flex-direction: column; width: 100%; gap: 8px; }
+            nav ul li { width: 100%; text-align: center; }
+            nav a.nav-link { width: 100%; justify-content: center; }
+            
+            .dropdown-menu {
+                position: static; transform: none; box-shadow: none; border: none;
+                display: none; opacity: 1; visibility: visible; padding: 10px 0;
+                background-color: transparent;
+            }
+            .dropdown.active .dropdown-menu { display: flex; }
+            
+            .nav-actions { width: 100%; justify-content: center; margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--border-color); }
+            
+            .options-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; text-align: center; }
+        }
+         /* Scroll to Top Button */
+        .scroll-top-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            box-shadow: var(--shadow-md);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+        .scroll-top-btn.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .scroll-top-btn:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+    </style>
+</head>
+<body>
+<!-- Scroll to Top Button -->
+<button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <i class="fa-solid fa-graduation-cap"></i> GK BYTE
+        </a>
+    </div>
+    <nav id="nav-menu">
+        <ul>
+            <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="nav-link"><i class="fa-solid fa-book-open"></i> Subjects <i class="fa-solid fa-chevron-down" style="font-size: 0.8em; margin-left:5px;"></i></a>
+                <div class="dropdown-menu">
+                    <a href="history.html"><i class="fa-solid fa-landmark"></i> History</a>
+                    <a href="politics.html"><i class="fa-solid fa-gavel"></i> Politics</a>
+                    <a href="economics.html"><i class="fa-solid fa-chart-line"></i> Economics</a>
+                    <a href="current-affairs.html"><i class="fa-solid fa-newspaper"></i> Current Affairs</a>
+                    <a href="geography.html"><i class="fa-solid fa-earth-americas"></i> Geography</a>
+                </div>
+            </li>
+            <li><a href="index.html#about" class="nav-link"><i class="fa-solid fa-circle-info"></i> About</a></li>
+            <li><a href="index.html#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="quiz.html" class="mat-btn accent"><i class="fa-solid fa-gamepad"></i> GK Quiz</a>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode"><i class="fa-solid fa-moon"></i></button>
+        </div>
+    </nav>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+</header>
+
+<section class="section">
+    <h1 class="page-title">June Economics Quiz</h1>
+    
+    <div class="week-nav">
+        <button class="week-btn active" data-week="week1"><i class="fa-regular fa-calendar-check"></i> Week 1</button>
+        <button class="week-btn" data-week="week2"><i class="fa-regular fa-calendar-check"></i> Week 2</button>
+        <button class="week-btn" data-week="week3"><i class="fa-regular fa-calendar-check"></i> Week 3</button>
+        <button class="week-btn" data-week="week4"><i class="fa-regular fa-calendar-check"></i> Week 4</button>
+    </div>
+
+    <!-- WEEK 1 -->
+    <div id="week1" class="week-content" style="display: block;">
+        
+<!-- Q1 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q1: What does GDP stand for?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Gross Domestic Product</span></div>
+        <div class="option"><span class="option-letter">B</span><span>General Development Plan</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Gross Demand Production</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Global Domestic Policy</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Gross Domestic Product
+        </strong>
+        <p>GDP is the total monetary value of all final goods and services produced within a country during a specific period.</p>
+    </div>
+</div>
+
+<!-- Q2 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q2: Which institution is responsible for issuing currency notes in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>SEBI</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Reserve Bank of India</span></div>
+        <div class="option"><span class="option-letter">C</span><span>NITI Aayog</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Finance Commission</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Reserve Bank of India
+        </strong>
+        <p>The Reserve Bank of India (RBI) is the country's central bank and is responsible for issuing most currency notes.</p>
+    </div>
+</div>
+
+<!-- Q3 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q3: Inflation refers to:</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Decrease in prices</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Increase in unemployment</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Sustained increase in the general price level</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Increase in exports</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Sustained increase in the general price level
+        </strong>
+        <p>Inflation is the persistent rise in the overall prices of goods and services, reducing purchasing power.</p>
+    </div>
+</div>
+
+<!-- Q4 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q4: Which tax is levied on the supply of goods and services in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Income Tax</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Custom Duty</span></div>
+        <div class="option"><span class="option-letter">C</span><span>GST</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Property Tax</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) GST
+        </strong>
+        <p>Goods and Services Tax (GST) is an indirect tax applicable to the supply of most goods and services in India.</p>
+    </div>
+</div>
+
+<!-- Q5 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q5: Which economic sector includes agriculture and mining?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Primary Sector</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Secondary Sector</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Tertiary Sector</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Quaternary Sector</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Primary Sector
+        </strong>
+        <p>The primary sector involves extraction and harvesting of natural resources such as agriculture, fishing, forestry, and mining.</p>
+    </div>
+</div>
+
+<!-- Q6 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q6: Which bank is known as the 'Banker's Bank' in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>State Bank of India</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Reserve Bank of India</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Punjab National Bank</span></div>
+        <div class="option"><span class="option-letter">D</span><span>NABARD</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Reserve Bank of India
+        </strong>
+        <p>RBI is called the Banker's Bank because it regulates and provides banking services to commercial banks.</p>
+    </div>
+</div>
+
+<!-- Q7 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q7: Which of the following is a direct tax?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>GST</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Custom Duty</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Income Tax</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Excise Duty</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Income Tax
+        </strong>
+        <p>Income Tax is directly paid by individuals or organizations to the government.</p>
+    </div>
+</div>
+
+<!-- Q8 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q8: Which organization publishes the World Economic Outlook?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>World Bank</span></div>
+        <div class="option"><span class="option-letter">B</span><span>IMF</span></div>
+        <div class="option"><span class="option-letter">C</span><span>WTO</span></div>
+        <div class="option"><span class="option-letter">D</span><span>ADB</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) IMF
+        </strong>
+        <p>The International Monetary Fund (IMF) publishes the World Economic Outlook twice every year.</p>
+    </div>
+</div>
+
+<!-- Q9 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q9: Fiscal deficit occurs when:</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Revenue exceeds expenditure</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Government expenditure exceeds total receipts excluding borrowings</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Exports exceed imports</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Inflation decreases</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Government expenditure exceeds total receipts excluding borrowings
+        </strong>
+        <p>Fiscal deficit measures the gap between government expenditure and receipts, excluding borrowings.</p>
+    </div>
+</div>
+
+<!-- Q10 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q10: Which index measures inflation at the retail level in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>WPI</span></div>
+        <div class="option"><span class="option-letter">B</span><span>CPI</span></div>
+        <div class="option"><span class="option-letter">C</span><span>IIP</span></div>
+        <div class="option"><span class="option-letter">D</span><span>HDI</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) CPI
+        </strong>
+        <p>The Consumer Price Index (CPI) measures changes in retail prices paid by consumers.</p>
+    </div>
+</div>
+
+<!-- Q11 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q11: Which market structure has only one seller?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Perfect Competition</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Monopoly</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Oligopoly</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Monopolistic Competition</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Monopoly
+        </strong>
+        <p>A monopoly exists when a single seller controls the entire market for a product or service.</p>
+    </div>
+</div>
+
+<!-- Q12 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q12: Which of the following is a capital receipt of the government?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Income Tax</span></div>
+        <div class="option"><span class="option-letter">B</span><span>GST</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Borrowings</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Custom Duty</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Borrowings
+        </strong>
+        <p>Government borrowings are capital receipts because they create liabilities.</p>
+    </div>
+</div>
+
+<!-- Q13 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q13: Which factor primarily determines demand for a normal good?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Price of the good</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Weather only</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Political system</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Exchange rate only</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Price of the good
+        </strong>
+        <p>According to the law of demand, the price of a good is the primary factor influencing its demand.</p>
+    </div>
+</div>
+
+<!-- Q14 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q14: Which sector contributes the largest share to India's GDP?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Agriculture</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Manufacturing</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Services</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Mining</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Services
+        </strong>
+        <p>The services sector contributes the largest share to India's Gross Domestic Product.</p>
+    </div>
+</div>
+
+<!-- Q15 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q15: Repo rate is the rate at which:</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Banks lend to customers</span></div>
+        <div class="option"><span class="option-letter">B</span><span>RBI lends to commercial banks</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Government borrows from IMF</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Customers lend to banks</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) RBI lends to commercial banks
+        </strong>
+        <p>The repo rate is the interest rate at which the Reserve Bank of India lends short-term funds to commercial banks.</p>
+    </div>
+</div>
+<!-- Q15 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q15: Repo rate is the rate at which:</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Banks lend to customers</span></div>
+        <div class="option"><span class="option-letter">B</span><span>RBI lends to commercial banks</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Government borrows from IMF</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Customers lend to banks</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) RBI lends to commercial banks
+        </strong>
+        <p>The repo rate is the interest rate at which the Reserve Bank of India lends short-term funds to commercial banks.</p>
+    </div>
+</div>
+
+<!-- Q16 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q16: Which of the following is a function of money?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Medium of Exchange</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Weather Forecasting</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Population Control</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Industrial Licensing</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Medium of Exchange
+        </strong>
+        <p>Money primarily acts as a medium of exchange, making buying and selling easier.</p>
+    </div>
+</div>
+
+<!-- Q17 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q17: Which organization regulates the securities market in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>RBI</span></div>
+        <div class="option"><span class="option-letter">B</span><span>SEBI</span></div>
+        <div class="option"><span class="option-letter">C</span><span>NABARD</span></div>
+        <div class="option"><span class="option-letter">D</span><span>SIDBI</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) SEBI
+        </strong>
+        <p>SEBI regulates the securities and capital markets in India.</p>
+    </div>
+</div>
+
+<!-- Q18 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q18: What is the full form of FDI?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Foreign Direct Investment</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Federal Development Initiative</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Financial Domestic Income</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Foreign Debt Index</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Foreign Direct Investment
+        </strong>
+        <p>FDI refers to investment made by a foreign entity in the business of another country.</p>
+    </div>
+</div>
+
+<!-- Q19 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q19: Which economic activity belongs to the secondary sector?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Fishing</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Manufacturing</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Banking</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Education</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Manufacturing
+        </strong>
+        <p>The secondary sector converts raw materials into finished goods through manufacturing.</p>
+    </div>
+</div>
+
+<!-- Q20 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q20: Which indicator measures the average price change of wholesale goods?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>CPI</span></div>
+        <div class="option"><span class="option-letter">B</span><span>HDI</span></div>
+        <div class="option"><span class="option-letter">C</span><span>WPI</span></div>
+        <div class="option"><span class="option-letter">D</span><span>IIP</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) WPI
+        </strong>
+        <p>The Wholesale Price Index measures price changes at the wholesale level.</p>
+    </div>
+</div>
+
+<!-- Q21 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q21: What is the currency of Japan?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Won</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Yuan</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Yen</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Dollar</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Yen
+        </strong>
+        <p>The official currency of Japan is the Japanese Yen.</p>
+    </div>
+</div>
+
+<!-- Q22 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q22: Which type of unemployment is common in agriculture during the off-season?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Seasonal Unemployment</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Structural Unemployment</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Frictional Unemployment</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Technological Unemployment</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Seasonal Unemployment
+        </strong>
+        <p>Seasonal unemployment occurs when work is available only during certain seasons.</p>
+    </div>
+</div>
+<!-- Q23 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q23: What does the Balance of Payments (BoP) record?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Only exports of goods</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Government expenditure only</span></div>
+        <div class="option"><span class="option-letter">C</span><span>All international economic transactions</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Only imports of services</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) All international economic transactions
+        </strong>
+        <p>The Balance of Payments records all economic transactions between residents of a country and the rest of the world.</p>
+    </div>
+</div>
+
+<!-- Q24 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q24: According to the law of demand, when price increases, demand generally:</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Increases</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Decreases</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Remains constant</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Doubles</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Decreases
+        </strong>
+        <p>The law of demand states that, other things remaining constant, demand falls as the price rises.</p>
+    </div>
+</div>
+
+<!-- Q25 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q25: Supply refers to:</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Quantity sellers are willing to sell</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Quantity buyers want to purchase</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Total imports</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Government revenue</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Quantity sellers are willing to sell
+        </strong>
+        <p>Supply is the quantity of a good or service that producers are willing and able to offer for sale at different prices.</p>
+    </div>
+</div>
+
+<!-- Q26 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q26: Deflation means:</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Increase in money supply</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Increase in exports</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Rise in employment</span></div>
+        <div class="option"><span class="option-letter">D</span><span>General fall in prices</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: D) General fall in prices
+        </strong>
+        <p>Deflation is a sustained decrease in the general price level of goods and services.</p>
+    </div>
+</div>
+
+<!-- Q27 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q27: India's economic liberalization policy was introduced in:</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>1985</span></div>
+        <div class="option"><span class="option-letter">B</span><span>1989</span></div>
+        <div class="option"><span class="option-letter">C</span><span>1991</span></div>
+        <div class="option"><span class="option-letter">D</span><span>2000</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) 1991
+        </strong>
+        <p>India introduced major economic reforms and liberalization in 1991 to boost growth and investment.</p>
+    </div>
+</div>
+
+<!-- Q28 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q28: NITI Aayog was established in:</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>2012</span></div>
+        <div class="option"><span class="option-letter">B</span><span>2015</span></div>
+        <div class="option"><span class="option-letter">C</span><span>2018</span></div>
+        <div class="option"><span class="option-letter">D</span><span>2020</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) 2015
+        </strong>
+        <p>NITI Aayog replaced the Planning Commission on 1 January 2015.</p>
+    </div>
+</div>
+
+<!-- Q29 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q29: The headquarters of the World Bank is located in:</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Washington, D.C.</span></div>
+        <div class="option"><span class="option-letter">B</span><span>New York</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Geneva</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Paris</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Washington, D.C.
+        </strong>
+        <p>The World Bank is headquartered in Washington, D.C., USA.</p>
+    </div>
+</div>
+
+<!-- Q30 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q30: The Blue Economy mainly focuses on:</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Coal mining</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Space research</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Sustainable use of ocean resources</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Forest conservation only</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Sustainable use of ocean resources
+        </strong>
+        <p>The Blue Economy promotes sustainable economic growth through responsible use of marine resources.</p>
+    </div>
+</div>
+
+<!-- Q31 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q31: The Human Development Index (HDI) is published by:</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>World Bank</span></div>
+        <div class="option"><span class="option-letter">B</span><span>IMF</span></div>
+        <div class="option"><span class="option-letter">C</span><span>WTO</span></div>
+        <div class="option"><span class="option-letter">D</span><span>UNDP</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: D) UNDP
+        </strong>
+        <p>The United Nations Development Programme (UNDP) publishes the Human Development Index.</p>
+    </div>
+</div>
+
+<!-- Q32 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q32: Fiscal policy mainly deals with:</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Government taxation and expenditure</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Exchange rates</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Foreign trade only</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Bank lending only</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Government taxation and expenditure
+        </strong>
+        <p>Fiscal policy uses government spending and taxation to influence economic activity.</p>
+    </div>
+</div>
+
+<!-- Q33 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q33: Open Market Operations (OMO) in India are conducted by:</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>SEBI</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Reserve Bank of India</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Ministry of Finance</span></div>
+        <div class="option"><span class="option-letter">D</span><span>NABARD</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Reserve Bank of India
+        </strong>
+        <p>RBI conducts Open Market Operations to regulate liquidity in the economy.</p>
+    </div>
+</div>
+
+<!-- Q34 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q34: Balance of Trade refers to:</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Difference between exports and imports of goods</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Total foreign investment</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Government budget balance</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Foreign exchange reserves</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Difference between exports and imports of goods
+        </strong>
+        <p>Balance of Trade is the difference between the value of a country's exports and imports of goods.</p>
+    </div>
+</div>
+
+<!-- Q35 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q35: Which of the following is an example of a public good?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>National Defence</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Private Car</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Mobile Phone</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Restaurant Meal</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) National Defence
+        </strong>
+        <p>Public goods are non-rival and non-excludable. National defence is a classic example.</p>
+    </div>
+</div>
+        
+        <div style="text-align: center; margin-top: 40px;">
+            <button class="mat-btn secondary view-more-btn" onclick="loadMore(this, 'week1')">
+                View More Questions <i class="fa-solid fa-angle-down" style="margin-left:8px;"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- WEEK 2 -->
+    <div id="week2" class="week-content" style="display: none;">
+<!-- Q36 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q36: Which of the following is a feature of a mixed economy?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Only private ownership</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Only government ownership</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Both public and private sectors coexist</span></div>
+        <div class="option"><span class="option-letter">D</span><span>No government intervention</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Both public and private sectors coexist
+        </strong>
+        <p>A mixed economy combines the features of both public and private ownership.</p>
+    </div>
+</div>
+
+<!-- Q37 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q37: Which of the following is NOT a factor of production?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Land</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Labour</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Capital</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Inflation</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: D) Inflation
+        </strong>
+        <p>The four factors of production are land, labour, capital, and entrepreneurship.</p>
+    </div>
+</div>
+
+<!-- Q38 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q38: Which type of market has many buyers and many sellers?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Monopoly</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Oligopoly</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Perfect Competition</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Monopsony</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Perfect Competition
+        </strong>
+        <p>Perfect competition is characterized by a large number of buyers and sellers.</p>
+    </div>
+</div>
+
+<!-- Q39 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q39: Which is the largest source of tax revenue for the Government of India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Income Tax</span></div>
+        <div class="option"><span class="option-letter">B</span><span>GST</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Property Tax</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Road Tax</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) GST
+        </strong>
+        <p>GST is one of the largest sources of indirect tax revenue for the Government of India.</p>
+    </div>
+</div>
+
+<!-- Q40 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q40: Which banking service allows customers to transfer money instantly using a mobile number or UPI ID?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>RTGS</span></div>
+        <div class="option"><span class="option-letter">B</span><span>NEFT</span></div>
+        <div class="option"><span class="option-letter">C</span><span>UPI</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Cheque</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) UPI
+        </strong>
+        <p>UPI enables instant fund transfers using mobile numbers, QR codes, or UPI IDs.</p>
+    </div>
+</div>
+
+<!-- Q41 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q41: Which sector is also known as the service sector?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Primary Sector</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Secondary Sector</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Tertiary Sector</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Quinary Sector</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Tertiary Sector
+        </strong>
+        <p>The tertiary sector provides services such as banking, transport, education, and healthcare.</p>
+    </div>
+</div>
+
+<!-- Q42 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q42: Which institution prepares India's Monetary Policy?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Finance Ministry</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Monetary Policy Committee</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Planning Commission</span></div>
+        <div class="option"><span class="option-letter">D</span><span>SEBI</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Monetary Policy Committee
+        </strong>
+        <p>The Monetary Policy Committee (MPC) formulates India's monetary policy and decides the repo rate.</p>
+    </div>
+</div>
+
+<!-- Q43 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q43: Which is an example of a direct tax?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>GST</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Income Tax</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Customs Duty</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Excise Duty</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Income Tax
+        </strong>
+        <p>Direct taxes are paid directly by individuals or organizations to the government.</p>
+    </div>
+</div>
+
+<!-- Q44 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q44: Which of the following is an example of capital expenditure?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Salaries</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Interest Payments</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Construction of Highways</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Pension Payments</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Construction of Highways
+        </strong>
+        <p>Capital expenditure creates durable assets that benefit the economy over the long term.</p>
+    </div>
+</div>
+
+<!-- Q45 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q45: Which index measures industrial production in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>CPI</span></div>
+        <div class="option"><span class="option-letter">B</span><span>WPI</span></div>
+        <div class="option"><span class="option-letter">C</span><span>IIP</span></div>
+        <div class="option"><span class="option-letter">D</span><span>HDI</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) IIP
+        </strong>
+        <p>The Index of Industrial Production (IIP) measures the growth of industrial output.</p>
+    </div>
+</div>
+
+<!-- Q46 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q46: Which economic problem arises because resources are limited?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Scarcity</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Inflation</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Globalization</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Urbanization</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Scarcity
+        </strong>
+        <p>Scarcity is the fundamental economic problem caused by limited resources and unlimited wants.</p>
+    </div>
+</div>
+
+<!-- Q47 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q47: Which organization regulates insurance companies in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>RBI</span></div>
+        <div class="option"><span class="option-letter">B</span><span>SEBI</span></div>
+        <div class="option"><span class="option-letter">C</span><span>IRDAI</span></div>
+        <div class="option"><span class="option-letter">D</span><span>NABARD</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) IRDAI
+        </strong>
+        <p>IRDAI is the regulatory authority for the insurance sector in India.</p>
+    </div>
+</div>
+
+<!-- Q48 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q48: Which type of inflation occurs due to increased production costs?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Demand-pull Inflation</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Cost-push Inflation</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Hyperinflation</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Imported Inflation</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Cost-push Inflation
+        </strong>
+        <p>Cost-push inflation results from rising production costs such as wages and raw materials.</p>
+    </div>
+</div>
+
+<!-- Q49 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q49: Which of the following is a renewable economic resource?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Coal</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Petroleum</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Solar Energy</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Natural Gas</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Solar Energy
+        </strong>
+        <p>Solar energy is a renewable resource that can be replenished naturally.</p>
+    </div>
+</div>
+
+<!-- Q50 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q50: Which term refers to a continuous increase in the value of a country's total output?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Economic Growth</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Deflation</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Depreciation</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Recession</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Economic Growth
+        </strong>
+        <p>Economic growth refers to a sustained increase in a country's production of goods and services, usually measured by GDP.</p>
+    </div>
+</div>
+<!-- Q51 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q51: Which institution is known as India's central bank?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>SEBI</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Reserve Bank of India</span></div>
+        <div class="option"><span class="option-letter">C</span><span>NABARD</span></div>
+        <div class="option"><span class="option-letter">D</span><span>SIDBI</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Reserve Bank of India
+        </strong>
+        <p>The Reserve Bank of India (RBI) is the central bank responsible for monetary policy and currency management.</p>
+    </div>
+</div>
+
+<!-- Q52 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q52: Which of the following is a renewable source of energy?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Coal</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Petroleum</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Wind Energy</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Natural Gas</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Wind Energy
+        </strong>
+        <p>Wind energy is a clean and renewable source of energy used for electricity generation.</p>
+    </div>
+</div>
+
+<!-- Q53 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q53: Which of the following is included in the primary sector?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Agriculture</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Banking</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Transport</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Retail Trade</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Agriculture
+        </strong>
+        <p>The primary sector involves extraction and production of natural resources such as agriculture and fishing.</p>
+    </div>
+</div>
+
+<!-- Q54 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q54: Which economic activity adds value by converting raw materials into finished goods?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Manufacturing</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Fishing</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Banking</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Tourism</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Manufacturing
+        </strong>
+        <p>Manufacturing belongs to the secondary sector and converts raw materials into finished products.</p>
+    </div>
+</div>
+
+<!-- Q55 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q55: Which is the main objective of monetary policy?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Price Stability</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Population Growth</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Increase Imports</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Reduce Exports</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Price Stability
+        </strong>
+        <p>Monetary policy aims to maintain price stability while supporting economic growth.</p>
+    </div>
+</div>
+
+<!-- Q56 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q56: Which tax is paid directly by the taxpayer to the government?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>GST</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Income Tax</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Customs Duty</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Excise Duty</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Income Tax
+        </strong>
+        <p>Income Tax is a direct tax because it is paid directly by individuals and businesses.</p>
+    </div>
+</div>
+
+<!-- Q57 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q57: Which of the following is measured by GDP?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Total value of final goods and services</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Total population</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Total exports only</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Total imports only</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Total value of final goods and services
+        </strong>
+        <p>GDP measures the market value of all final goods and services produced within a country.</p>
+    </div>
+</div>
+
+<!-- Q58 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q58: Which institution provides long-term finance for agriculture in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>NABARD</span></div>
+        <div class="option"><span class="option-letter">B</span><span>SEBI</span></div>
+        <div class="option"><span class="option-letter">C</span><span>IRDAI</span></div>
+        <div class="option"><span class="option-letter">D</span><span>LIC</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) NABARD
+        </strong>
+        <p>NABARD promotes sustainable agriculture and rural development through financial support.</p>
+    </div>
+</div>
+
+<!-- Q59 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q59: Which of the following is a macroeconomic variable?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>National Income</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Price of one product</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Income of one consumer</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Output of one firm</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) National Income
+        </strong>
+        <p>Macroeconomics studies economy-wide variables such as national income, inflation, and unemployment.</p>
+    </div>
+</div>
+
+<!-- Q60 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q60: Which organization regulates mutual funds in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>SEBI</span></div>
+        <div class="option"><span class="option-letter">B</span><span>RBI</span></div>
+        <div class="option"><span class="option-letter">C</span><span>NABARD</span></div>
+        <div class="option"><span class="option-letter">D</span><span>IRDAI</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) SEBI
+        </strong>
+        <p>SEBI regulates mutual funds and protects the interests of investors in India.</p>
+    </div>
+</div>
+
+<!-- Q61 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q61: Which economic indicator measures the rise in consumer prices?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>CPI</span></div>
+        <div class="option"><span class="option-letter">B</span><span>IIP</span></div>
+        <div class="option"><span class="option-letter">C</span><span>HDI</span></div>
+        <div class="option"><span class="option-letter">D</span><span>BOP</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) CPI
+        </strong>
+        <p>The Consumer Price Index (CPI) measures retail inflation faced by consumers.</p>
+    </div>
+</div>
+
+<!-- Q62 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q62: Which type of unemployment occurs due to technological advancements?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Seasonal</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Technological</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Frictional</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Disguised</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Technological
+        </strong>
+        <p>Technological unemployment occurs when machines replace human labour.</p>
+    </div>
+</div>
+
+<!-- Q63 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q63: Which of the following is an example of an indirect tax?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Income Tax</span></div>
+        <div class="option"><span class="option-letter">B</span><span>GST</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Corporate Tax</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Wealth Tax</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) GST
+        </strong>
+        <p>GST is collected indirectly through the sale of goods and services.</p>
+    </div>
+</div>
+
+<!-- Q64 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q64: Which market structure has only a single buyer?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Monopoly</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Oligopoly</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Monopsony</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Perfect Competition</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Monopsony
+        </strong>
+        <p>A monopsony is a market where there is only one buyer but many sellers.</p>
+    </div>
+</div>
+
+<!-- Q65 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q65: Which of the following best defines economics?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Study of unlimited resources</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Study of scarce resources and their allocation</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Study of only banking</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Study of government laws</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Study of scarce resources and their allocation
+        </strong>
+        <p>Economics studies how individuals and societies allocate scarce resources to satisfy unlimited wants.</p>
+    </div>
+</div>
+<!-- Q66 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q66: Which institution provides financial assistance to small industries in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>SIDBI</span></div>
+        <div class="option"><span class="option-letter">B</span><span>RBI</span></div>
+        <div class="option"><span class="option-letter">C</span><span>SEBI</span></div>
+        <div class="option"><span class="option-letter">D</span><span>IRDAI</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) SIDBI
+        </strong>
+        <p>SIDBI (Small Industries Development Bank of India) provides financial support to MSMEs and small industries.</p>
+    </div>
+</div>
+
+<!-- Q67 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q67: Which of the following is an example of a public sector enterprise?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Reliance Industries</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Infosys</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Oil and Natural Gas Corporation (ONGC)</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Tata Steel</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Oil and Natural Gas Corporation (ONGC)
+        </strong>
+        <p>ONGC is a major public sector undertaking owned by the Government of India.</p>
+    </div>
+</div>
+
+<!-- Q68 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q68: Which type of bank mainly serves rural and agricultural sectors?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Regional Rural Bank</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Investment Bank</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Foreign Bank</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Payment Bank</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Regional Rural Bank
+        </strong>
+        <p>Regional Rural Banks (RRBs) provide banking and credit facilities to rural areas.</p>
+    </div>
+</div>
+
+<!-- Q69 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q69: Which of the following is a component of GDP?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Consumption</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Investment</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Government Expenditure</span></div>
+        <div class="option"><span class="option-letter">D</span><span>All of the Above</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: D) All of the Above
+        </strong>
+        <p>GDP is calculated using consumption, investment, government expenditure, and net exports.</p>
+    </div>
+</div>
+
+<!-- Q70 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q70: Which term refers to a sustained decline in economic activity?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Inflation</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Expansion</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Recession</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Boom</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Recession
+        </strong>
+        <p>A recession is a significant decline in economic activity lasting for an extended period.</p>
+    </div>
+</div>
+        
+        <div style="text-align: center; margin-top: 40px;">
+            <button class="mat-btn secondary view-more-btn" onclick="loadMore(this, 'week2')">
+                View More Questions <i class="fa-solid fa-angle-down" style="margin-left:8px;"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- WEEK 3 -->
+    <div id="week3" class="week-content" style="display: none;">
+ <!-- Q71 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q71: Which of the following is a function of commercial banks?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Accepting Deposits</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Issuing Currency Notes</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Printing Coins</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Framing Monetary Policy</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Accepting Deposits
+        </strong>
+        <p>Commercial banks accept deposits from the public and provide loans and other banking services.</p>
+    </div>
+</div>
+
+<!-- Q72 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q72: Which of the following is an example of invisible exports?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Export of Cars</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Export of Software Services</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Export of Rice</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Export of Steel</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Export of Software Services
+        </strong>
+        <p>Software and IT services are classified as invisible exports because they are services rather than physical goods.</p>
+    </div>
+</div>
+
+<!-- Q73 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q73: Which organization publishes the World Development Report?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>IMF</span></div>
+        <div class="option"><span class="option-letter">B</span><span>World Bank</span></div>
+        <div class="option"><span class="option-letter">C</span><span>UNDP</span></div>
+        <div class="option"><span class="option-letter">D</span><span>WTO</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) World Bank
+        </strong>
+        <p>The World Bank publishes the annual World Development Report on global development issues.</p>
+    </div>
+</div>
+
+<!-- Q74 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q74: Which of the following is NOT a function of money?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Store of Value</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Medium of Exchange</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Measure of Pollution</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Unit of Account</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Measure of Pollution
+        </strong>
+        <p>Money functions as a medium of exchange, a unit of account, and a store of value, but it does not measure pollution.</p>
+    </div>
+</div>
+
+<!-- Q75 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q75: Which economic system allows prices to be determined mainly by market forces of demand and supply?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Command Economy</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Market Economy</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Traditional Economy</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Barter Economy</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Market Economy
+        </strong>
+        <p>In a market economy, prices are largely determined by the interaction of demand and supply with minimal government intervention.</p>
+    </div>
+</div>
+<!-- Q76 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q76: Which organization regulates India's stock exchanges?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>RBI</span></div>
+        <div class="option"><span class="option-letter">B</span><span>SEBI</span></div>
+        <div class="option"><span class="option-letter">C</span><span>NABARD</span></div>
+        <div class="option"><span class="option-letter">D</span><span>IRDAI</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) SEBI
+        </strong>
+        <p>SEBI regulates the securities market and protects investors' interests in India.</p>
+    </div>
+</div>
+
+<!-- Q77 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q77: Which of the following is a fixed cost for a factory?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Raw Materials</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Electricity for Production</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Factory Rent</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Packaging Expenses</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Factory Rent
+        </strong>
+        <p>Fixed costs remain unchanged regardless of the level of production.</p>
+    </div>
+</div>
+
+<!-- Q78 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q78: Which bank is called the "Banker's Bank" in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>State Bank of India</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Reserve Bank of India</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Punjab National Bank</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Canara Bank</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Reserve Bank of India
+        </strong>
+        <p>RBI acts as the banker to commercial banks and regulates the banking system.</p>
+    </div>
+</div>
+
+<!-- Q79 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q79: Which of the following is a merit good?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Education</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Cigarettes</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Alcohol</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Lottery Tickets</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Education
+        </strong>
+        <p>Merit goods like education provide significant benefits to individuals and society.</p>
+    </div>
+</div>
+
+<!-- Q80 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q80: Which index measures wholesale inflation in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>CPI</span></div>
+        <div class="option"><span class="option-letter">B</span><span>WPI</span></div>
+        <div class="option"><span class="option-letter">C</span><span>IIP</span></div>
+        <div class="option"><span class="option-letter">D</span><span>HDI</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) WPI
+        </strong>
+        <p>The Wholesale Price Index (WPI) measures inflation at the wholesale level.</p>
+    </div>
+</div>
+
+<!-- Q81 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q81: Which of the following is a characteristic of monopoly?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Many Sellers</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Single Seller</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Perfect Competition</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Many Buyers and Sellers</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Single Seller
+        </strong>
+        <p>A monopoly market has only one seller controlling the entire supply.</p>
+    </div>
+</div>
+
+<!-- Q82 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q82: Which of the following is included in indirect taxes?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Income Tax</span></div>
+        <div class="option"><span class="option-letter">B</span><span>GST</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Corporate Tax</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Property Tax</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) GST
+        </strong>
+        <p>GST is an indirect tax collected on the supply of goods and services.</p>
+    </div>
+</div>
+
+<!-- Q83 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q83: Which economic activity belongs to the tertiary sector?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Mining</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Agriculture</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Banking</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Manufacturing</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Banking
+        </strong>
+        <p>Banking is a service activity and belongs to the tertiary sector.</p>
+    </div>
+</div>
+
+<!-- Q84 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q84: Which type of inflation is caused by excessive demand?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Cost-push Inflation</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Demand-pull Inflation</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Imported Inflation</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Deflation</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Demand-pull Inflation
+        </strong>
+        <p>Demand-pull inflation occurs when aggregate demand exceeds aggregate supply.</p>
+    </div>
+</div>
+
+<!-- Q85 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q85: Which organization publishes the Human Development Index (HDI)?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>World Bank</span></div>
+        <div class="option"><span class="option-letter">B</span><span>IMF</span></div>
+        <div class="option"><span class="option-letter">C</span><span>UNDP</span></div>
+        <div class="option"><span class="option-letter">D</span><span>WTO</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) UNDP
+        </strong>
+        <p>UNDP publishes the Human Development Report containing the HDI rankings.</p>
+    </div>
+</div>
+
+<!-- Q86 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q86: Which of the following is an example of capital formation?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Building a Factory</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Buying Food</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Paying Taxes</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Buying Clothes</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Building a Factory
+        </strong>
+        <p>Capital formation involves creating productive assets such as factories and machinery.</p>
+    </div>
+</div>
+
+<!-- Q87 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q87: Which of the following is NOT a direct tax?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Income Tax</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Corporate Tax</span></div>
+        <div class="option"><span class="option-letter">C</span><span>GST</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Capital Gains Tax</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) GST
+        </strong>
+        <p>GST is an indirect tax collected on the supply of goods and services.</p>
+    </div>
+</div>
+
+<!-- Q88 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q88: Which of the following is the largest contributor to India's GDP?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Agriculture</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Manufacturing</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Services Sector</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Mining</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Services Sector
+        </strong>
+        <p>The services sector contributes the largest share to India's Gross Domestic Product.</p>
+    </div>
+</div>
+
+<!-- Q89 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q89: Which of the following is an example of microeconomics?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>National Income</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Inflation Rate</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Pricing of a Single Product</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Balance of Payments</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Pricing of a Single Product
+        </strong>
+        <p>Microeconomics studies individual consumers, firms, and specific markets.</p>
+    </div>
+</div>
+
+<!-- Q90 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q90: Which factor of production receives 'rent' as its reward?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Labour</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Capital</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Land</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Entrepreneur</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Land
+        </strong>
+        <p>In economics, land earns rent, labour earns wages, capital earns interest, and entrepreneurs earn profit.</p>
+    </div>
+</div>
+<!-- Q91 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q91: Which organization is responsible for collecting and publishing India's GDP estimates?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>RBI</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Ministry of Finance</span></div>
+        <div class="option"><span class="option-letter">C</span><span>National Statistical Office (NSO)</span></div>
+        <div class="option"><span class="option-letter">D</span><span>SEBI</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) National Statistical Office (NSO)
+        </strong>
+        <p>The National Statistical Office (NSO) compiles and publishes India's GDP estimates.</p>
+    </div>
+</div>
+
+<!-- Q92 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q92: Which of the following is an example of a variable cost?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Factory Rent</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Insurance Premium</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Raw Material Cost</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Building Tax</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Raw Material Cost
+        </strong>
+        <p>Variable costs change according to the level of production, such as raw material expenses.</p>
+    </div>
+</div>
+
+<!-- Q93 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q93: Which of the following is a function of the Reserve Bank of India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Printing Currency Notes</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Conducting Census</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Managing Railways</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Collecting GST</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Printing Currency Notes
+        </strong>
+        <p>The RBI issues and manages currency notes (except the ₹1 note) and regulates the monetary system.</p>
+    </div>
+</div>
+
+<!-- Q94 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q94: Which economic activity is included in the secondary sector?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Agriculture</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Mining</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Manufacturing</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Banking</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Manufacturing
+        </strong>
+        <p>The secondary sector involves manufacturing and industrial production.</p>
+    </div>
+</div>
+
+<!-- Q95 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q95: Which type of unemployment is common in agriculture due to surplus workers?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Seasonal Unemployment</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Technological Unemployment</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Disguised Unemployment</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Structural Unemployment</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Disguised Unemployment
+        </strong>
+        <p>Disguised unemployment occurs when more workers are employed than actually needed.</p>
+    </div>
+</div>
+
+<!-- Q96 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q96: Which of the following is an example of a capital good?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Television</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Machine Tool</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Bread</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Clothing</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Machine Tool
+        </strong>
+        <p>Capital goods are used to produce other goods and services, such as machinery.</p>
+    </div>
+</div>
+
+<!-- Q97 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q97: Which of the following is measured by Per Capita Income?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Average Income of Citizens</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Total Tax Collection</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Total Exports</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Total Population</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Average Income of Citizens
+        </strong>
+        <p>Per capita income is calculated by dividing national income by the total population.</p>
+    </div>
+</div>
+
+<!-- Q98 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q98: Which market structure has a few large sellers?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Perfect Competition</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Monopoly</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Oligopoly</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Monopsony</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Oligopoly
+        </strong>
+        <p>An oligopoly market consists of a few dominant firms controlling most of the market.</p>
+    </div>
+</div>
+
+<!-- Q99 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q99: Which policy is used by the government to influence taxation and public expenditure?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Monetary Policy</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Fiscal Policy</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Trade Policy</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Industrial Policy</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Fiscal Policy
+        </strong>
+        <p>Fiscal policy involves government decisions on taxation, borrowing, and public expenditure.</p>
+    </div>
+</div>
+
+<!-- Q100 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q100: Which of the following is an example of a direct benefit transfer (DBT)?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Cash transferred directly to beneficiaries' bank accounts</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Subsidy through ration shops</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Distribution of free textbooks</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Public road construction</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Cash transferred directly to beneficiaries' bank accounts
+        </strong>
+        <p>DBT transfers government benefits directly into eligible beneficiaries' bank accounts.</p>
+    </div>
+</div>
+
+<!-- Q101 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q101: Which factor of production receives wages as income?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Land</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Labour</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Capital</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Entrepreneurship</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Labour
+        </strong>
+        <p>Labour earns wages, while land earns rent, capital earns interest, and entrepreneurs earn profit.</p>
+    </div>
+</div>
+
+<!-- Q102 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q102: Which sector mainly provides transport, communication, and banking services?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Primary Sector</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Secondary Sector</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Tertiary Sector</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Agricultural Sector</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Tertiary Sector
+        </strong>
+        <p>The tertiary sector includes all service-related economic activities.</p>
+    </div>
+</div>
+
+<!-- Q103 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q103: Which of the following is a non-renewable natural resource?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Wind Energy</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Solar Energy</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Coal</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Hydroelectric Energy</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Coal
+        </strong>
+        <p>Coal is a fossil fuel and a non-renewable natural resource.</p>
+    </div>
+</div>
+
+<!-- Q104 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q104: Which economic concept explains that human wants are unlimited but resources are limited?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Scarcity</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Elasticity</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Utility</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Opportunity Cost</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Scarcity
+        </strong>
+        <p>Scarcity is the basic economic problem arising from unlimited wants and limited resources.</p>
+    </div>
+</div>
+
+<!-- Q105 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q105: Which banking service enables customers to withdraw cash using a debit card at any time?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>ATM</span></div>
+        <div class="option"><span class="option-letter">B</span><span>NEFT</span></div>
+        <div class="option"><span class="option-letter">C</span><span>RTGS</span></div>
+        <div class="option"><span class="option-letter">D</span><span>UPI</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) ATM
+        </strong>
+        <p>An Automated Teller Machine (ATM) allows customers to withdraw cash and access basic banking services using a debit card.</p>
+    </div>
+</div>
+        
+        <div style="text-align: center; margin-top: 40px;">
+            <button class="mat-btn secondary view-more-btn" onclick="loadMore(this, 'week3')">
+                View More Questions <i class="fa-solid fa-angle-down" style="margin-left:8px;"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- WEEK 4 -->
+    <div id="week4" class="week-content" style="display: none;">
+<!-- Q106 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q106: Which of the following is considered the backbone of the Indian economy?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Manufacturing</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Agriculture</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Tourism</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Information Technology</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Agriculture
+        </strong>
+        <p>Agriculture is often called the backbone of the Indian economy because it supports a large share of the population.</p>
+    </div>
+</div>
+
+<!-- Q107 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q107: Which type of market has only one seller?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Oligopoly</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Perfect Competition</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Monopoly</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Monopsony</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Monopoly
+        </strong>
+        <p>A monopoly exists when a single seller controls the entire market for a product or service.</p>
+    </div>
+</div>
+
+<!-- Q108 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q108: Which of the following is a function of money?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Medium of Exchange</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Unit of Account</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Store of Value</span></div>
+        <div class="option"><span class="option-letter">D</span><span>All of the Above</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: D) All of the Above
+        </strong>
+        <p>Money serves as a medium of exchange, a unit of account, and a store of value.</p>
+    </div>
+</div>
+
+<!-- Q109 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q109: Which organization provides long-term loans to industries in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>SIDBI</span></div>
+        <div class="option"><span class="option-letter">B</span><span>LIC</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Post Office</span></div>
+        <div class="option"><span class="option-letter">D</span><span>EPFO</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) SIDBI
+        </strong>
+        <p>SIDBI supports MSMEs by providing financial assistance and development services.</p>
+    </div>
+</div>
+
+<!-- Q110 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q110: Which of the following is an example of fiscal policy?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Changing Repo Rate</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Increasing Government Spending</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Changing CRR</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Open Market Operations</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Increasing Government Spending
+        </strong>
+        <p>Fiscal policy deals with taxation and government expenditure to influence the economy.</p>
+    </div>
+</div>
+
+<!-- Q111 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q111: Which factor of production earns interest?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Land</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Labour</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Capital</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Entrepreneur</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Capital
+        </strong>
+        <p>Capital receives interest as its reward in the production process.</p>
+    </div>
+</div>
+
+<!-- Q112 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q112: Which of the following is measured by the Consumer Price Index (CPI)?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Retail Inflation</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Industrial Growth</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Exports</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Employment Rate</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Retail Inflation
+        </strong>
+        <p>CPI measures changes in the prices paid by consumers for goods and services.</p>
+    </div>
+</div>
+
+<!-- Q113 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q113: Which type of unemployment occurs during the off-season in agriculture?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Seasonal Unemployment</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Structural Unemployment</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Technological Unemployment</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Frictional Unemployment</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Seasonal Unemployment
+        </strong>
+        <p>Seasonal unemployment occurs when work is available only during certain seasons.</p>
+    </div>
+</div>
+
+<!-- Q114 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q114: Which of the following is a public good?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>National Defense</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Private Car</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Mobile Phone</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Restaurant Service</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) National Defense
+        </strong>
+        <p>Public goods are non-rival and non-excludable, such as national defense and street lighting.</p>
+    </div>
+</div>
+
+<!-- Q115 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q115: Which institution regulates the insurance sector in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>SEBI</span></div>
+        <div class="option"><span class="option-letter">B</span><span>IRDAI</span></div>
+        <div class="option"><span class="option-letter">C</span><span>RBI</span></div>
+        <div class="option"><span class="option-letter">D</span><span>NABARD</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) IRDAI
+        </strong>
+        <p>IRDAI regulates and promotes the insurance industry in India.</p>
+    </div>
+</div>
+
+<!-- Q116 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q116: Which economic concept refers to the next best alternative that is given up?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Opportunity Cost</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Utility</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Scarcity</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Elasticity</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Opportunity Cost
+        </strong>
+        <p>Opportunity cost is the value of the next best alternative forgone when making a choice.</p>
+    </div>
+</div>
+
+<!-- Q117 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q117: Which of the following is included in the Balance of Payments (BoP)?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Exports and Imports</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Foreign Investments</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Remittances</span></div>
+        <div class="option"><span class="option-letter">D</span><span>All of the Above</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: D) All of the Above
+        </strong>
+        <p>The Balance of Payments records all economic transactions between residents and the rest of the world.</p>
+    </div>
+</div>
+
+<!-- Q118 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q118: Which tax was introduced in India on 1 July 2017?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Income Tax</span></div>
+        <div class="option"><span class="option-letter">B</span><span>GST</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Customs Duty</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Service Tax</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) GST
+        </strong>
+        <p>The Goods and Services Tax (GST) came into effect on 1 July 2017, replacing multiple indirect taxes.</p>
+    </div>
+</div>
+
+<!-- Q119 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q119: Which of the following is an example of inflation?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>General rise in prices</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Fall in unemployment</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Increase in exports</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Decrease in GDP</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) General rise in prices
+        </strong>
+        <p>Inflation refers to a sustained increase in the general price level of goods and services.</p>
+    </div>
+</div>
+
+<!-- Q120 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q120: Which economic indicator is commonly used to measure a country's standard of living?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Per Capita Income</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Fiscal Deficit</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Repo Rate</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Cash Reserve Ratio</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Per Capita Income
+        </strong>
+        <p>Per capita income is widely used as an indicator of the average standard of living in a country.</p>
+    </div>
+</div>
+<!-- Q121 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q121: Which of the following is the primary objective of economic planning?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Increase Inequality</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Economic Development</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Reduce Exports</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Increase Inflation</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Economic Development
+        </strong>
+        <p>Economic planning aims to achieve sustainable growth, employment, and balanced development.</p>
+    </div>
+</div>
+
+<!-- Q122 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q122: Which of the following is a feature of perfect competition?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Single Seller</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Product Differentiation</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Large Number of Buyers and Sellers</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Price Control by Sellers</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Large Number of Buyers and Sellers
+        </strong>
+        <p>Perfect competition has many buyers and sellers dealing in homogeneous products.</p>
+    </div>
+</div>
+
+<!-- Q123 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q123: Which organization regulates commodity markets in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>SEBI</span></div>
+        <div class="option"><span class="option-letter">B</span><span>RBI</span></div>
+        <div class="option"><span class="option-letter">C</span><span>IRDAI</span></div>
+        <div class="option"><span class="option-letter">D</span><span>NABARD</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) SEBI
+        </strong>
+        <p>SEBI regulates both securities and commodity derivative markets in India.</p>
+    </div>
+</div>
+
+<!-- Q124 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q124: Which of the following is a measure of economic inequality?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Gini Coefficient</span></div>
+        <div class="option"><span class="option-letter">B</span><span>CPI</span></div>
+        <div class="option"><span class="option-letter">C</span><span>IIP</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Repo Rate</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Gini Coefficient
+        </strong>
+        <p>The Gini Coefficient measures the degree of income or wealth inequality.</p>
+    </div>
+</div>
+
+<!-- Q125 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q125: Which of the following is a source of government revenue?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Taxes</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Borrowings</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Fees and Fines</span></div>
+        <div class="option"><span class="option-letter">D</span><span>All of the Above</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: D) All of the Above
+        </strong>
+        <p>Government revenue comes from taxes, borrowings, fees, fines, and other receipts.</p>
+    </div>
+</div>
+
+<!-- Q126 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q126: Which of the following is an example of a direct tax in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>GST</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Customs Duty</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Income Tax</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Excise Duty</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Income Tax
+        </strong>
+        <p>Income Tax is paid directly by individuals and businesses to the government.</p>
+    </div>
+</div>
+
+<!-- Q127 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q127: Which factor determines the demand for a product?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Price of the Product</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Consumer Income</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Tastes and Preferences</span></div>
+        <div class="option"><span class="option-letter">D</span><span>All of the Above</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: D) All of the Above
+        </strong>
+        <p>Demand depends on price, income, preferences, and other market factors.</p>
+    </div>
+</div>
+
+<!-- Q128 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q128: Which type of bank account usually earns interest on deposits?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Current Account</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Savings Account</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Loan Account</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Cash Credit Account</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Savings Account
+        </strong>
+        <p>Savings accounts encourage saving by providing interest on deposited money.</p>
+    </div>
+</div>
+
+<!-- Q129 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q129: Which institution provides crop insurance to farmers in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>IRDAI</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Agriculture Insurance Company of India</span></div>
+        <div class="option"><span class="option-letter">C</span><span>SEBI</span></div>
+        <div class="option"><span class="option-letter">D</span><span>NABARD</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Agriculture Insurance Company of India
+        </strong>
+        <p>AIC implements crop insurance schemes to protect farmers against crop losses.</p>
+    </div>
+</div>
+
+<!-- Q130 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q130: Which of the following is an example of a public sector bank?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>HDFC Bank</span></div>
+        <div class="option"><span class="option-letter">B</span><span>ICICI Bank</span></div>
+        <div class="option"><span class="option-letter">C</span><span>State Bank of India</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Axis Bank</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) State Bank of India
+        </strong>
+        <p>State Bank of India is the largest public sector bank in the country.</p>
+    </div>
+</div>
+
+<!-- Q131 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q131: Which type of inflation occurs when production costs increase?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Demand-Pull Inflation</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Cost-Push Inflation</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Hyperinflation</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Deflation</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Cost-Push Inflation
+        </strong>
+        <p>Cost-push inflation is caused by rising production costs such as wages and raw materials.</p>
+    </div>
+</div>
+
+<!-- Q132 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q132: Which economic indicator measures industrial growth?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>IIP</span></div>
+        <div class="option"><span class="option-letter">B</span><span>CPI</span></div>
+        <div class="option"><span class="option-letter">C</span><span>WPI</span></div>
+        <div class="option"><span class="option-letter">D</span><span>GDP Deflator</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) IIP
+        </strong>
+        <p>The Index of Industrial Production (IIP) measures changes in industrial output.</p>
+    </div>
+</div>
+
+<!-- Q133 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q133: Which is the largest sector of employment in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Manufacturing</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Agriculture</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Banking</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Information Technology</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Agriculture
+        </strong>
+        <p>Agriculture continues to employ the largest share of India's workforce.</p>
+    </div>
+</div>
+
+<!-- Q134 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q134: Which organization provides microfinance to Self-Help Groups (SHGs)?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>NABARD</span></div>
+        <div class="option"><span class="option-letter">B</span><span>SEBI</span></div>
+        <div class="option"><span class="option-letter">C</span><span>IRDAI</span></div>
+        <div class="option"><span class="option-letter">D</span><span>RBI</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) NABARD
+        </strong>
+        <p>NABARD supports SHGs through various rural credit and microfinance initiatives.</p>
+    </div>
+</div>
+
+<!-- Q135 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q135: Which factor of production earns profit?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Capital</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Entrepreneur</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Land</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Labour</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Entrepreneur
+        </strong>
+        <p>The entrepreneur organizes production and earns profit as a reward for taking risks.</p>
+    </div>
+</div>
+
+<!-- Q136 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q136: Which of the following is a function of commercial banks?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Accept Deposits</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Provide Loans</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Create Credit</span></div>
+        <div class="option"><span class="option-letter">D</span><span>All of the Above</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: D) All of the Above
+        </strong>
+        <p>Commercial banks accept deposits, provide loans, and create credit in the economy.</p>
+    </div>
+</div>
+
+<!-- Q137 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q137: Which of the following is an indicator of economic growth?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Increase in GDP</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Decrease in Exports</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Increase in Inflation Only</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Increase in Imports Only</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Increase in GDP
+        </strong>
+        <p>Economic growth is commonly measured by the increase in a country's Gross Domestic Product (GDP).</p>
+    </div>
+</div>
+
+<!-- Q138 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q138: Which government document presents estimated receipts and expenditures for a financial year?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Economic Survey</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Union Budget</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Census Report</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Five-Year Plan</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Union Budget
+        </strong>
+        <p>The Union Budget outlines the government's expected revenue and expenditure for the financial year.</p>
+    </div>
+</div>
+
+<!-- Q139 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q139: Which type of economy is based mainly on customs and traditions?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Market Economy</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Mixed Economy</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Traditional Economy</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Command Economy</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Traditional Economy
+        </strong>
+        <p>A traditional economy relies on customs, beliefs, and long-established practices.</p>
+    </div>
+</div>
+
+<!-- Q140 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q140: Which economic problem arises because human wants are unlimited while resources are limited?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Scarcity</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Inflation</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Recession</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Deflation</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Scarcity
+        </strong>
+        <p>Scarcity is the fundamental economic problem of limited resources and unlimited human wants.</p>
+    </div>
+</div>
+        
+        <div style="text-align: center; margin-top: 40px;">
+            <button class="mat-btn secondary view-more-btn" onclick="loadMore(this, 'week4')">
+                View More Questions <i class="fa-solid fa-angle-down" style="margin-left:8px;"></i>
+            </button>
+        </div>
+    </div>
+
+</section>
+
+<!-- Footer with GK Links -->
+<footer>
+    <div class="footer-grid">
+        <div class="footer-col">
+            <div class="logo" style="margin-bottom: 20px;">
+                <a href="index.html" style="font-size: 20px; font-weight: 800; color: var(--text-color); display:flex; align-items:center; gap:8px; letter-spacing: -0.5px;">
+                    <i class="fa-solid fa-graduation-cap" style="color: var(--primary-color);"></i> GK BYTE
+                </a>
+            </div>
+            <p style="font-size: 0.95rem;">Empowering minds with comprehensive and curated General Knowledge. Your ultimate companion for competitive exams and lifelong learning journeys.</p>
+        </div>
+        
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About Us</a>
+                <a href="quiz.html">GK Quizzes</a>
+                
+                <a href="index.html#contact">Contact Support</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </div>
+        
+        <div class="footer-col">
+            <h4>Subjects</h4>
+            <div class="footer-links">
+                <a href="history.html">History</a>
+                <a href="politics.html">Politics</a>
+                <a href="economics.html">Economics</a>
+                <a href="current-affairs.html">Current Affairs</a>
+                <a href="geography.html">Geography</a>
+                
+            </div>
+        </div>
+        
+        <div class="footer-col">
+            <h4>Newsletter</h4>
+            <p style="margin-bottom: 12px; font-size: 0.95rem;">Subscribe to receive weekly GK updates directly in your inbox.</p>
+            <div class="newsletter">
+                <form action="#" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+                    <input type="email" placeholder="Your email address" required style="width: 100%; margin-bottom: 8px;">
+                    <button type="submit" class="mat-btn" style="width: 100%; padding: 10px 16px;">Subscribe <i class="fa-solid fa-paper-plane" style="margin-left: 8px;"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2026 GK BYTE. All Rights Reserved. Redesigned with Material Design &hearts;</p>
+    </div>
+</footer>
+
+<script>
+    // Scroll to Top Logic
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+    
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            scrollTopBtn.classList.add('show');
+        } else {
+            scrollTopBtn.classList.remove('show');
+        }
+    });
+    scrollTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+    // Theme & Mobile Menu
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.documentElement; 
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    body.setAttribute('data-theme', savedTheme);
+    updateIcon(savedTheme);
+
+    themeToggle.addEventListener('click', () => {
+        const newTheme = body.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+        body.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateIcon(newTheme);
+    });
+
+    function updateIcon(theme) {
+        themeToggle.innerHTML = theme === 'light' ? '<i class="fa-solid fa-moon"></i>' : '<i class="fa-solid fa-sun"></i>';
+    }
+
+    const menuToggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav-menu');
+    menuToggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        const icon = menuToggle.querySelector('i');
+        icon.classList.toggle('fa-bars');
+        icon.classList.toggle('fa-xmark');
+    });
+
+    const dropdown = document.querySelector('.dropdown');
+    dropdown.addEventListener('click', (e) => {
+        if(window.innerWidth <= 768) dropdown.classList.toggle('active');
+    });
+
+    // --- Static Question Pagination Logic ---
+    const PAGE_SIZE = 20;
+
+    function setupPagination() {
+        const weekContents = document.querySelectorAll('.week-content');
+        weekContents.forEach(week => {
+            let cards = week.querySelectorAll('.question-card');
+            cards.forEach((card, index) => {
+                card.style.display = index >= PAGE_SIZE ? 'none' : 'block';
+            });
+            
+            const viewMoreBtn = week.querySelector('.view-more-btn');
+            if (viewMoreBtn) {
+                if (cards.length <= PAGE_SIZE) {
+                    viewMoreBtn.style.display = 'none';
+                } else {
+                    viewMoreBtn.style.display = 'inline-flex';
+                    viewMoreBtn.dataset.visibleCount = PAGE_SIZE;
+                    viewMoreBtn.innerHTML = `View More Questions (${cards.length - PAGE_SIZE} left) <i class="fa-solid fa-angle-down" style="margin-left:8px;"></i>`;
+                }
+            }
+        });
+    }
+
+    window.loadMore = function(btn, weekId) {
+        const week = document.getElementById(weekId);
+        let cards = week.querySelectorAll('.question-card');
+        let visibleCount = parseInt(btn.dataset.visibleCount || PAGE_SIZE);
+        
+        let nextCount = visibleCount + PAGE_SIZE;
+        cards.forEach((card, index) => {
+            if (index < nextCount) card.style.display = 'block';
+        });
+        
+        btn.dataset.visibleCount = nextCount;
+        if (nextCount >= cards.length) {
+            btn.style.display = 'none';
+        } else {
+            btn.innerHTML = `View More Questions (${cards.length - nextCount} left) <i class="fa-solid fa-angle-down" style="margin-left:8px;"></i>`;
+        }
+    };
+
+    window.toggleExplanation = function(btn) {
+        const expBox = btn.nextElementSibling;
+        if (expBox.style.display === 'none' || expBox.style.display === '') {
+            expBox.style.display = 'block';
+            btn.innerHTML = '<i class="fa-solid fa-minus"></i> Hide Explanation';
+            btn.classList.remove('accent');
+            btn.classList.add('secondary');
+        } else {
+            expBox.style.display = 'none';
+            btn.innerHTML = '<i class="fa-solid fa-plus"></i> View Explanation';
+            btn.classList.remove('secondary');
+            btn.classList.add('accent');
+        }
+    };
+
+    // Week Toggling
+    document.querySelectorAll('.week-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            // Remove active from all buttons
+            document.querySelectorAll('.week-btn').forEach(b => b.classList.remove('active'));
+            // Add active to clicked button
+            btn.classList.add('active');
+            
+            // Hide all content
+            document.querySelectorAll('.week-content').forEach(w => w.style.display = 'none');
+            // Show corresponding content
+            document.getElementById(btn.dataset.week).style.display = 'block';
+        });
+    });
+    
+    // Initialize
+    setupPagination();
+</script>
+
+</body>
+</html>

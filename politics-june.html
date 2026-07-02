@@ -1,0 +1,3549 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GK BYTE - June Politics. Weekly curated questions to test your knowledge.">
+    <title>GK BYTE | June Politics Quiz</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Poppins for Headings, Inter for Body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Variables for Material Design & Theming */
+        :root {
+            /* Light Theme Colors */
+            --bg-color: #f8fafc; 
+            --surface-color: #ffffff;
+            --text-color: #222222;
+            --text-muted: #555555;
+            --primary-color: #2563EB; 
+            --primary-hover: #1d4ed8;
+            --secondary-bg: #f1f5f9;
+            --accent-green: #10b981; 
+            --error-red: #ef4444; 
+            --border-color: #e2e8f0;
+            
+            /* Material Shadows */
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            
+            /* Typography */
+            --font-body: 'Inter', sans-serif;
+            --font-heading: 'Poppins', sans-serif;
+        }
+
+        [data-theme="dark"] {
+            /* Dark Theme Colors */
+            --bg-color: #121212;
+            --surface-color: #1e1e1e;
+            --text-color: #e5e5e5;
+            --text-muted: #a3a3a3;
+            --primary-color: #3b82f6;
+            --primary-hover: #60a5fa;
+            --secondary-bg: #2d2d2d;
+            --border-color: #333333;
+            
+            /* Shadows for Dark Mode */
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-body);
+            font-size: 16px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s ease, color 0.3s ease;
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+        
+        h1, h2, h3, h4 { 
+            font-family: var(--font-heading); 
+            color: var(--text-color);
+            line-height: 1.3;
+        }
+
+        /* Material Utility Classes */
+        .mat-card {
+            background-color: var(--surface-color);
+            border-radius: 12px;
+            box-shadow: var(--shadow-sm);
+            padding: 30px;
+            border: 1px solid var(--border-color);
+        }
+
+        .mat-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background-color: var(--primary-color);
+            color: #ffffff !important;
+            font-weight: 500;
+            font-family: var(--font-body);
+            border-radius: 8px;
+            box-shadow: var(--shadow-sm);
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.2s, box-shadow 0.2s, transform 0.1s;
+            font-size: 1rem;
+            letter-spacing: 0.3px;
+        }
+
+        .mat-btn:hover { 
+            background-color: var(--primary-hover);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .mat-btn:active { 
+            transform: scale(0.98); 
+            box-shadow: var(--shadow-sm); 
+        }
+
+        .mat-btn.secondary { 
+            background-color: transparent;
+            color: var(--primary-color) !important;
+            border: 2px solid var(--primary-color);
+            box-shadow: none;
+        }
+
+        .mat-btn.secondary:hover {
+            background-color: rgba(37, 99, 235, 0.05);
+        }
+        
+        [data-theme="dark"] .mat-btn.secondary:hover {
+            background-color: rgba(59, 130, 246, 0.1);
+        }
+        
+        .mat-btn.accent {
+            background-color: var(--accent-green);
+        }
+        .mat-btn.accent:hover {
+            background-color: #059669;
+        }
+
+        /* Header & Navigation */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: var(--surface-color);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: var(--shadow-sm);
+            border-bottom: 1px solid var(--border-color);
+            transition: background-color 0.3s ease;
+        }
+
+        .logo a {
+            font-family: var(--font-heading);
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--text-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        .logo a i {
+            color: var(--primary-color);
+        }
+
+        nav { display: flex; align-items: center; gap: 24px; }
+        nav ul { display: flex; align-items: center; gap: 8px; }
+
+        nav a.nav-link {
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: background-color 0.2s, color 0.2s;
+            color: var(--text-color);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        nav a.nav-link:hover, .dropdown.active > a.nav-link {
+            background-color: var(--secondary-bg);
+            color: var(--primary-color);
+        }
+
+        /* Dropdown */
+        .dropdown { position: relative; }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 120%;
+            left: 50%;
+            transform: translateX(-50%) translateY(10px);
+            background-color: var(--surface-color);
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            min-width: 220px;
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
+            z-index: 100;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        .dropdown-menu a {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 16px;
+            border-radius: 8px;
+            transition: background-color 0.2s;
+            font-weight: 500;
+            color: var(--text-color);
+            font-size: 0.95rem;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: var(--secondary-bg);
+            color: var(--primary-color);
+        }
+
+        /* Actions (Toggle & Quiz Btn) */
+        .nav-actions { display: flex; align-items: center; gap: 16px; }
+
+        .theme-toggle {
+            background: var(--secondary-bg);
+            border: none;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            cursor: pointer;
+            color: var(--text-color);
+            transition: background-color 0.2s, transform 0.2s;
+        }
+
+        .theme-toggle:hover {
+            background-color: var(--border-color);
+            transform: scale(1.05);
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 28px;
+            color: var(--text-color);
+            cursor: pointer;
+        }
+
+        /* Quiz Page Styles */
+        .section { padding: 60px 5%; max-width: 1200px; margin: 0 auto; min-height: 80vh; }
+        
+        .page-title { 
+            text-align: center; 
+            margin-bottom: 48px; 
+            font-size: 2.5rem; 
+            font-weight: 800;
+        }
+
+        .week-nav { 
+            display: flex; 
+            justify-content: center; 
+            gap: 16px; 
+            margin-bottom: 48px; 
+            flex-wrap: wrap; 
+        }
+        
+        .week-btn { 
+            background-color: var(--surface-color); 
+            color: var(--text-muted); 
+            font-size: 1rem; 
+            padding: 12px 24px; 
+            border-radius: 24px; 
+            transition: all 0.2s; 
+            border: 1px solid var(--border-color); 
+            font-weight: 600; 
+            font-family: var(--font-body);
+            display: flex; 
+            align-items: center; 
+            gap: 8px; 
+            cursor: pointer;
+        }
+        .week-btn:hover { 
+            border-color: var(--primary-color); 
+            color: var(--primary-color); 
+        }
+        .week-btn.active { 
+            background-color: var(--primary-color); 
+            color: white; 
+            border-color: var(--primary-color);
+            box-shadow: var(--shadow-sm); 
+        }
+        
+        .question-card { 
+            margin-bottom: 40px; 
+            text-align: left; 
+            animation: fadeIn 0.4s ease; 
+            display: none; 
+            padding: 32px;
+        }
+        
+        @keyframes fadeIn { 
+            from { opacity: 0; transform: translateY(10px); } 
+            to { opacity: 1; transform: translateY(0); } 
+        }
+
+        .question-text { 
+            font-size: 1.15rem; 
+            font-weight: 600; 
+            margin-bottom: 24px; 
+            padding: 20px 24px; 
+            background-color: var(--secondary-bg); 
+            color: var(--text-color); 
+            border-left: 4px solid var(--primary-color); 
+            border-radius: 8px;
+            line-height: 1.6; 
+        }
+
+        .options-grid { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 16px; 
+            margin-bottom: 24px; 
+        }
+        
+        .option { 
+            background-color: var(--surface-color); 
+            border: 1px solid var(--border-color);
+            padding: 16px 20px; 
+            border-radius: 12px; 
+            font-weight: 500; 
+            transition: all 0.2s ease; 
+            display: flex; 
+            align-items: center; 
+            gap: 16px; 
+            font-size: 1rem; 
+            cursor: pointer;
+        }
+        
+        .option:hover { 
+            border-color: var(--primary-color);
+            background-color: rgba(37, 99, 235, 0.05);
+            color: var(--primary-color); 
+        }
+        
+        [data-theme="dark"] .option:hover {
+            background-color: rgba(59, 130, 246, 0.1);
+        }
+
+        .option-letter { 
+            background: var(--primary-color); 
+            color: white; 
+            width: 32px; 
+            height: 32px; 
+            display: inline-flex; 
+            align-items: center; 
+            justify-content: center; 
+            border-radius: 50%; 
+            font-weight: 600; 
+            font-size: 0.9rem; 
+            flex-shrink: 0; 
+        }
+
+        .explanation-box { 
+            margin-top: 24px; 
+            background-color: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            border-left: 4px solid var(--accent-green); 
+            padding: 20px 24px; 
+            border-radius: 8px; 
+            display: none; 
+            animation: slideDown 0.3s ease; 
+        }
+        
+        [data-theme="dark"] .explanation-box {
+            background-color: rgba(16, 185, 129, 0.15);
+        }
+        
+        @keyframes slideDown { 
+            from { opacity: 0; transform: translateY(-10px); } 
+            to { opacity: 1; transform: translateY(0); } 
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--surface-color); padding: 80px 5% 40px; margin-top: 80px;
+            border-top: 1px solid var(--border-color);
+        }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 40px; max-width: 1280px; margin: 0 auto 60px; }
+        
+        .footer-col { display: flex; flex-direction: column; }
+        .footer-col h4 { font-size: 1.125rem; margin-bottom: 24px; font-weight: 600; color: var(--text-color); }
+        .footer-links { display: flex; flex-direction: column; gap: 12px; }
+        .footer-links a { color: var(--text-muted); transition: color 0.2s; display: inline-block; font-size: 0.95rem; }
+        .footer-links a:hover { color: var(--primary-color); }
+        
+        .newsletter form { display: flex; flex-direction: column; gap: 8px; margin-top: 16px; }
+        .newsletter input {
+            padding: 12px 16px; border: 1px solid var(--border-color); border-radius: 8px;
+            background: var(--bg-color); color: var(--text-color); outline: none;
+            font-family: var(--font-body); transition: border-color 0.2s;
+        }
+        .newsletter input:focus { border-color: var(--primary-color); }
+        
+        .footer-bottom { text-align: center; padding-top: 24px; border-top: 1px solid var(--border-color); color: var(--text-muted); font-size: 0.875rem; }
+
+        @media (max-width: 768px) {
+            .menu-toggle { display: block; }
+            nav {
+                position: absolute; top: 100%; left: 0; width: 100%; background-color: var(--surface-color);
+                padding: 24px 5%; flex-direction: column; box-shadow: var(--shadow-md);
+                opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.3s ease;
+                border-bottom: 1px solid var(--border-color);
+            }
+            nav.active { opacity: 1; visibility: visible; transform: translateY(0); }
+            nav ul { flex-direction: column; width: 100%; gap: 8px; }
+            nav ul li { width: 100%; text-align: center; }
+            nav a.nav-link { width: 100%; justify-content: center; }
+            
+            .dropdown-menu {
+                position: static; transform: none; box-shadow: none; border: none;
+                display: none; opacity: 1; visibility: visible; padding: 10px 0;
+                background-color: transparent;
+            }
+            .dropdown.active .dropdown-menu { display: flex; }
+            
+            .nav-actions { width: 100%; justify-content: center; margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--border-color); }
+            
+            .options-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; text-align: center; }
+        }
+         /* Scroll to Top Button */
+        .scroll-top-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            box-shadow: var(--shadow-md);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+        .scroll-top-btn.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .scroll-top-btn:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+    </style>
+</head>
+<body>
+<!-- Scroll to Top Button -->
+<button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <i class="fa-solid fa-graduation-cap"></i> GK BYTE
+        </a>
+    </div>
+    <nav id="nav-menu">
+        <ul>
+            <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="nav-link"><i class="fa-solid fa-book-open"></i> Subjects <i class="fa-solid fa-chevron-down" style="font-size: 0.8em; margin-left:5px;"></i></a>
+                <div class="dropdown-menu">
+                    <a href="history.html"><i class="fa-solid fa-landmark"></i> History</a>
+                    <a href="politics.html"><i class="fa-solid fa-gavel"></i> Politics</a>
+                    <a href="economics.html"><i class="fa-solid fa-chart-line"></i> Economics</a>
+                    <a href="current-affairs.html"><i class="fa-solid fa-newspaper"></i> Current Affairs</a>
+                    <a href="geography.html"><i class="fa-solid fa-earth-americas"></i> Geography</a>
+                </div>
+            </li>
+            <li><a href="index.html#about" class="nav-link"><i class="fa-solid fa-circle-info"></i> About</a></li>
+            <li><a href="index.html#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="quiz.html" class="mat-btn accent"><i class="fa-solid fa-gamepad"></i> GK Quiz</a>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode"><i class="fa-solid fa-moon"></i></button>
+        </div>
+    </nav>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+</header>
+
+<section class="section">
+    <h1 class="page-title">June Politics Quiz</h1>
+    
+    <div class="week-nav">
+        <button class="week-btn active" data-week="week1"><i class="fa-regular fa-calendar-check"></i> Week 1</button>
+        <button class="week-btn" data-week="week2"><i class="fa-regular fa-calendar-check"></i> Week 2</button>
+        <button class="week-btn" data-week="week3"><i class="fa-regular fa-calendar-check"></i> Week 3</button>
+        <button class="week-btn" data-week="week4"><i class="fa-regular fa-calendar-check"></i> Week 4</button>
+    </div>
+
+    <!-- WEEK 1 -->
+    <div id="week1" class="week-content" style="display: block;">
+        
+<!-- Q1 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q1: Which of the following is the supreme law of the land in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Parliamentary Acts</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Constitution of India</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Judicial decisions</span></div>
+        <div class="option"><span class="option-letter">D</span><span>President’s orders</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Constitution of India
+        </strong>
+        <p>The Constitution of India is the supreme law that governs all institutions and citizens.</p>
+    </div>
+</div>
+
+<!-- Q2 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q2: How many fundamental rights are guaranteed by the Indian Constitution (originally)?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>5</span></div>
+        <div class="option"><span class="option-letter">B</span><span>6</span></div>
+        <div class="option"><span class="option-letter">C</span><span>7</span></div>
+        <div class="option"><span class="option-letter">D</span><span>8</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) 7
+        </strong>
+        <p>Originally, the Constitution provided 7 Fundamental Rights before the Right to Property was removed.</p>
+    </div>
+</div>
+
+<!-- Q3 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q3: Who is known as the “Father of the Indian Constitution”?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Mahatma Gandhi</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Jawaharlal Nehru</span></div>
+        <div class="option"><span class="option-letter">C</span><span>B. R. Ambedkar</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Sardar Patel</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) B. R. Ambedkar
+        </strong>
+        <p>Dr. B. R. Ambedkar chaired the Drafting Committee and played a key role in framing the Constitution.</p>
+    </div>
+</div>
+
+<!-- Q4 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q4: The Indian Constitution was adopted on which date?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>15 August 1947</span></div>
+        <div class="option"><span class="option-letter">B</span><span>26 January 1950</span></div>
+        <div class="option"><span class="option-letter">C</span><span>26 November 1949</span></div>
+        <div class="option"><span class="option-letter">D</span><span>2 October 1948</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) 26 November 1949
+        </strong>
+        <p>The Constitution was adopted on 26 November 1949 and came into force on 26 January 1950.</p>
+    </div>
+</div>
+
+<!-- Q5 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q5: How many schedules are there in the Indian Constitution (originally)?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>8</span></div>
+        <div class="option"><span class="option-letter">B</span><span>10</span></div>
+        <div class="option"><span class="option-letter">C</span><span>12</span></div>
+        <div class="option"><span class="option-letter">D</span><span>14</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) 8
+        </strong>
+        <p>The Constitution originally had 8 Schedules, which have increased over time through amendments.</p>
+    </div>
+</div>
+
+<!-- Q6 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q6: Which article of the Constitution defines India as a “Union of States”?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 1</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 3</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 12</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 32</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 1
+        </strong>
+        <p>Article 1 declares India as a “Union of States.”</p>
+    </div>
+</div>
+
+<!-- Q7 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q7: Who heads the Union Executive in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Prime Minister</span></div>
+        <div class="option"><span class="option-letter">B</span><span>President</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Chief Justice of India</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Lok Sabha Speaker</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) President
+        </strong>
+        <p>The President is the constitutional head of the Union Executive of India.</p>
+    </div>
+</div>
+
+<!-- Q8 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q8: Which house of Parliament is also called the “House of the People”?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Rajya Sabha</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Vidhan Sabha</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Lok Sabha</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Legislative Council</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Lok Sabha
+        </strong>
+        <p>Lok Sabha represents the people directly and is called the House of the People.</p>
+    </div>
+</div>
+
+<!-- Q9 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q9: How many members are nominated by the President to the Rajya Sabha?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>10</span></div>
+        <div class="option"><span class="option-letter">B</span><span>12</span></div>
+        <div class="option"><span class="option-letter">C</span><span>15</span></div>
+        <div class="option"><span class="option-letter">D</span><span>20</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) 12
+        </strong>
+        <p>The President nominates 12 members to the Rajya Sabha for their expertise in various fields.</p>
+    </div>
+</div>
+
+<!-- Q10 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q10: Which amendment is known as the “Mini Constitution”?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>42nd Amendment</span></div>
+        <div class="option"><span class="option-letter">B</span><span>44th Amendment</span></div>
+        <div class="option"><span class="option-letter">C</span><span>52nd Amendment</span></div>
+        <div class="option"><span class="option-letter">D</span><span>73rd Amendment</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) 42nd Amendment
+        </strong>
+        <p>The 42nd Amendment (1976) made major changes to the Constitution and is called the “Mini Constitution.”</p>
+    </div>
+</div>
+
+<!-- Q11 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q11: Which body conducts elections in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Finance Commission</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Election Commission</span></div>
+        <div class="option"><span class="option-letter">C</span><span>NITI Aayog</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Supreme Court</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Election Commission
+        </strong>
+        <p>The Election Commission of India conducts free and fair elections.</p>
+    </div>
+</div>
+
+<!-- Q12 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q12: What is the minimum age to become the Prime Minister of India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>25 years</span></div>
+        <div class="option"><span class="option-letter">B</span><span>30 years</span></div>
+        <div class="option"><span class="option-letter">C</span><span>35 years</span></div>
+        <div class="option"><span class="option-letter">D</span><span>No fixed age (must be MP)</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: D) No fixed age (must be MP)
+        </strong>
+        <p>A person must be a Member of Parliament, but there is no separate minimum age beyond eligibility as MP.</p>
+    </div>
+</div>
+
+<!-- Q13 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q13: Which article deals with Right to Equality?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Articles 14–18</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Articles 19–22</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Articles 23–24</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Articles 25–28</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Articles 14–18
+        </strong>
+        <p>Right to Equality is covered under Articles 14 to 18 of the Constitution.</p>
+    </div>
+</div>
+
+<!-- Q14 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q14: Who appoints the Chief Election Commissioner of India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Prime Minister</span></div>
+        <div class="option"><span class="option-letter">B</span><span>President of India</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Supreme Court</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Parliament</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) President of India
+        </strong>
+        <p>The Chief Election Commissioner is appointed by the President of India.</p>
+    </div>
+</div>
+
+<!-- Q15 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q15: Which feature makes India a federal country?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Single Constitution</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Division of powers between Centre and States</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Single citizenship only</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Parliament supremacy over States</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Division of powers between Centre and States
+        </strong>
+        <p>India is federal because powers are divided between the Union and State governments.</p>
+    </div>
+</div>
+        <!-- Q16 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q16: How many types of emergencies are mentioned in the Indian Constitution?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>2</span></div>
+        <div class="option"><span class="option-letter">B</span><span>3</span></div>
+        <div class="option"><span class="option-letter">C</span><span>4</span></div>
+        <div class="option"><span class="option-letter">D</span><span>5</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) 3
+        </strong>
+        <p>The Constitution provides for three types of emergencies: National Emergency, State Emergency (President’s Rule), and Financial Emergency.</p>
+    </div>
+</div>
+
+<!-- Q17 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q17: Which article of the Constitution deals with President’s Rule?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 352</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 356</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 360</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 370</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Article 356
+        </strong>
+        <p>Article 356 empowers the President to impose President’s Rule in a state.</p>
+    </div>
+</div>
+
+<!-- Q18 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q18: Which body is called the “Upper House” of Parliament?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Lok Sabha</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Vidhan Sabha</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Rajya Sabha</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Legislative Assembly</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Rajya Sabha
+        </strong>
+        <p>Rajya Sabha is the Upper House of the Indian Parliament.</p>
+    </div>
+</div>
+
+<!-- Q19 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q19: Who is the constitutional head of a State in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Chief Minister</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Governor</span></div>
+        <div class="option"><span class="option-letter">C</span><span>President</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Speaker</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Governor
+        </strong>
+        <p>The Governor is the constitutional head of a State in India.</p>
+    </div>
+</div>
+
+<!-- Q20 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q20: Which Article of the Constitution provides for Right to Constitutional Remedies?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 14</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 19</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 32</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 21</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Article 32
+        </strong>
+        <p>Article 32 allows citizens to approach the Supreme Court for enforcement of Fundamental Rights.</p>
+    </div>
+</div>
+
+<!-- Q21 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q21: Who presides over the Rajya Sabha?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Prime Minister</span></div>
+        <div class="option"><span class="option-letter">B</span><span>President</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Vice President</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Lok Sabha Speaker</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Vice President
+        </strong>
+        <p>The Vice President of India acts as the ex-officio Chairman of the Rajya Sabha.</p>
+    </div>
+</div>
+
+<!-- Q22 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q22: Which body is responsible for amending the Constitution?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Supreme Court</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Parliament</span></div>
+        <div class="option"><span class="option-letter">C</span><span>President</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Election Commission</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Parliament
+        </strong>
+        <p>Only Parliament has the power to amend the Constitution under Article 368.</p>
+    </div>
+</div>
+
+<!-- Q23 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q23: Which Fundamental Right was removed from the Constitution?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Right to Equality</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Right to Property</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Right to Freedom</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Right against Exploitation</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Right to Property
+        </strong>
+        <p>Right to Property was removed as a Fundamental Right and made a legal right under Article 300A.</p>
+    </div>
+</div>
+
+<!-- Q24 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q24: Which schedule of the Constitution deals with Panchayati Raj?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>8th Schedule</span></div>
+        <div class="option"><span class="option-letter">B</span><span>10th Schedule</span></div>
+        <div class="option"><span class="option-letter">C</span><span>11th Schedule</span></div>
+        <div class="option"><span class="option-letter">D</span><span>12th Schedule</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) 11th Schedule
+        </strong>
+        <p>The 11th Schedule (added by 73rd Amendment) deals with Panchayati Raj institutions.</p>
+    </div>
+</div>
+
+<!-- Q25 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q25: Which constitutional body advises the President on financial matters?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>NITI Aayog</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Finance Commission</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Election Commission</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Planning Commission</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Finance Commission
+        </strong>
+        <p>The Finance Commission recommends distribution of tax revenues between Centre and States.</p>
+    </div>
+</div>
+
+<!-- Q26 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q26: Which type of government does India have?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Presidential</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Parliamentary</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Monarchy</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Dictatorship</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Parliamentary
+        </strong>
+        <p>India follows a parliamentary system where the executive is responsible to the legislature.</p>
+    </div>
+</div>
+
+<!-- Q27 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q27: Which Article deals with Right to Education?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 19A</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 21A</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 24</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 29</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Article 21A
+        </strong>
+        <p>Article 21A makes free and compulsory education a Fundamental Right for children aged 6–14 years.</p>
+    </div>
+</div>
+
+<!-- Q28 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q28: Who is the real executive head of India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>President</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Prime Minister</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Governor</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Chief Justice</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Prime Minister
+        </strong>
+        <p>The Prime Minister is the real executive head of the government.</p>
+    </div>
+</div>
+
+<!-- Q29 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q29: Which body protects the Constitution in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Parliament</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Supreme Court</span></div>
+        <div class="option"><span class="option-letter">C</span><span>President</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Election Commission</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Supreme Court
+        </strong>
+        <p>The Supreme Court acts as the guardian of the Constitution.</p>
+    </div>
+</div>
+
+<!-- Q30 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q30: Which system of government is followed in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Federal</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Unitary</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Quasi-federal</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Confederal</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Quasi-federal
+        </strong>
+        <p>India is a quasi-federal system with strong Centre and states.</p>
+    </div>
+</div>
+
+<!-- Q31 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q31: Which article deals with Fundamental Duties?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 48A</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 51A</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 40</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 44</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Article 51A
+        </strong>
+        <p>Article 51A lists the Fundamental Duties of Indian citizens.</p>
+    </div>
+</div>
+
+<!-- Q32 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q32: Who is responsible for maintaining law and order in a State?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Governor</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Chief Minister</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Chief Justice</span></div>
+        <div class="option"><span class="option-letter">D</span><span>President</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Chief Minister
+        </strong>
+        <p>The Chief Minister heads the state executive and maintains law and order through the state administration.</p>
+    </div>
+</div>
+
+<!-- Q33 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q33: Which body is called the “watchdog of public finances”?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Finance Commission</span></div>
+        <div class="option"><span class="option-letter">B</span><span>CAG</span></div>
+        <div class="option"><span class="option-letter">C</span><span>NITI Aayog</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Election Commission</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) CAG
+        </strong>
+        <p>The Comptroller and Auditor General (CAG) audits government expenditure.</p>
+    </div>
+</div>
+
+<!-- Q34 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q34: Which Article guarantees protection of life and personal liberty?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 19</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 21</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 22</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 20</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Article 21
+        </strong>
+        <p>Article 21 guarantees Right to Life and Personal Liberty.</p>
+    </div>
+</div>
+
+<!-- Q35 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q35: Which system ensures separation of powers in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Federalism</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Parliamentary system</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Judicial review</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Directive Principles</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Judicial review
+        </strong>
+        <p>Judicial review ensures separation of powers by allowing courts to check unconstitutional actions.</p>
+    </div>
+</div>
+        <div style="text-align: center; margin-top: 40px;">
+            <button class="mat-btn secondary view-more-btn" onclick="loadMore(this, 'week1')">
+                View More Questions <i class="fa-solid fa-angle-down" style="margin-left:8px;"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- WEEK 2 -->
+    <div id="week2" class="week-content" style="display: none;">
+<!-- Q36 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q36: Which Article of the Constitution deals with the Directive Principles of State Policy?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Part III</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Part IV</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Part V</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Part VI</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Part IV
+        </strong>
+        <p>Directive Principles of State Policy are included in Part IV of the Constitution (Articles 36–51).</p>
+    </div>
+</div>
+
+<!-- Q37 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q37: Which Article defines the Citizenship of India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 5</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 10</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 15</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 21</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 5
+        </strong>
+        <p>Article 5 defines citizenship at the commencement of the Constitution.</p>
+    </div>
+</div>
+
+<!-- Q38 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q38: Which body is known as the “guardian of the Constitution”?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Parliament</span></div>
+        <div class="option"><span class="option-letter">B</span><span>President</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Supreme Court</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Election Commission</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Supreme Court
+        </strong>
+        <p>The Supreme Court ensures protection and interpretation of the Constitution.</p>
+    </div>
+</div>
+
+<!-- Q39 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q39: How many members are there in the Lok Sabha (maximum strength)?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>500</span></div>
+        <div class="option"><span class="option-letter">B</span><span>530</span></div>
+        <div class="option"><span class="option-letter">C</span><span>545</span></div>
+        <div class="option"><span class="option-letter">D</span><span>552</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: D) 552
+        </strong>
+        <p>Lok Sabha can have a maximum of 552 members (530 from States, 20 from UTs, 2 nominated).</p>
+    </div>
+</div>
+
+<!-- Q40 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q40: Which Amendment lowered the voting age from 21 to 18 years?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>42nd Amendment</span></div>
+        <div class="option"><span class="option-letter">B</span><span>44th Amendment</span></div>
+        <div class="option"><span class="option-letter">C</span><span>61st Amendment</span></div>
+        <div class="option"><span class="option-letter">D</span><span>73rd Amendment</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) 61st Amendment
+        </strong>
+        <p>The 61st Amendment (1988) reduced voting age from 21 to 18 years.</p>
+    </div>
+</div>
+
+<!-- Q41 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q41: Which Article deals with the establishment of the Supreme Court?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 124</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 226</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 368</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 32</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 124
+        </strong>
+        <p>Article 124 establishes the Supreme Court of India.</p>
+    </div>
+</div>
+
+<!-- Q42 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q42: Who appoints the Prime Minister of India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Parliament</span></div>
+        <div class="option"><span class="option-letter">B</span><span>President</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Supreme Court</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Election Commission</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) President
+        </strong>
+        <p>The President appoints the Prime Minister, usually the leader of the majority party.</p>
+    </div>
+</div>
+
+<!-- Q43 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q43: Which Article deals with the President of India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 52</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 53</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 54</span></div>
+        <div class="option"><span class="option-letter">D</span><span>All of the above</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: D) All of the above
+        </strong>
+        <p>Articles 52–62 deal with the President of India.</p>
+    </div>
+</div>
+
+<!-- Q44 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q44: Which body is responsible for preparing the Union Budget?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>RBI</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Finance Ministry</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Planning Commission</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Parliament</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Finance Ministry
+        </strong>
+        <p>The Union Budget is prepared by the Ministry of Finance.</p>
+    </div>
+</div>
+
+<!-- Q45 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q45: Which Article deals with equality before law?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 14</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 15</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 16</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 17</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 14
+        </strong>
+        <p>Article 14 guarantees equality before law and equal protection of laws.</p>
+    </div>
+</div>
+
+<!-- Q46 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q46: Which system is followed for elections in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Proportional representation</span></div>
+        <div class="option"><span class="option-letter">B</span><span>First-past-the-post</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Indirect voting only</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Nomination system</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) First-past-the-post
+        </strong>
+        <p>India uses the First-Past-The-Post electoral system for most elections.</p>
+    </div>
+</div>
+
+<!-- Q47 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q47: Which Article deals with emergency due to financial instability?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 352</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 356</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 360</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 365</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Article 360
+        </strong>
+        <p>Article 360 deals with Financial Emergency.</p>
+    </div>
+</div>
+
+<!-- Q48 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q48: Which body is the highest law-making body in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Supreme Court</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Parliament</span></div>
+        <div class="option"><span class="option-letter">C</span><span>President</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Election Commission</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Parliament
+        </strong>
+        <p>Parliament is the supreme legislative body in India.</p>
+    </div>
+</div>
+
+<!-- Q49 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q49: Which Article defines the Fundamental Rights?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Part II</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Part III</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Part IV</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Part V</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Part III
+        </strong>
+        <p>Fundamental Rights are included in Part III of the Constitution.</p>
+    </div>
+</div>
+
+<!-- Q50 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q50: Which body controls the finances of the Union government?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Finance Commission</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Parliament</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Supreme Court</span></div>
+        <div class="option"><span class="option-letter">D</span><span>RBI</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Parliament
+        </strong>
+        <p>Parliament controls the finances of the Union through budget approval and oversight.</p>
+    </div>
+</div>
+<!-- Q51 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q51: Which Article of the Constitution deals with the Union Council of Ministers?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 74</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 75</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 76</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 77</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Article 75
+        </strong>
+        <p>Article 75 deals with the appointment, tenure, and responsibilities of the Union Council of Ministers.</p>
+    </div>
+</div>
+
+<!-- Q52 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q52: Who is the ex-officio Chairman of the Rajya Sabha?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>President</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Prime Minister</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Vice President</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Speaker</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Vice President
+        </strong>
+        <p>The Vice President of India presides over the Rajya Sabha as its Chairman.</p>
+    </div>
+</div>
+
+<!-- Q53 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q53: Which body is responsible for conducting Panchayat elections?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>State Election Commission</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Election Commission of India</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Finance Commission</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Parliament</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) State Election Commission
+        </strong>
+        <p>State Election Commissions conduct elections for Panchayati Raj institutions.</p>
+    </div>
+</div>
+
+<!-- Q54 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q54: Which Article deals with emergency in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Articles 352–360</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Articles 360–370</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Articles 370–380</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Articles 300–310</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Articles 352–360
+        </strong>
+        <p>These articles cover National Emergency, President’s Rule, and Financial Emergency.</p>
+    </div>
+</div>
+
+<!-- Q55 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q55: Who appoints the Governor of a State?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Prime Minister</span></div>
+        <div class="option"><span class="option-letter">B</span><span>President</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Chief Minister</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Supreme Court</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) President
+        </strong>
+        <p>The Governor is appointed by the President of India.</p>
+    </div>
+</div>
+
+<!-- Q56 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q56: Which body is called the “guardian of public funds”?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>CAG</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Finance Commission</span></div>
+        <div class="option"><span class="option-letter">C</span><span>RBI</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Parliament</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) CAG
+        </strong>
+        <p>The Comptroller and Auditor General audits government expenditure and ensures accountability.</p>
+    </div>
+</div>
+
+<!-- Q57 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q57: Which Article deals with freedom of speech and expression?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 14</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 19</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 21</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 22</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Article 19
+        </strong>
+        <p>Article 19 guarantees freedom of speech and expression among other freedoms.</p>
+    </div>
+</div>
+
+<!-- Q58 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q58: Which body resolves disputes between Centre and States?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Supreme Court</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Parliament</span></div>
+        <div class="option"><span class="option-letter">C</span><span>President</span></div>
+        <div class="option"><span class="option-letter">D</span><span>NITI Aayog</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Supreme Court
+        </strong>
+        <p>The Supreme Court settles disputes between Centre and States under federal jurisdiction.</p>
+    </div>
+</div>
+
+<!-- Q59 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q59: Which Amendment introduced the Anti-Defection Law?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>42nd Amendment</span></div>
+        <div class="option"><span class="option-letter">B</span><span>52nd Amendment</span></div>
+        <div class="option"><span class="option-letter">C</span><span>61st Amendment</span></div>
+        <div class="option"><span class="option-letter">D</span><span>73rd Amendment</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) 52nd Amendment
+        </strong>
+        <p>The 52nd Amendment Act (1985) introduced the Anti-Defection Law.</p>
+    </div>
+</div>
+
+<!-- Q60 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q60: Which Article deals with Right to Equality?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Articles 14–18</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Articles 19–22</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Articles 25–28</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Articles 29–30</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Articles 14–18
+        </strong>
+        <p>Right to Equality is covered under Articles 14–18 of the Constitution.</p>
+    </div>
+</div>
+
+<!-- Q61 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q61: Which body prepares the electoral rolls in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Election Commission</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Parliament</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Supreme Court</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Finance Commission</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Election Commission
+        </strong>
+        <p>The Election Commission prepares and updates electoral rolls for elections.</p>
+    </div>
+</div>
+
+<!-- Q62 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q62: Which Article deals with emergency provisions in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Articles 352–360</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Articles 370–371</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Articles 300–310</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Articles 1–4</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Articles 352–360
+        </strong>
+        <p>These articles define National Emergency, State Emergency, and Financial Emergency.</p>
+    </div>
+</div>
+
+<!-- Q63 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q63: Who can dissolve the Lok Sabha?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>President</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Prime Minister</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Speaker</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Chief Justice</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) President
+        </strong>
+        <p>The President can dissolve the Lok Sabha on the advice of the Prime Minister and Council of Ministers.</p>
+    </div>
+</div>
+
+<!-- Q64 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q64: Which Article deals with amendment of the Constitution?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 356</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 360</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 368</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 124</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Article 368
+        </strong>
+        <p>Article 368 provides the procedure for amending the Constitution.</p>
+    </div>
+</div>
+
+<!-- Q65 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q65: Which body is responsible for conducting elections in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Finance Commission</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Election Commission</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Supreme Court</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Parliament</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Election Commission
+        </strong>
+        <p>The Election Commission of India conducts free and fair elections.</p>
+    </div>
+</div>
+
+<!-- Q66 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q66: Which Article deals with equality before law?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 14</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 15</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 16</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 17</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 14
+        </strong>
+        <p>Article 14 guarantees equality before law and equal protection of laws.</p>
+    </div>
+</div>
+
+<!-- Q67 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q67: Which Article deals with Right to Information (RTI)?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 19</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 21</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 32</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 300A</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 19
+        </strong>
+        <p>RTI is derived from Article 19(1)(a) – freedom of speech and expression.</p>
+    </div>
+</div>
+
+<!-- Q68 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q68: Who is the head of the Union Cabinet?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>President</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Prime Minister</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Speaker</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Vice President</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Prime Minister
+        </strong>
+        <p>The Prime Minister heads the Union Council of Ministers.</p>
+    </div>
+</div>
+
+<!-- Q69 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q69: Which Article deals with the Vice President of India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 63</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 64</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 65</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 66</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: D) Article 66
+        </strong>
+        <p>Article 66 deals with the election of the Vice President of India.</p>
+    </div>
+</div>
+
+<!-- Q70 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q70: Which system ensures rule of law in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Federalism</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Judicial system</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Parliamentary system</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Directive Principles</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Judicial system
+        </strong>
+        <p>The judiciary ensures rule of law by interpreting and enforcing laws.</p>
+    </div>
+</div>
+        
+        <div style="text-align: center; margin-top: 40px;">
+            <button class="mat-btn secondary view-more-btn" onclick="loadMore(this, 'week2')">
+                View More Questions <i class="fa-solid fa-angle-down" style="margin-left:8px;"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- WEEK 3 -->
+    <div id="week3" class="week-content" style="display: none;">
+<!-- Q71 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q71: Which Article of the Constitution deals with the President’s veto power?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 111</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 112</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 123</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 124</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 111
+        </strong>
+        <p>Article 111 gives the President the power to assent, withhold assent, or return a bill (except Money Bills).</p>
+    </div>
+</div>
+
+<!-- Q72 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q72: Which body is responsible for protecting Fundamental Rights in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Parliament</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Supreme Court</span></div>
+        <div class="option"><span class="option-letter">C</span><span>President</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Election Commission</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Supreme Court
+        </strong>
+        <p>The Supreme Court is the guardian and protector of Fundamental Rights.</p>
+    </div>
+</div>
+
+<!-- Q73 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q73: Which Article deals with Money Bill in Parliament?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 109</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 110</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 111</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 112</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Article 110
+        </strong>
+        <p>Article 110 defines what constitutes a Money Bill in Parliament.</p>
+    </div>
+</div>
+
+<!-- Q74 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q74: Who can declare a National Emergency in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Prime Minister</span></div>
+        <div class="option"><span class="option-letter">B</span><span>President</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Parliament</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Supreme Court</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) President
+        </strong>
+        <p>National Emergency is declared by the President under Article 352.</p>
+    </div>
+</div>
+
+<!-- Q75 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q75: Which Article deals with Governor of a State?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 153</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 155</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 156</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 160</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Article 156
+        </strong>
+        <p>Article 156 deals with the term of office of the Governor.</p>
+    </div>
+</div>
+
+<!-- Q76 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q76: Which body controls the elections in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Supreme Court</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Election Commission</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Parliament</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Finance Commission</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Election Commission
+        </strong>
+        <p>The Election Commission of India conducts and supervises elections.</p>
+    </div>
+</div>
+
+<!-- Q77 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q77: Which Article deals with freedom of religion?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Articles 25–28</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Articles 19–22</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Articles 14–18</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Articles 32–35</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Articles 25–28
+        </strong>
+        <p>These articles guarantee freedom of religion in India.</p>
+    </div>
+</div>
+
+<!-- Q78 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q78: Who is the head of the Indian judiciary?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>President</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Chief Justice of India</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Prime Minister</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Attorney General</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Chief Justice of India
+        </strong>
+        <p>The Chief Justice of India is the head of the Supreme Court and Indian judiciary system.</p>
+    </div>
+</div>
+
+<!-- Q79 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q79: Which Article deals with the Attorney General of India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 76</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 72</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 80</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 90</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 76
+        </strong>
+        <p>Article 76 provides for the Attorney General of India, the highest law officer.</p>
+    </div>
+</div>
+
+<!-- Q80 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q80: Which body advises the President of India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Supreme Court</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Council of Ministers</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Parliament</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Election Commission</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Council of Ministers
+        </strong>
+        <p>The President acts on the advice of the Council of Ministers headed by the Prime Minister.</p>
+    </div>
+</div>
+
+<!-- Q81 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q81: Which Article deals with emergency provisions in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Articles 352–360</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Articles 360–370</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Articles 300–310</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Articles 1–4</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Articles 352–360
+        </strong>
+        <p>These articles define different types of emergencies in India.</p>
+    </div>
+</div>
+
+<!-- Q82 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q82: Which Amendment introduced Panchayati Raj system?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>73rd Amendment</span></div>
+        <div class="option"><span class="option-letter">B</span><span>74th Amendment</span></div>
+        <div class="option"><span class="option-letter">C</span><span>42nd Amendment</span></div>
+        <div class="option"><span class="option-letter">D</span><span>44th Amendment</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) 73rd Amendment
+        </strong>
+        <p>The 73rd Amendment Act (1992) gave constitutional status to Panchayati Raj.</p>
+    </div>
+</div>
+
+<!-- Q83 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q83: Which Article deals with Supreme Court jurisdiction?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 124–147</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 200–220</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 300–310</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 352–360</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 124–147
+        </strong>
+        <p>These articles define the composition and jurisdiction of the Supreme Court.</p>
+    </div>
+</div>
+
+<!-- Q84 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q84: Which Article deals with State Legislature?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Articles 168–212</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Articles 124–147</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Articles 352–360</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Articles 19–22</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Articles 168–212
+        </strong>
+        <p>These articles deal with State Legislatures in India.</p>
+    </div>
+</div>
+
+<!-- Q85 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q85: Which Article deals with Election Commission of India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 324</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 320</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 326</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 330</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 324
+        </strong>
+        <p>Article 324 provides for the Election Commission of India.</p>
+    </div>
+</div>
+<!-- Q86 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q86: Which Article deals with the Governor's powers?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 154</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 156</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 160</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 165</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 154
+        </strong>
+        <p>Article 154 vests the executive power of the State in the Governor.</p>
+    </div>
+</div>
+
+<!-- Q87 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q87: Which Article deals with the Parliament of India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Articles 79–122</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Articles 52–78</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Articles 123–143</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Articles 200–212</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Articles 79–122
+        </strong>
+        <p>These articles define the structure and functioning of the Parliament of India.</p>
+    </div>
+</div>
+
+<!-- Q88 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q88: Which Article deals with Money Bill definition?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 109</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 110</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 111</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 112</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Article 110
+        </strong>
+        <p>Article 110 defines what constitutes a Money Bill in Parliament.</p>
+    </div>
+</div>
+
+<!-- Q89 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q89: Which body conducts elections for President of India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Election Commission</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Parliament</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Supreme Court</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Finance Commission</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Election Commission
+        </strong>
+        <p>The Election Commission conducts the election of the President of India.</p>
+    </div>
+</div>
+
+<!-- Q90 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q90: Which Article deals with writ jurisdiction of Supreme Court?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 32</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 226</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 136</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 141</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 32
+        </strong>
+        <p>Article 32 empowers the Supreme Court to issue writs for enforcement of Fundamental Rights.</p>
+    </div>
+</div>
+
+<!-- Q91 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q91: Which Article deals with the State Election Commission?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 243K</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 324</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 326</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 330</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 243K
+        </strong>
+        <p>Article 243K provides for the State Election Commission for Panchayat elections.</p>
+    </div>
+</div>
+
+<!-- Q92 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q92: Which Article deals with Municipalities in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 243P–243ZG</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 124–147</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 352–360</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 19–22</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 243P–243ZG
+        </strong>
+        <p>These articles deal with Municipalities under the 74th Amendment.</p>
+    </div>
+</div>
+
+<!-- Q93 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q93: Which Article deals with Fundamental Duties?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 51A</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 21A</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 32</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 40</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 51A
+        </strong>
+        <p>Article 51A lists Fundamental Duties of citizens.</p>
+    </div>
+</div>
+
+<!-- Q94 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q94: Which body is responsible for auditing government accounts?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Finance Commission</span></div>
+        <div class="option"><span class="option-letter">B</span><span>CAG</span></div>
+        <div class="option"><span class="option-letter">C</span><span>RBI</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Election Commission</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) CAG
+        </strong>
+        <p>The Comptroller and Auditor General audits government accounts and expenditure.</p>
+    </div>
+</div>
+
+<!-- Q95 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q95: Which Article deals with Right to Property (now a legal right)?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 19(1)(f)</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 21</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 300A</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 31</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Article 300A
+        </strong>
+        <p>Right to Property is now a constitutional legal right under Article 300A.</p>
+    </div>
+</div>
+
+<!-- Q96 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q96: Which Article deals with Freedom of Trade and Commerce?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 19</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 301</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 21</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 32</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Article 301
+        </strong>
+        <p>Article 301 guarantees freedom of trade, commerce, and intercourse across India.</p>
+    </div>
+</div>
+
+<!-- Q97 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q97: Which Article deals with High Courts in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Articles 214–231</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Articles 124–147</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Articles 352–360</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Articles 300–310</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Articles 214–231
+        </strong>
+        <p>These articles deal with High Courts in the states.</p>
+    </div>
+</div>
+
+<!-- Q98 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q98: Which body conducts elections to Parliament?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Election Commission</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Supreme Court</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Parliament</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Finance Commission</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Election Commission
+        </strong>
+        <p>The Election Commission conducts elections to Parliament and State Assemblies.</p>
+    </div>
+</div>
+
+<!-- Q99 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q99: Which Article deals with emergency provisions in India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Articles 352–360</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Articles 370–373</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Articles 300–310</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Articles 1–4</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Articles 352–360
+        </strong>
+        <p>These articles deal with National Emergency, State Emergency, and Financial Emergency.</p>
+    </div>
+</div>
+
+<!-- Q100 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q100: Which Article deals with Supreme Court jurisdiction?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 124</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 132–136</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 200</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 300A</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Article 132–136
+        </strong>
+        <p>These articles define the appellate and special jurisdiction of the Supreme Court.</p>
+    </div>
+</div>
+
+<!-- Q101 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q101: Which Article deals with the Finance Commission?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 280</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 270</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 300</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 350</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 280
+        </strong>
+        <p>Article 280 provides for the establishment of the Finance Commission.</p>
+    </div>
+</div>
+
+<!-- Q102 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q102: Which Article deals with writ jurisdiction of High Courts?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 32</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 226</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 124</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 360</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Article 226
+        </strong>
+        <p>Article 226 empowers High Courts to issue writs for enforcement of rights.</p>
+    </div>
+</div>
+
+<!-- Q103 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q103: Which Article deals with Fundamental Rights enforcement?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 32</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 226</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 19</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 21</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 32
+        </strong>
+        <p>Article 32 allows citizens to approach the Supreme Court for enforcement of Fundamental Rights.</p>
+    </div>
+</div>
+
+<!-- Q104 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q104: Which Article deals with State Council of Ministers?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 163</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 164</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 165</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 166</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Article 164
+        </strong>
+        <p>Article 164 deals with the appointment of Chief Minister and other ministers in states.</p>
+    </div>
+</div>
+
+<!-- Q105 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q105: Which Article deals with Comptroller and Auditor General of India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 148</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 149</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 150</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 151</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 148
+        </strong>
+        <p>Article 148 deals with the appointment and duties of the CAG of India.</p>
+    </div>
+</div>
+        
+        <div style="text-align: center; margin-top: 40px;">
+            <button class="mat-btn secondary view-more-btn" onclick="loadMore(this, 'week3')">
+                View More Questions <i class="fa-solid fa-angle-down" style="margin-left:8px;"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- WEEK 4 -->
+    <div id="week4" class="week-content" style="display: none;">
+
+<!-- Q106 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q106: Which Article deals with the creation of All India Services?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 312</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 310</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 315</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 320</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 312
+        </strong>
+        <p>Article 312 allows Parliament to create new All India Services if necessary.</p>
+    </div>
+</div>
+
+<!-- Q107 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q107: Which Article deals with Public Service Commissions?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 315</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 320</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 324</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 326</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 315
+        </strong>
+        <p>Article 315 provides for Public Service Commissions at Union and State levels.</p>
+    </div>
+</div>
+
+<!-- Q108 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q108: Which Article deals with functions of the Election Commission?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 324</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 325</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 326</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 327</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 324
+        </strong>
+        <p>Article 324 defines powers and functions of the Election Commission.</p>
+    </div>
+</div>
+
+<!-- Q109 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q109: Which Article deals with abolition of untouchability?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 17</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 18</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 19</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 21</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 17
+        </strong>
+        <p>Article 17 abolishes untouchability and forbids its practice in any form.</p>
+    </div>
+</div>
+
+<!-- Q110 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q110: Which Article deals with abolition of titles?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 17</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 18</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 19</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 20</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Article 18
+        </strong>
+        <p>Article 18 prohibits the state from conferring titles, except military or academic distinctions.</p>
+    </div>
+</div>
+
+<!-- Q111 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q111: Which Article deals with protection against arrest and detention?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 20</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 21</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 22</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 23</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Article 22
+        </strong>
+        <p>Article 22 provides safeguards against arbitrary arrest and detention.</p>
+    </div>
+</div>
+
+<!-- Q112 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q112: Which Article deals with protection of life and personal liberty?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 19</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 20</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 21</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 22</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Article 21
+        </strong>
+        <p>Article 21 guarantees protection of life and personal liberty.</p>
+    </div>
+</div>
+
+<!-- Q113 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q113: Which Article deals with protection in respect of conviction for offences?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 20</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 21</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 22</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 23</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 20
+        </strong>
+        <p>Article 20 provides protection against ex-post facto laws and double jeopardy.</p>
+    </div>
+</div>
+
+<!-- Q114 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q114: Which Article deals with prohibition of trafficking in human beings?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 23</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 24</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 25</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 26</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 23
+        </strong>
+        <p>Article 23 prohibits trafficking in human beings and forced labour.</p>
+    </div>
+</div>
+
+<!-- Q115 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q115: Which Article deals with prohibition of child labour?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 23</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 24</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 25</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 26</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Article 24
+        </strong>
+        <p>Article 24 prohibits employment of children in factories and hazardous work.</p>
+    </div>
+</div>
+
+<!-- Q116 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q116: Which Article deals with freedom of conscience and religion?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 25</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 26</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 27</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 28</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 25
+        </strong>
+        <p>Article 25 guarantees freedom of conscience and free profession of religion.</p>
+    </div>
+</div>
+
+<!-- Q117 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q117: Which Article deals with management of religious affairs?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 26</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 27</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 28</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 29</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 26
+        </strong>
+        <p>Article 26 gives religious denominations the right to manage their own affairs.</p>
+    </div>
+</div>
+
+<!-- Q118 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q118: Which Article deals with freedom from taxation for promotion of religion?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 27</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 28</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 29</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 30</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 27
+        </strong>
+        <p>Article 27 prohibits taxation for promotion of any particular religion.</p>
+    </div>
+</div>
+
+<!-- Q119 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q119: Which Article deals with cultural and educational rights?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 29–30</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 25–28</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 19–22</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 14–18</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 29–30
+        </strong>
+        <p>Articles 29 and 30 protect cultural and educational rights of minorities.</p>
+    </div>
+</div>
+
+<!-- Q120 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q120: Which Article deals with protection of interests of minorities?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 29</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 30</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 31</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 32</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Article 30
+        </strong>
+        <p>Article 30 gives minorities the right to establish and administer educational institutions.</p>
+    </div>
+</div>
+
+<!-- Q121 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q121: Which Article deals with the Administrative Tribunals?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 323A</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 323B</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 324</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 326</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 323A
+        </strong>
+        <p>Article 323A empowers Parliament to establish administrative tribunals for public service matters.</p>
+    </div>
+</div>
+
+<!-- Q122 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q122: Which Article deals with Finance Commission recommendations?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 280</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 275</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 300</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 355</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 280
+        </strong>
+        <p>Article 280 deals with the Finance Commission and its role in financial distribution.</p>
+    </div>
+</div>
+
+<!-- Q123 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q123: Which Article deals with Panchayats?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Articles 243–243O</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Articles 324–326</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Articles 352–360</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Articles 14–18</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Articles 243–243O
+        </strong>
+        <p>These articles define the structure and functioning of Panchayati Raj institutions.</p>
+    </div>
+</div>
+
+<!-- Q124 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q124: Which Article deals with Union Territories?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Articles 239–241</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Articles 245–255</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Articles 300–310</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Articles 19–22</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Articles 239–241
+        </strong>
+        <p>These articles deal with administration of Union Territories in India.</p>
+    </div>
+</div>
+
+<!-- Q125 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q125: Which Article deals with Supreme Court advisory jurisdiction?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 143</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 136</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 124</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 32</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 143
+        </strong>
+        <p>Article 143 allows the President to seek advisory opinion from the Supreme Court.</p>
+    </div>
+</div>
+
+<!-- Q126 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q126: Which Article deals with Freedom of Press (implicit in Constitution)?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 19(1)(a)</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 21</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 32</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 14</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 19(1)(a)
+        </strong>
+        <p>Freedom of speech and expression includes freedom of the press under Article 19(1)(a).</p>
+    </div>
+</div>
+
+<!-- Q127 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q127: Which Article deals with equality before law?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 14</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 15</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 16</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 17</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 14
+        </strong>
+        <p>Article 14 guarantees equality before law and equal protection of laws.</p>
+    </div>
+</div>
+
+<!-- Q128 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q128: Which Article deals with prohibition of discrimination?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 15</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 16</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 17</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 18</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 15
+        </strong>
+        <p>Article 15 prohibits discrimination on grounds of religion, caste, sex, etc.</p>
+    </div>
+</div>
+
+<!-- Q129 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q129: Which Article deals with equality of opportunity in public employment?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 16</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 17</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 18</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 19</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 16
+        </strong>
+        <p>Article 16 ensures equality of opportunity in government jobs.</p>
+    </div>
+</div>
+
+<!-- Q130 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q130: Which Article deals with protection of minorities' language and culture?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 29</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 30</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 31</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 32</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 29
+        </strong>
+        <p>Article 29 protects interests of minorities by preserving language, script, and culture.</p>
+    </div>
+</div>
+
+<!-- Q131 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q131: Which Article deals with Right to Constitutional Remedies?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 32</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 33</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 34</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 35</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 32
+        </strong>
+        <p>Article 32 is called the "Heart and Soul" of the Constitution as it provides constitutional remedies.</p>
+    </div>
+</div>
+
+<!-- Q132 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q132: Which Article deals with suspension of Fundamental Rights during Emergency?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 358</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 359</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 360</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 361</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Article 359
+        </strong>
+        <p>Article 359 allows suspension of enforcement of Fundamental Rights during Emergency.</p>
+    </div>
+</div>
+
+<!-- Q133 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q133: Which Article deals with President's pardoning power?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 72</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 73</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 74</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 75</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 72
+        </strong>
+        <p>Article 72 gives the President the power to grant pardons, reprieves, and remissions.</p>
+    </div>
+</div>
+
+<!-- Q134 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q134: Which Article deals with Council of Ministers to aid President?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 74</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 75</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 76</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 77</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 74
+        </strong>
+        <p>Article 74 states that the President shall act on the advice of the Council of Ministers.</p>
+    </div>
+</div>
+
+<!-- Q135 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q135: Which Article deals with Prime Minister appointment?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 75</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 76</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 77</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 78</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 75
+        </strong>
+        <p>Article 75 deals with appointment of Prime Minister and Council of Ministers.</p>
+    </div>
+</div>
+
+<!-- Q136 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q136: Which Article deals with Attorney General of India?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 76</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 77</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 78</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 79</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 76
+        </strong>
+        <p>Article 76 provides for the Attorney General of India.</p>
+    </div>
+</div>
+
+<!-- Q137 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q137: Which Article deals with Comptroller and Auditor General?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 148</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 149</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 150</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 151</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Article 148
+        </strong>
+        <p>Article 148 deals with appointment and duties of the CAG of India.</p>
+    </div>
+</div>
+
+<!-- Q138 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q138: Which Article deals with High Courts?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Articles 214–231</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Articles 124–147</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Articles 300–310</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Articles 352–360</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: A) Articles 214–231
+        </strong>
+        <p>These articles deal with High Courts in India.</p>
+    </div>
+</div>
+
+<!-- Q139 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q139: Which Article deals with State Emergency (President’s Rule)?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 352</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 356</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 360</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 370</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: B) Article 356
+        </strong>
+        <p>Article 356 provides for President’s Rule in states.</p>
+    </div>
+</div>
+
+<!-- Q140 -->
+<div class="mat-card question-card">
+    <div class="question-text">Q140: Which Article deals with Financial Emergency?</div>
+    <div class="options-grid">
+        <div class="option"><span class="option-letter">A</span><span>Article 352</span></div>
+        <div class="option"><span class="option-letter">B</span><span>Article 356</span></div>
+        <div class="option"><span class="option-letter">C</span><span>Article 360</span></div>
+        <div class="option"><span class="option-letter">D</span><span>Article 365</span></div>
+    </div>
+    <button class="mat-btn accent toggle-exp-btn" onclick="toggleExplanation(this)">
+        <i class="fa-solid fa-plus"></i> View Explanation
+    </button>
+    <div class="explanation-box">
+        <strong style="color:var(--accent-green);display:block;margin-bottom:8px;">
+            Correct Answer: C) Article 360
+        </strong>
+        <p>Article 360 deals with Financial Emergency in India.</p>
+    </div>
+</div>
+
+        
+        <div style="text-align: center; margin-top: 40px;">
+            <button class="mat-btn secondary view-more-btn" onclick="loadMore(this, 'week4')">
+                View More Questions <i class="fa-solid fa-angle-down" style="margin-left:8px;"></i>
+            </button>
+        </div>
+    </div>
+
+</section>
+
+<!-- Footer with GK Links -->
+<footer>
+    <div class="footer-grid">
+        <div class="footer-col">
+            <div class="logo" style="margin-bottom: 20px;">
+                <a href="index.html" style="font-size: 20px; font-weight: 800; color: var(--text-color); display:flex; align-items:center; gap:8px; letter-spacing: -0.5px;">
+                    <i class="fa-solid fa-graduation-cap" style="color: var(--primary-color);"></i> GK BYTE
+                </a>
+            </div>
+            <p style="font-size: 0.95rem;">Empowering minds with comprehensive and curated General Knowledge. Your ultimate companion for competitive exams and lifelong learning journeys.</p>
+        </div>
+        
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About Us</a>
+                <a href="quiz.html">GK Quizzes</a>
+                
+                <a href="index.html#contact">Contact Support</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </div>
+        
+        <div class="footer-col">
+            <h4>Subjects</h4>
+            <div class="footer-links">
+                <a href="history.html">History</a>
+                <a href="politics.html">Politics</a>
+                <a href="economics.html">Economics</a>
+                <a href="current-affairs.html">Current Affairs</a>
+                <a href="geography.html">Geography</a>
+                
+            </div>
+        </div>
+        
+        <div class="footer-col">
+            <h4>Newsletter</h4>
+            <p style="margin-bottom: 12px; font-size: 0.95rem;">Subscribe to receive weekly GK updates directly in your inbox.</p>
+            <div class="newsletter">
+                <form action="#" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+                    <input type="email" placeholder="Your email address" required style="width: 100%; margin-bottom: 8px;">
+                    <button type="submit" class="mat-btn" style="width: 100%; padding: 10px 16px;">Subscribe <i class="fa-solid fa-paper-plane" style="margin-left: 8px;"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2026 GK BYTE. All Rights Reserved. Redesigned with Material Design &hearts;</p>
+    </div>
+</footer>
+
+<script>
+    // Scroll to Top Logic
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+    
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            scrollTopBtn.classList.add('show');
+        } else {
+            scrollTopBtn.classList.remove('show');
+        }
+    });
+    scrollTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+    // Theme & Mobile Menu
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.documentElement; 
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    body.setAttribute('data-theme', savedTheme);
+    updateIcon(savedTheme);
+
+    themeToggle.addEventListener('click', () => {
+        const newTheme = body.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+        body.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateIcon(newTheme);
+    });
+
+    function updateIcon(theme) {
+        themeToggle.innerHTML = theme === 'light' ? '<i class="fa-solid fa-moon"></i>' : '<i class="fa-solid fa-sun"></i>';
+    }
+
+    const menuToggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav-menu');
+    menuToggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        const icon = menuToggle.querySelector('i');
+        icon.classList.toggle('fa-bars');
+        icon.classList.toggle('fa-xmark');
+    });
+
+    const dropdown = document.querySelector('.dropdown');
+    dropdown.addEventListener('click', (e) => {
+        if(window.innerWidth <= 768) dropdown.classList.toggle('active');
+    });
+
+    // --- Static Question Pagination Logic ---
+    const PAGE_SIZE = 20;
+
+    function setupPagination() {
+        const weekContents = document.querySelectorAll('.week-content');
+        weekContents.forEach(week => {
+            let cards = week.querySelectorAll('.question-card');
+            cards.forEach((card, index) => {
+                card.style.display = index >= PAGE_SIZE ? 'none' : 'block';
+            });
+            
+            const viewMoreBtn = week.querySelector('.view-more-btn');
+            if (viewMoreBtn) {
+                if (cards.length <= PAGE_SIZE) {
+                    viewMoreBtn.style.display = 'none';
+                } else {
+                    viewMoreBtn.style.display = 'inline-flex';
+                    viewMoreBtn.dataset.visibleCount = PAGE_SIZE;
+                    viewMoreBtn.innerHTML = `View More Questions (${cards.length - PAGE_SIZE} left) <i class="fa-solid fa-angle-down" style="margin-left:8px;"></i>`;
+                }
+            }
+        });
+    }
+
+    window.loadMore = function(btn, weekId) {
+        const week = document.getElementById(weekId);
+        let cards = week.querySelectorAll('.question-card');
+        let visibleCount = parseInt(btn.dataset.visibleCount || PAGE_SIZE);
+        
+        let nextCount = visibleCount + PAGE_SIZE;
+        cards.forEach((card, index) => {
+            if (index < nextCount) card.style.display = 'block';
+        });
+        
+        btn.dataset.visibleCount = nextCount;
+        if (nextCount >= cards.length) {
+            btn.style.display = 'none';
+        } else {
+            btn.innerHTML = `View More Questions (${cards.length - nextCount} left) <i class="fa-solid fa-angle-down" style="margin-left:8px;"></i>`;
+        }
+    };
+
+    window.toggleExplanation = function(btn) {
+        const expBox = btn.nextElementSibling;
+        if (expBox.style.display === 'none' || expBox.style.display === '') {
+            expBox.style.display = 'block';
+            btn.innerHTML = '<i class="fa-solid fa-minus"></i> Hide Explanation';
+            btn.classList.remove('accent');
+            btn.classList.add('secondary');
+        } else {
+            expBox.style.display = 'none';
+            btn.innerHTML = '<i class="fa-solid fa-plus"></i> View Explanation';
+            btn.classList.remove('secondary');
+            btn.classList.add('accent');
+        }
+    };
+
+    // Week Toggling
+    document.querySelectorAll('.week-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            // Remove active from all buttons
+            document.querySelectorAll('.week-btn').forEach(b => b.classList.remove('active'));
+            // Add active to clicked button
+            btn.classList.add('active');
+            
+            // Hide all content
+            document.querySelectorAll('.week-content').forEach(w => w.style.display = 'none');
+            // Show corresponding content
+            document.getElementById(btn.dataset.week).style.display = 'block';
+        });
+    });
+    
+    // Initialize
+    setupPagination();
+</script>
+
+</body>
+</html>
