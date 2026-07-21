@@ -8,11 +8,11 @@ GK BYTE is a premier educational platform meticulously crafted to aid students, 
 ## 🌟 Key Features
 
 - **Comprehensive Coverage**: Highly curated resources covering 5+ core subjects including:
-  - History
-  - Politics
-  - Economics
-  - Current Affairs
-  - Geography (and General Science)
+  - History.
+  - Politics.
+  - Economics.
+  - Current Affairs.
+  - Geography.(and General Science)
 - **Monthly Updates**: Fresh quiz modules and current affairs updates delivered every month to keep your knowledge up to date.
 - **Subject Archives**: Browse through past monthly content and previous exam papers with ease.
 - **Modern "Bento UI" Design**: A sleek, fully responsive dark theme interface that looks beautiful on desktops, tablets, and mobile devices.
