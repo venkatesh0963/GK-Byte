@@ -5,7 +5,7 @@
 
 GK BYTE is a premier educational platform meticulously crafted to aid students, professionals, and competitive exam aspirants in mastering General Knowledge. Designed with a modern, dark-themed Bento UI, it provides a highly engaging and interactive learning experience.
 
-## 🌟 Key Features
+## 🌟 Key Features.
 
 - **Comprehensive Coverage**: Highly curated resources covering 5+ core subjects including:
   - History.
