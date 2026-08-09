@@ -1,5 +1,5 @@
 # GK BYTE | Master General Knowledge
-.
+
 ![GK BYTE - Next-Generation EdTech Platform](https://img.shields.io/badge/Platform-EdTech-2563EB.svg)
 ![Status - Active](https://img.shields.io/badge/Status-Active-10b981.svg)
 
